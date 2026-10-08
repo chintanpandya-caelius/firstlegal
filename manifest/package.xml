@@ -6,8 +6,7 @@
     <types><members>*</members><name>ApexPage</name></types>
     <types><members>*</members><name>ApexComponent</name></types>
     <types><members>*</members><name>ApexTestSuite</name></types>
-    <types><members>*</members><name>StaticResource</name></types>
-
+    
     <!-- Lightning -->
     <types><members>*</members><name>AuraDefinitionBundle</name></types>
     <types><members>*</members><name>LightningComponentBundle</name></types>
@@ -19,17 +18,12 @@
     <types><members>*</members><name>CompactLayout</name></types>
     <types><members>*</members><name>CustomPageWebLink</name></types>
     <types><members>*</members><name>WebLink</name></types>
-    <types><members>*</members><name>Network</name></types>
     <types><members>*</members><name>NavigationMenu</name></types>
-    <types><members>*</members><name>ExperienceBundle</name></types>
-    <types><members>*</members><name>SiteDotCom</name></types>
-    <types><members>*</members><name>CustomSite</name></types>
-
+    
     <!-- Objects and data model -->
     <types><members>*</members><name>CustomObject</name></types>
     <types><members>*</members><name>CustomField</name></types>
     <types><members>*</members><name>CustomObjectTranslation</name></types>
-    <types><members>*</members><name>BusinessProcess</name></types>
     <types><members>*</members><name>RecordType</name></types>
     <types><members>*</members><name>ListView</name></types>
     <types><members>*</members><name>FieldSet</name></types>
@@ -42,7 +36,6 @@
     <types><members>*</members><name>StandardValueSet</name></types>
     <types><members>*</members><name>StandardValueSetTranslation</name></types>
     <types><members>*</members><name>CustomPermission</name></types>
-    <types><members>*</members><name>CustomNotificationType</name></types>
     <types><members>*</members><name>Translations</name></types>
 
     <!-- Automation -->
@@ -60,14 +53,11 @@
     <types><members>*</members><name>EscalationRules</name></types>
     <types><members>*</members><name>MatchingRules</name></types>
     <types><members>*</members><name>DuplicateRule</name></types>
-    <types><members>*</members><name>PlatformEventChannel</name></types>
-    <types><members>*</members><name>PlatformEventChannelMember</name></types>
-
+    
     <!-- Security and access -->
     <types><members>*</members><name>Profile</name></types>
     <types><members>*</members><name>PermissionSet</name></types>
     <types><members>*</members><name>PermissionSetGroup</name></types>
-    <types><members>*</members><name>MutingPermissionSet</name></types>
     <types><members>*</members><name>Role</name></types>
     <types><members>*</members><name>Group</name></types>
     <types><members>*</members><name>Queue</name></types>
@@ -76,35 +66,7 @@
     <types><members>*</members><name>SharingCriteriaRule</name></types>
     <types><members>*</members><name>SharingOwnerRule</name></types>
     <types><members>*</members><name>SharingTerritoryRule</name></types>
-    <types><members>*</members><name>AuthProvider</name></types>
-    <types><members>*</members><name>ConnectedApp</name></types>
-    <types><members>*</members><name>RemoteSiteSetting</name></types>
-    <types><members>*</members><name>CspTrustedSite</name></types>
-    <types><members>*</members><name>CorsWhitelistOrigin</name></types>
-    <types><members>*</members><name>NamedCredential</name></types>
-    <types><members>*</members><name>ExternalCredential</name></types>
-    <types><members>*</members><name>ExternalDataSource</name></types>
-  
-    <types><members>*</members><name>Settings</name></types>
-
-    <!-- Integration and other -->
-    <types><members>*</members><name>ExternalServiceRegistration</name></types>
-    <types><members>*</members><name>EmailServicesFunction</name></types>
-    <types><members>*</members><name>CallCenter</name></types>
-    <types><members>*</members><name>LeadConvertSettings</name></types>
-    <types><members>*</members><name>EntitlementProcess</name></types>
-    <types><members>*</members><name>MilestoneType</name></types>
-    <types><members>*</members><name>Territory2</name></types>
-    <types><members>*</members><name>Territory2Model</name></types>
-    <types><members>*</members><name>Territory2Rule</name></types>
-    <types><members>*</members><name>Territory2Type</name></types>
-    <types><members>*</members><name>DataCategoryGroup</name></types>
-    <types><members>*</members><name>Skill</name></types>
-    <types><members>*</members><name>ServiceChannel</name></types>
-    <types><members>*</members><name>PathAssistant</name></types>
-    <types><members>*</members><name>EmbeddedServiceConfig</name></types>
-    <types><members>*</members><name>ChatterExtension</name></types>
-
+    
     <!-- Folder-based types: wildcard '*' does NOT retrieve contents.
          Add folder names (and folder/item names) manually, or use the
          CLI command shown in the notes. Examples (uncomment and edit):
