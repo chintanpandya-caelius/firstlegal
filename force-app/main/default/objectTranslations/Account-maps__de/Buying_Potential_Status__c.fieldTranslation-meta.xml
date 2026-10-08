@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Buying Potential Status --></label>
+    <name>Buying_Potential_Status__c</name>
+    <picklistValues>
+        <masterLabel>Confirmed</masterLabel>
+        <translation><!-- Confirmed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Converted</masterLabel>
+        <translation><!-- Converted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Journey</masterLabel>
+        <translation><!-- In Journey --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Needs Review</masterLabel>
+        <translation><!-- Needs Review --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Reviewed</masterLabel>
+        <translation><!-- Not Reviewed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not a Fit</masterLabel>
+        <translation><!-- Not a Fit --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

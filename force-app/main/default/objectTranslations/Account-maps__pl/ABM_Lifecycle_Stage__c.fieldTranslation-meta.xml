@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- ABM Lifecycle Stage --></label>
+    <name>ABM_Lifecycle_Stage__c</name>
+    <picklistValues>
+        <masterLabel>ABM Segment Assigned</masterLabel>
+        <translation><!-- ABM Segment Assigned --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Account Hierarchy Applied</masterLabel>
+        <translation><!-- Account Hierarchy Applied --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Actively Engaging</masterLabel>
+        <translation><!-- Actively Engaging --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Buying Group Mapped</masterLabel>
+        <translation><!-- Buying Group Mapped --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Firm Wide Opt Out</masterLabel>
+        <translation><!-- Firm Wide Opt Out --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flagged as ABM Target</masterLabel>
+        <translation><!-- Flagged as ABM Target --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Handed to Sales</masterLabel>
+        <translation><!-- Handed to Sales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Handoff Ready</masterLabel>
+        <translation><!-- Handoff Ready --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Journey Enrolled</masterLabel>
+        <translation><!-- Journey Enrolled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Key Attributes Captured</masterLabel>
+        <translation><!-- Key Attributes Captured --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Prospect or Existing Customer</masterLabel>
+        <translation><!-- New Prospect or Existing Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Target Identified</masterLabel>
+        <translation><!-- Target Identified --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

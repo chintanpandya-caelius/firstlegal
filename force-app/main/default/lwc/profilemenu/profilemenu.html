@@ -1,0 +1,115 @@
+<template>
+    <div class="header-icons-container">
+        <template if:false={isLoggedIn}>
+            <a href={loginUrl} class="login-link" data-url={loginUrl} onclick={handleMenuClick}>
+                Login
+            </a>
+        </template>
+
+        <template if:true={isLoggedIn}>
+            <!-- Notification Bell -->
+            <div class="icon-wrapper">
+                <button
+                    class="icon-button"
+                    onclick={toggleNotifications}
+                    aria-label="Notifications"
+                >
+                    <svg class="icon-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C10.3 2 9 3.3 9 5v1.1C6.2 6.9 4.5 9.4 4.5 12.3v4.2L3 19h18l-1.5-2.5v-4.2c0-2.9-1.7-5.4-4.5-6.2V5c0-1.7-1.3-3-3-3z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                        <path d="M9.5 19a2.5 2.5 0 0 0 5 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    <template if:true={hasUnread}>
+                        <span class="badge">{unreadCount}</span>
+                    </template>
+                </button>
+
+                <template if:true={showNotifications}>
+                    <div class="dropdown-panel notifications-panel">
+                        <div class="panel-header">
+                            <h2>Notifications</h2>
+                            <div class="panel-header-actions">
+                                <a href="javascript:void(0);" class="mark-read-link" onclick={handleMarkAllRead}>Mark all as read</a>
+                                <button class="close-btn" onclick={toggleNotifications} aria-label="Close">&times;</button>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <template if:true={notifications.length}>
+                                <template for:each={notifications} for:item="notif">
+                                    <div
+                                        key={notif.id}
+                                        class="notification-item"
+                                        data-unread={notif.unread}
+                                        data-id={notif.id}
+                                        data-ticket-id={notif.ticketId}
+                                        onclick={handleNotificationClick}
+                                    >
+                                        <div class="notif-icon-wrapper">
+                                            <lightning-icon icon-name='standard:custom_notification' alternative-text='custom_notification' size='small' title='custom_notification'></lightning-icon>
+                                        </div>
+                                        <div class="notif-content">
+                                            <p class="notif-title">{notif.title}</p>
+                                            <p class="notif-desc">{notif.description}</p>
+                                            <p class="notif-time">{notif.timestamp}</p>
+                                        </div>
+                                        <template if:true={notif.unread}>
+                                            <span class="unread-dot"></span>
+                                        </template>
+                                    </div>
+                                </template>
+                            </template>
+                            <template if:false={notifications.length}>
+                                <p class="empty-state">No notifications</p>
+                            </template>
+                        </div>
+                    </div>
+                </template>
+            </div>
+
+            <!-- Profile Menu -->
+            <div class="icon-wrapper">
+                <button
+                    class="icon-button profile-button"
+                    onclick={toggleProfileMenu}
+                    aria-label="Profile menu"
+                >
+                    <svg class="icon-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M4 20c0-3.9 3.6-7 8-7s8 3.1 8 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                </button>
+
+                <template if:true={showProfileMenu}>
+                    <div class="dropdown-panel profile-menu">
+                        <a
+                            href={profileUrl}
+                            class="menu-item"
+                            onclick={handleProfileClick}
+                        >
+                            Profile
+                        </a>
+                        <a
+                            href={logoutUrl}
+                            class="menu-item"
+                            onclick={handleLogoutClick}
+                        >
+                            Log Out
+                        </a>
+                    </div>
+                </template>
+            </div>
+        </template>
+    </div>
+    <template if:true={showLogoutConfirm}>
+        <div class="modal-backdrop" onclick={handleCancelLogout}>
+            <div class="logout-modal" onclick={stopPropagation}>
+                <p class="logout-modal-title">Do you want to sign-out?</p>
+                <button class="modal-btn modal-btn-confirm" onclick={handleConfirmLogout}>
+                    Yes, sign me out
+                </button>
+                <button class="modal-btn modal-btn-cancel" onclick={handleCancelLogout}>
+                    No, stay signed in
+                </button>
+            </div>
+        </div>
+    </template>
+</template>

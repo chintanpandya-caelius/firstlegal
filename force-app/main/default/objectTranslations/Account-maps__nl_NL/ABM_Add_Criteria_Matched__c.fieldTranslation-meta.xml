@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Stores criteria that selected Account automatically --></help>
+    <label><!-- ABM Add Criteria Matched --></label>
+    <name>ABM_Add_Criteria_Matched__c</name>
+</CustomFieldTranslation>

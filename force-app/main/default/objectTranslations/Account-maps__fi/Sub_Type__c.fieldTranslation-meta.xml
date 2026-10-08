@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sub Type --></label>
+    <name>Sub_Type__c</name>
+    <picklistValues>
+        <masterLabel>Affiliate</masterLabel>
+        <translation><!-- Affiliate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Both (Plaintiff/Defense)</masterLabel>
+        <translation><!-- Both (Plaintiff/Defense) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COD</masterLabel>
+        <translation><!-- COD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Corporate Account</masterLabel>
+        <translation><!-- Corporate Account --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Defense Only Firm</masterLabel>
+        <translation><!-- Defense Only Firm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Government</masterLabel>
+        <translation><!-- Government --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Pro Per</masterLabel>
+        <translation><!-- In Pro Per --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Independent Contractors</masterLabel>
+        <translation><!-- Independent Contractors --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurance Firm</masterLabel>
+        <translation><!-- Insurance Firm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Law Firm</masterLabel>
+        <translation><!-- Law Firm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lemon Law</masterLabel>
+        <translation><!-- Lemon Law --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Local</masterLabel>
+        <translation><!-- Local --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Opposing Council</masterLabel>
+        <translation><!-- Opposing Council --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plaintiff Firm</masterLabel>
+        <translation><!-- Plaintiff Firm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vendor</masterLabel>
+        <translation><!-- Vendor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Workers Comp</masterLabel>
+        <translation><!-- Workers Comp --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

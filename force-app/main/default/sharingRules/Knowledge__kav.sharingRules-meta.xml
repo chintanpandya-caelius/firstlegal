@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingGuestRules>
+        <fullName>Guest_User_Portal</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Guest User Portal</label>
+        <sharedTo>
+            <guestUser>First_Legal_Portal</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>IsVisibleInPkb</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <includeHVUOwnedRecords>true</includeHVUOwnedRecords>
+    </sharingGuestRules>
+    <sharingGuestRules>
+        <fullName>Portal_Users</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Portal Users</label>
+        <sharedTo>
+            <guestUser>First_Legal_Portal</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>Title</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </criteriaItems>
+        <includeHVUOwnedRecords>false</includeHVUOwnedRecords>
+    </sharingGuestRules>
+</SharingRules>

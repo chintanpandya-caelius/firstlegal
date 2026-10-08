@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Consolidated Status --></label>
+    <name>Consolidated_Status__c</name>
+    <picklistValues>
+        <masterLabel>Active – Bellwether Phase</masterLabel>
+        <translation><!-- Active – Bellwether Phase --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Active – Pretrial</masterLabel>
+        <translation><!-- Active – Pretrial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Claims Administration</masterLabel>
+        <translation><!-- Claims Administration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed</masterLabel>
+        <translation><!-- Closed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Settlement Phase</masterLabel>
+        <translation><!-- Settlement Phase --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

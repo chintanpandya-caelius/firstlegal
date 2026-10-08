@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>PSG COs (Delivery Related) - Manager</label>
+    <permissionSets>PS_DeliveryAttempt_Create</permissionSets>
+    <permissionSets>PS_DeliveryAttempt_Delete</permissionSets>
+    <permissionSets>PS_DeliveryAttempt_ModifyAll</permissionSets>
+    <permissionSets>PS_DeliveryAttempt_Read</permissionSets>
+    <permissionSets>PS_DeliveryAttempt_Update</permissionSets>
+    <permissionSets>PS_DeliveryAttempt_ViewAll</permissionSets>
+    <permissionSets>PS_Delivery_Create</permissionSets>
+    <permissionSets>PS_Delivery_Delete</permissionSets>
+    <permissionSets>PS_Delivery_ModifyAll</permissionSets>
+    <permissionSets>PS_Delivery_Read</permissionSets>
+    <permissionSets>PS_Delivery_Update</permissionSets>
+    <permissionSets>PS_Delivery_ViewAll</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

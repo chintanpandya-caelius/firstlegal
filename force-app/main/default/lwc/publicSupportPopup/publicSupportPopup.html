@@ -1,0 +1,167 @@
+<template>
+    <!-- ═══════ FLOATING SUPPORT BUTTON ═══════ -->
+    <div class={fabClass} onclick={togglePopup}>
+        <lightning-icon icon-name="utility:help" size="small" variant="inverse"></lightning-icon>
+        <span class="fab-label">Support</span>
+    </div>
+
+    <!-- ═══════ POPUP ═══════ -->
+    <template if:true={isPopupOpen}>
+        <section class={popupClass} role="dialog" aria-modal="true" aria-label="Support Center">
+
+            <!-- ════════════════ HOME SCREEN ════════════════ -->
+            <template if:true={showHome}>
+                <div class="popup-header">
+                    <span class="header-title">{popupTitle}</span>
+                    <lightning-button-icon
+                        icon-name="utility:chevrondown"
+                        variant="bare-inverse"
+                        size="small"
+                        onclick={closePopup}>
+                    </lightning-button-icon>
+                </div>
+
+                <div class="popup-body">
+                    <p class="tagline">{popupTagline}</p>
+
+                    <!-- Menu Items -->
+                    <ul class="menu-list">
+                        <template if:true={showAnnouncements}>
+                            <li class="menu-item" onclick={goToAnnouncements}>
+                                <lightning-icon icon-name="utility:announcement" size="small"></lightning-icon>
+                                <span class="menu-label">Announcements</span>
+                                <lightning-icon icon-name="utility:chevronright" size="xx-small" class="menu-chevron"></lightning-icon>
+                            </li>
+                        </template>
+
+                        <template if:true={showGuidedTours}>
+                            <li class="menu-item" onclick={goToGuidedTours}>
+                                <lightning-icon icon-name="utility:journey" size="small"></lightning-icon>
+                                <span class="menu-label">Guided Tours</span>
+                                <lightning-icon icon-name="utility:chevronright" size="xx-small" class="menu-chevron"></lightning-icon>
+                            </li>
+                        </template>
+
+                        <template if:true={showKbMenuItem}>
+                            <li class="menu-item" onclick={goToKnowledgeBase}>
+                                <lightning-icon icon-name="utility:knowledge_base" size="small"></lightning-icon>
+                                <span class="menu-label">Knowledge Base</span>
+                                <lightning-icon icon-name="utility:chevronright" size="xx-small" class="menu-chevron"></lightning-icon>
+                            </li>
+                        </template>
+                    </ul>
+
+                    <!-- Suggested Articles (Always Visible on Home) -->
+                    <template if:true={hasSuggestedArticles}>
+                        <div class="suggested-section">
+                            <p class="section-heading">Suggested Articles</p>
+                            <ul class="article-list">
+                                <template for:each={suggestedArticles} for:item="article">
+                                    <li key={article.id} class="article-item" data-id={article.id} onclick={handleArticleClick}>
+                                        <lightning-icon icon-name="utility:file" size="xx-small" class="article-icon"></lightning-icon>
+                                        <span class="article-link">{article.title}</span>
+                                    </li>
+                                </template>
+                            </ul>
+                        </div>
+                    </template>
+
+                    <!-- Contact Row -->
+                    <template if:true={showContactRow}>
+                        <div class="contact-row">
+                            <span class="contact-label">Contact us</span>
+                            <div class="contact-icons">
+                                <template if:true={showEmail}>
+                                    <lightning-button-icon icon-name="utility:email" variant="bare" size="medium" onclick={handleEmail}></lightning-button-icon>
+                                </template>
+                                <template if:true={showPhone}>
+                                    <lightning-button-icon icon-name="utility:call" variant="bare" size="medium" onclick={handleCall}></lightning-button-icon>
+                                </template>
+                                <template if:true={showChat}>
+                                    <lightning-button-icon icon-name="utility:chat" variant="bare" size="medium" onclick={handleChat}></lightning-button-icon>
+                                </template>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+            </template>
+
+            <!-- ════════════════ KNOWLEDGE BASE SCREEN ════════════════ -->
+            <template if:true={showKnowledgeBase}>
+                <div class="popup-header">
+                    <div class="header-left">
+                        <lightning-button-icon
+                            icon-name="utility:back"
+                            variant="bare-inverse"
+                            size="small"
+                            onclick={goHome}>
+                        </lightning-button-icon>
+                        <span class="header-title">Knowledge Base</span>
+                    </div>
+                    <div class="header-right">
+                        <lightning-button-icon
+                            icon-name="utility:new_window"
+                            variant="bare-inverse"
+                            size="small"
+                            title="View All Articles"
+                            onclick={handleViewAllArticles}>
+                        </lightning-button-icon>
+                        <lightning-button-icon
+                            icon-name="utility:chevrondown"
+                            variant="bare-inverse"
+                            size="small"
+                            onclick={closePopup}>
+                        </lightning-button-icon>
+                    </div>
+                </div>
+
+                <div class="popup-body">
+                    <!-- Search -->
+                    <div class="search-container">
+                        <lightning-input
+                            type="search"
+                            variant="label-hidden"
+                            placeholder="Search articles..."
+                            value={searchTerm}
+                            oninput={handleSearch}>
+                        </lightning-input>
+                    </div>
+
+                    <!-- Loading -->
+                    <template if:true={isSearching}>
+                        <div class="spinner-container">
+                            <lightning-spinner size="small" variant="brand"></lightning-spinner>
+                        </div>
+                    </template>
+
+                    <!-- Section Title -->
+                    <p class="section-heading">{sectionTitle}</p>
+
+                    <!-- No Results -->
+                    <template if:true={hasNoResults}>
+                        <div class="no-results">
+                            <lightning-icon icon-name="utility:info" size="x-small"></lightning-icon>
+                            <span>No matching articles found.</span>
+                        </div>
+                    </template>
+
+                    <!-- Article List -->
+                    <ul class="article-list detailed">
+                        <template for:each={displayArticles} for:item="article">
+                            <li key={article.id} class="article-item-detail" data-id={article.id} onclick={handleArticleClick}>
+                                <div class="article-icon-wrap">
+                                    <lightning-icon icon-name="utility:file" size="x-small"></lightning-icon>
+                                </div>
+                                <div class="article-text">
+                                    <span class="article-title">{article.title}</span>
+                                    <span class="article-excerpt">{article.excerpt}</span>
+                                </div>
+                            </li>
+                        </template>
+                    </ul>
+                </div>
+            </template>
+
+        </section>
+    </template>
+</template>

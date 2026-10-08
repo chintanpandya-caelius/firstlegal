@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Current Service Line --></label>
+    <name>Current_Service_Line__c</name>
+    <picklistValues>
+        <masterLabel>Court Reporting</masterLabel>
+        <translation><!-- Court Reporting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Depositions</masterLabel>
+        <translation><!-- Depositions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Records Retrieval</masterLabel>
+        <translation><!-- Records Retrieval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trial Services</masterLabel>
+        <translation><!-- Trial Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>eFiling</masterLabel>
+        <translation><!-- eFiling --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

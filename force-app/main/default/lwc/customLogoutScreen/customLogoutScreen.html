@@ -1,0 +1,20 @@
+<template>
+    <div class="confirm-wrapper">
+        <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open slds-modal_small confirm-modal">
+            <div class="slds-modal__container">
+                <div class="slds-modal__content slds-p-around_large slds-text-align_center">
+                    <p class="slds-text-heading_small slds-m-bottom_medium">
+                        Do you want to sign out from {siteHost}?
+                    </p>
+                    <button class="slds-button slds-button_brand slds-size_1-of-1 slds-m-bottom_x-small" onclick={handleSignOut}>
+                        Yes, sign me out
+                    </button>
+                    <button class="slds-button slds-button_neutral slds-size_1-of-1" onclick={handleStaySignedIn}>
+                        No, stay signed in
+                    </button>
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </div>
+</template>

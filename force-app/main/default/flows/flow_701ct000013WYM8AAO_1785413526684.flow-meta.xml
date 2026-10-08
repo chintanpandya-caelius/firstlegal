@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>67.0</apiVersion>
+    <areMetricsLoggedToDataCloud>true</areMetricsLoggedToDataCloud>
+    <dataSpace>default</dataSpace>
+    <decisions>
+        <name>Check_Influence_Level</name>
+        <label>Check Influence Level</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>High_Influence_Path</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Input.Influence_Level__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>High</stringValue>
+                </rightValue>
+            </conditions>
+            <label>High Influence Path</label>
+        </rules>
+        <rules>
+            <name>Medium_Influence_Path</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Input.Influence_Level__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Medium</stringValue>
+                </rightValue>
+            </conditions>
+            <label>Medium Influence Path</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Records Campaign Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Records Campaign Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_Influence_Level</targetReference>
+        </connector>
+        <object>ssot__AccountContact__dlm</object>
+        <schedule>
+            <frequency>OnActivate</frequency>
+        </schedule>
+        <segment>1sgct0000000eFBAAY</segment>
+        <triggerType>Segment</triggerType>
+    </start>
+    <status>Draft</status>
+    <timeZoneSidKey>America/Los_Angeles</timeZoneSidKey>
+</Flow>

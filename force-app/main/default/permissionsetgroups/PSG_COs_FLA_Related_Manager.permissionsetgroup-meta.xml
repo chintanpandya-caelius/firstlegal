@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>PSG COs (FLA Related) - Manager</label>
+    <permissionSets>PS_ConsolidatedLegalProceeding_Create</permissionSets>
+    <permissionSets>PS_ConsolidatedLegalProceeding_Delete</permissionSets>
+    <permissionSets>PS_ConsolidatedLegalProceeding_ModifyAll</permissionSets>
+    <permissionSets>PS_ConsolidatedLegalProceeding_Read</permissionSets>
+    <permissionSets>PS_ConsolidatedLegalProceeding_Update</permissionSets>
+    <permissionSets>PS_ConsolidatedLegalProceeding_ViewAll</permissionSets>
+    <permissionSets>PS_ConsolidationGroup_Create</permissionSets>
+    <permissionSets>PS_ConsolidationGroup_Delete</permissionSets>
+    <permissionSets>PS_ConsolidationGroup_ModifyAll</permissionSets>
+    <permissionSets>PS_ConsolidationGroup_Read</permissionSets>
+    <permissionSets>PS_ConsolidationGroup_Update</permissionSets>
+    <permissionSets>PS_ConsolidationGroup_ViewAll</permissionSets>
+    <permissionSets>PS_FirstLookAgreement_Create</permissionSets>
+    <permissionSets>PS_FirstLookAgreement_Delete</permissionSets>
+    <permissionSets>PS_FirstLookAgreement_ModifyAll</permissionSets>
+    <permissionSets>PS_FirstLookAgreement_Read</permissionSets>
+    <permissionSets>PS_FirstLookAgreement_Update</permissionSets>
+    <permissionSets>PS_FirstLookAgreement_ViewAll</permissionSets>
+    <permissionSets>PS_FirstLookReview_Create</permissionSets>
+    <permissionSets>PS_FirstLookReview_Delete</permissionSets>
+    <permissionSets>PS_FirstLookReview_ModifyAll</permissionSets>
+    <permissionSets>PS_FirstLookReview_Read</permissionSets>
+    <permissionSets>PS_FirstLookReview_Update</permissionSets>
+    <permissionSets>PS_FirstLookReview_ViewAll</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesIncludeBosses>true</doesIncludeBosses>
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Pod 3 – Mo-Z JTI</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>Pod_3_Mo_Z_JTI</publicGroup>
+        </publicGroups>
+        <users>
+            <user>fcpagent@firstlegal.com</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>Ticket_Routing_Config</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>WorkOrder</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,70 @@
+/* timezoneUtilityBar.css */
+.container {
+    padding: 12px;
+    background: #ffffff;
+    min-width: 340px;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #d8dde6;
+    padding-bottom: 8px;
+}
+
+.time-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.label-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #080707;
+}
+
+.timezone {
+    font-size: 11px;
+    color: #706e6b;
+}
+
+.time {
+    font-size: 15px;
+    font-weight: 700;
+    color: #0176d3;
+}
+
+.status {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.online {
+    background: #2e844a;
+}
+
+.warning {
+    background: #fe9339;
+}
+
+.offline {
+    background: #ba0517;
+}

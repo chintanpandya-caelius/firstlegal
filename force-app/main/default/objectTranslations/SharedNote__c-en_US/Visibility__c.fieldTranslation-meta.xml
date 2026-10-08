@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Visibility --></label>
+    <name>Visibility__c</name>
+    <picklistValues>
+        <masterLabel>Chatbot Visible</masterLabel>
+        <translation><!-- Chatbot Visible --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Visible</masterLabel>
+        <translation><!-- Customer Visible --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>External Visible</masterLabel>
+        <translation><!-- External Visible --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal Only</masterLabel>
+        <translation><!-- Internal Only --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partner Visible</masterLabel>
+        <translation><!-- Partner Visible --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

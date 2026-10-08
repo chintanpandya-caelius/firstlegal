@@ -1,0 +1,25 @@
+<template>
+    <template if:true={isLoading}>
+        <div class="loading-wrapper">
+            <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+        </div>
+    </template>
+
+    <template if:true={hasRelatedArticles}>
+        <div class="related-wrapper">
+            <p class="related-label">RELATED ARTICLES</p>
+            <ul class="related-list">
+                <template for:each={relatedArticles} for:item="article">
+                    <li key={article.Id} class="related-item">
+                        <a
+                            href={article.href}
+                            class="related-link"
+                            data-id={article.Id}
+                            onclick={handleArticleClick}
+                        >{article.Title}</a>
+                    </li>
+                </template>
+            </ul>
+        </div>
+    </template>
+</template>

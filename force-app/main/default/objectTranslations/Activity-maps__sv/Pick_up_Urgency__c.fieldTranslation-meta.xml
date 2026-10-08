@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Pick-up Urgency --></label>
+    <name>Pick_up_Urgency__c</name>
+    <picklistValues>
+        <masterLabel>Must Complete Today</masterLabel>
+        <translation><!-- Must Complete Today --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rush</masterLabel>
+        <translation><!-- Rush --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Standard</masterLabel>
+        <translation><!-- Standard --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

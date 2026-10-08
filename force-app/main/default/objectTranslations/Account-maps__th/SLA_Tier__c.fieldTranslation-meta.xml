@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Indicates the response-priority tier for this record. S1 is used for COD and Opposing Council records. Lead and Opportunity support S1–S4; Customer Accounts support S1–S2. This field is managed by SLA automation and should not normally be changed manually. --></help>
+    <label><!-- SLA Tier --></label>
+    <name>SLA_Tier__c</name>
+    <picklistValues>
+        <masterLabel>S1</masterLabel>
+        <translation><!-- S1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S2</masterLabel>
+        <translation><!-- S2 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Marketing Flags --></label>
+    <name>Marketing_Flags__c</name>
+    <picklistValues>
+        <masterLabel>Collections Escalation</masterLabel>
+        <translation><!-- Collections Escalation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Do Not Contact</masterLabel>
+        <translation><!-- Do Not Contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Legal Hold</masterLabel>
+        <translation><!-- Legal Hold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Relationship Issue</masterLabel>
+        <translation><!-- Relationship Issue --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

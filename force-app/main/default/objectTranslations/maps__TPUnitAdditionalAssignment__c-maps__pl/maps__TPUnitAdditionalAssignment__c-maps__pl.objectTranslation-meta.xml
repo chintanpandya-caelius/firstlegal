@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Dodatkowe przypisanie jednostki planowania terytorium</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Dodatkowe przypisania jednostki planowania terytorium</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Dodatkowe przypisanie jednostki planowania terytorium</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Dodatkowe przypisania jednostki planowania terytorium</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Dodatkowego przypisania jednostki planowania terytorium</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Dodatkowych przypisań jednostki planowania terytorium</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Dodatkowemu przypisaniu jednostki planowania terytorium</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Dodatkowym przypisaniom jednostki planowania terytorium</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Dodatkowym przypisaniem jednostki planowania terytorium</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Dodatkowymi przypisaniami jednostki planowania terytorium</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>false</plural>
+        <value>Dodatkowym przypisaniu jednostki planowania terytorium</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>true</plural>
+        <value>Dodatkowych przypisaniach jednostki planowania terytorium</value>
+    </caseValues>
+    <gender>Neuter</gender>
+    <nameFieldLabel>AutoId</nameFieldLabel>
+</CustomObjectTranslation>

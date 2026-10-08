@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select the Lead’s role within their organization. This field is required before moving the Lead to Nurturing or a later stage. --></help>
+    <label><!-- Lead Role --></label>
+    <name>Contact_Role__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Identifies how this Account was added to the ABM target list, such as criteria-based automation or manual selection. --></help>
+    <label><!-- ABM Target Source --></label>
+    <name>ABM_Target_Source__c</name>
+    <picklistValues>
+        <masterLabel>Criteria-Based</masterLabel>
+        <translation><!-- Criteria-Based --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Imported</masterLabel>
+        <translation><!-- Imported --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manual</masterLabel>
+        <translation><!-- Manual --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unknown</masterLabel>
+        <translation><!-- Unknown --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

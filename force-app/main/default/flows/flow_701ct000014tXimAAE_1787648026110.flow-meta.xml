@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>67.0</apiVersion>
+    <areMetricsLoggedToDataCloud>true</areMetricsLoggedToDataCloud>
+    <dataSpace>default</dataSpace>
+    <environments>Default</environments>
+    <interviewLabel>Test 25/08 Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Test 25/08 Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <object>UnifiedIndividual__dlm</object>
+        <schedule>
+            <frequency>OnActivate</frequency>
+        </schedule>
+        <segment>1sgct0000000f9dAAA</segment>
+        <triggerType>Segment</triggerType>
+    </start>
+    <status>InvalidDraft</status>
+    <timeZoneSidKey>America/Los_Angeles</timeZoneSidKey>
+</Flow>

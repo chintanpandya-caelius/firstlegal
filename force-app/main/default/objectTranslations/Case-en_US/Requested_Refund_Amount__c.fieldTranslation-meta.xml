@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter the refund total requested by customer. --></help>
+    <label><!-- Requested Refund Amount --></label>
+    <name>Requested_Refund_Amount__c</name>
+</CustomFieldTranslation>

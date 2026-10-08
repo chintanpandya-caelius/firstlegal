@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Assigned POD --></label>
+    <name>Assigned_POD__c</name>
+    <picklistValues>
+        <masterLabel>FCP POD1</masterLabel>
+        <translation><!-- FCP POD1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD10</masterLabel>
+        <translation><!-- FCP POD10 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD11</masterLabel>
+        <translation><!-- FCP POD11 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD12</masterLabel>
+        <translation><!-- FCP POD12 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD13</masterLabel>
+        <translation><!-- FCP POD13 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD14</masterLabel>
+        <translation><!-- FCP POD14 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD15</masterLabel>
+        <translation><!-- FCP POD15 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD16</masterLabel>
+        <translation><!-- FCP POD16 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD17</masterLabel>
+        <translation><!-- FCP POD17 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD18</masterLabel>
+        <translation><!-- FCP POD18 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD19</masterLabel>
+        <translation><!-- FCP POD19 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD2</masterLabel>
+        <translation><!-- FCP POD2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD20</masterLabel>
+        <translation><!-- FCP POD20 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD21</masterLabel>
+        <translation><!-- FCP POD21 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD22</masterLabel>
+        <translation><!-- FCP POD22 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD23</masterLabel>
+        <translation><!-- FCP POD23 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD24</masterLabel>
+        <translation><!-- FCP POD24 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD25</masterLabel>
+        <translation><!-- FCP POD25 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD3</masterLabel>
+        <translation><!-- FCP POD3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD4</masterLabel>
+        <translation><!-- FCP POD4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD5</masterLabel>
+        <translation><!-- FCP POD5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD6</masterLabel>
+        <translation><!-- FCP POD6 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD7</masterLabel>
+        <translation><!-- FCP POD7 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD8</masterLabel>
+        <translation><!-- FCP POD8 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD9</masterLabel>
+        <translation><!-- FCP POD9 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

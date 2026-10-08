@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Ventura</label>
+    <protected>false</protected>
+    <values>
+        <field>Zip_Codes__c</field>
+        <value xsi:type="xsd:string">90361,91320,91359,93001,93003,93004,93006,93010,93012,93013,93014,93015,93021,93023,93030,93032,93036,93060,93063,93065,93101,93105,93108,93110,93420,93455,93457,93458</value>
+    </values>
+</CustomMetadata>

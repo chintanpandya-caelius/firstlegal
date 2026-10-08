@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Record Type Label --></label>
+    <name>Record_Type_Label__c</name>
+    <picklistValues>
+        <masterLabel>Accounting</masterLabel>
+        <translation><!-- Accounting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Court and Process</masterLabel>
+        <translation><!-- Court and Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Depositions</masterLabel>
+        <translation><!-- Depositions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Digital</masterLabel>
+        <translation><!-- Digital --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Investigations</masterLabel>
+        <translation><!-- Investigations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Records</masterLabel>
+        <translation><!-- Records --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tier 1 (FCP/FSP)</masterLabel>
+        <translation><!-- Tier 1 (FCP/FSP) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>eDiscovery</masterLabel>
+        <translation><!-- eDiscovery --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

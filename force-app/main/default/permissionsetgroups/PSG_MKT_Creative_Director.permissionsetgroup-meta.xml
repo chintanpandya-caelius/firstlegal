@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Grants access to create CMS content, use Email Builder Lite, and view campaign records to support creative asset development, content management, and marketing campaign execution.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>PSG_MKT_Creative_Director</label>
+    <permissionSets>PS_CMSContent_Create</permissionSets>
+    <permissionSets>PS_Campaign_Read</permissionSets>
+    <permissionSets>PS_Campaign_System_Permissions</permissionSets>
+    <permissionSets>PS_DuplicateRecordSetRead_edit</permissionSets>
+    <permissionSets>force__AbridgedEmailBuilder</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

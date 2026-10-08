@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- SQL Status --></label>
+    <name>SQL_Status__c</name>
+    <picklistValues>
+        <masterLabel>Not SQL</masterLabel>
+        <translation><!-- Not SQL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SQL</masterLabel>
+        <translation><!-- SQL --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

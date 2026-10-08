@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Attendees List</fullName>
+        <default>false</default>
+        <label>Attendees List</label>
+    </customValue>
+    <customValue>
+        <fullName>Badge Scan</fullName>
+        <default>false</default>
+        <label>Badge Scan</label>
+    </customValue>
+    <customValue>
+        <fullName>Contact Form</fullName>
+        <default>false</default>
+        <label>Contact Form</label>
+    </customValue>
+    <customValue>
+        <fullName>Customer Event</fullName>
+        <default>false</default>
+        <label>Customer Event</label>
+    </customValue>
+    <customValue>
+        <fullName>Depo</fullName>
+        <default>false</default>
+        <label>Depo</label>
+    </customValue>
+    <customValue>
+        <fullName>E-Discovery</fullName>
+        <default>false</default>
+        <label>E-Discovery</label>
+    </customValue>
+    <customValue>
+        <fullName>Email List</fullName>
+        <default>false</default>
+        <label>Email List</label>
+    </customValue>
+    <customValue>
+        <fullName>Event Org</fullName>
+        <default>false</default>
+        <label>Event Org</label>
+    </customValue>
+    <customValue>
+        <fullName>Google Adds</fullName>
+        <default>false</default>
+        <label>Google Adds</label>
+    </customValue>
+    <customValue>
+        <fullName>Inbound Leads</fullName>
+        <default>false</default>
+        <label>Inbound Leads</label>
+    </customValue>
+    <customValue>
+        <fullName>Registration Form</fullName>
+        <default>false</default>
+        <label>Registration Form</label>
+    </customValue>
+    <customValue>
+        <fullName>Trade Show</fullName>
+        <default>false</default>
+        <label>Trade Show</label>
+    </customValue>
+    <customValue>
+        <fullName>Registration MCLE&apos;s</fullName>
+        <default>false</default>
+        <label>Registration MCLE&apos;s</label>
+    </customValue>
+    <customValue>
+        <fullName>Referral / Other</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Referral / Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Website -</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Website -</label>
+    </customValue>
+    <customValue>
+        <fullName>First Class</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>First Class</label>
+    </customValue>
+    <customValue>
+        <fullName>Website</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Website</label>
+    </customValue>
+    <customValue>
+        <fullName>Registration MCLE’s</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Registration MCLE’s</label>
+    </customValue>
+    <customValue>
+        <fullName>Operational -</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Operational -</label>
+    </customValue>
+    <customValue>
+        <fullName>Event -</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Event -</label>
+    </customValue>
+    <customValue>
+        <fullName>Digital -</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Digital -</label>
+    </customValue>
+    <customValue>
+        <fullName>Client</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Client</label>
+    </customValue>
+    <customValue>
+        <fullName>Customer Care</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Customer Care</label>
+    </customValue>
+    <customValue>
+        <fullName>Digital</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Digital</label>
+    </customValue>
+    <customValue>
+        <fullName>Email</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Email</label>
+    </customValue>
+    <customValue>
+        <fullName>Event</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Event</label>
+    </customValue>
+    <customValue>
+        <fullName>Law Firm</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Law Firm</label>
+    </customValue>
+    <customValue>
+        <fullName>Marketing</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Marketing</label>
+    </customValue>
+    <customValue>
+        <fullName>Operational</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Operational</label>
+    </customValue>
+    <masterLabel>Source Detail</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

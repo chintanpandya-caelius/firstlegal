@@ -1,0 +1,259 @@
+/* ─── FLOATING SUPPORT BUTTON ─────────────────────────────────────────────── */
+
+.support-fab {
+    position: fixed;
+    bottom: 90px; /* Keeps Support above the chat widget */
+    right: 1.5%;
+    background: #005fb2;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+}
+
+.support-fab.chat-open {
+    z-index: 1;
+}
+
+/* ─── POPUP CONTAINER ─────────────────────────────────────────────────────── */
+
+.popup-wrapper {
+    position: fixed;
+    bottom: 150px; /* Popup sits above the Support button */
+    right: 1.5%;
+    width: 22vw;
+    min-width: 300px;
+    max-width: 380px;
+    max-height: 70vh;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+.popup-wrapper.chat-open {
+    z-index: 1;
+}
+
+/* ─── HEADER ──────────────────────────────────────────────────────────────── */
+.popup-header {
+    background: #005fb2;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+/* ─── BODY ────────────────────────────────────────────────────────────────── */
+.popup-body {
+    padding: 15px;
+    overflow-y: auto;
+}
+
+/* ─── TAGLINE ─────────────────────────────────────────────────────────────── */
+.tagline {
+    font-size: 0.9rem;
+    color: #444;
+    margin-bottom: 12px;
+}
+
+/* ─── MENU LIST ───────────────────────────────────────────────────────────── */
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 12px 0;
+}
+
+.menu-item {
+    padding: 12px;
+    border-bottom: 1px solid #f0f0f0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.2s;
+}
+
+.menu-item:hover {
+    background: #f9f9f9;
+}
+
+.menu-label {
+    flex: 1;
+    font-size: 0.95rem;
+    color: #222;
+}
+
+.menu-chevron {
+    margin-left: auto;
+}
+
+/* ─── SUGGESTED / SEARCH SECTION ─────────────────────────────────────────── */
+.suggested-section {
+    margin-top: 12px;
+}
+
+.section-heading {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #888;
+    margin: 0 0 8px 0;
+    letter-spacing: 0.04em;
+}
+
+/* ─── ARTICLE LIST (HOME) ─────────────────────────────────────────────────── */
+.article-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.article-item {
+    padding: 10px 12px;
+    border-bottom: 1px solid #f0f0f0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.2s;
+}
+
+.article-item:hover {
+    background: #f9f9f9;
+}
+
+.article-link {
+    font-size: 0.9rem;
+    color: #005fb2;
+    text-decoration: none;
+}
+
+.article-icon {
+    flex-shrink: 0;
+}
+
+/* ─── ARTICLE LIST (KNOWLEDGE BASE SCREEN) ───────────────────────────────── */
+.article-list.detailed {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.article-item-detail {
+    padding: 10px 12px;
+    border-bottom: 1px solid #f0f0f0;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    transition: background 0.2s;
+}
+
+.article-item-detail:hover {
+    background: #f9f9f9;
+}
+
+.article-icon-wrap {
+    flex-shrink: 0;
+    padding-top: 2px;
+}
+
+.article-text {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.article-title {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #005fb2;
+}
+
+.article-excerpt {
+    font-size: 0.8rem;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* ─── SEARCH ──────────────────────────────────────────────────────────────── */
+.search-container {
+    margin-bottom: 12px;
+}
+
+/* ─── SPINNER ─────────────────────────────────────────────────────────────── */
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    padding: 16px 0;
+}
+
+/* ─── NO RESULTS ──────────────────────────────────────────────────────────── */
+.no-results {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+    color: #888;
+    padding: 10px 0;
+}
+
+/* ─── CONTACT ROW ─────────────────────────────────────────────────────────── */
+.contact-row {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #444;
+}
+
+.contact-icons {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+/* ─── MISC ────────────────────────────────────────────────────────────────── */
+.icon-btn {
+    cursor: pointer;
+    --lwc-colorTextIconDefault: white;
+}
+
+.fab-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+}

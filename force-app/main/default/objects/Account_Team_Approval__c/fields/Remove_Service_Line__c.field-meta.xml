@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Remove_Service_Line__c</fullName>
+    <label>Remove Service Line</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Court &amp; Process</fullName>
+                <default>false</default>
+                <label>Court &amp; Process</label>
+            </value>
+            <value>
+                <fullName>Depositions; Digital</fullName>
+                <default>false</default>
+                <label>Depositions; Digital</label>
+            </value>
+            <value>
+                <fullName>E-Discovery</fullName>
+                <default>false</default>
+                <label>E-Discovery</label>
+            </value>
+            <value>
+                <fullName>Investigations</fullName>
+                <default>false</default>
+                <label>Investigations</label>
+            </value>
+            <value>
+                <fullName>Records</fullName>
+                <default>false</default>
+                <label>Records</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

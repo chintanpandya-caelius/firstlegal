@@ -1,0 +1,45 @@
+<template>
+    <section class="knowledge-base" aria-labelledby="browse-by-topic-title">
+        <h1 id="browse-by-topic-title" class="section-heading">BROWSE BY TOPIC</h1>
+
+        <div if:true={hasError} class="state state-error" role="alert">
+            {errorMessage}
+        </div>
+
+        <div if:true={isLoading} class="state state-loading">
+            <lightning-spinner alternative-text="Loading Knowledge Base" size="medium"></lightning-spinner>
+        </div>
+
+        <div if:true={hasDivisions} class="division-grid">
+            <template for:each={divisions} for:item="division">
+                <article
+                    key={division.divisionValue}
+                    class="division-card"
+                    role="button"
+                    tabindex="0"
+                    data-division={division.divisionValue}
+                    onclick={handleDivisionClick}
+                    onkeydown={handleDivisionKeydown}
+                >
+                    <div class="division-icon-wrap">
+                        <img
+                            class="division-icon"
+                            src={division.logoUrl}
+                            alt={division.label}
+                        />
+                    </div>
+
+                    <div class="division-content">
+                        <div class="article-count">{division.articleCountLabel}</div>
+                        <h2 class="division-title">{division.label}</h2>
+                        <p class="division-summary">{division.summary}</p>
+                    </div>
+                </article>
+            </template>
+        </div>
+
+        <div if:true={showEmptyState} class="state state-empty">
+            No Knowledge Base topics are currently available.
+        </div>
+    </section>
+</template>

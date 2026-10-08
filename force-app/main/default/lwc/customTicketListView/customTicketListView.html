@@ -1,0 +1,123 @@
+<template>
+    <div class="ticket-panel">
+        <div class="panel-header">
+            <div class="view-select">
+                <lightning-combobox
+                    label="List view"
+                    variant="label-hidden"
+                    value={selectedView}
+                    options={listViewOptions}
+                    onchange={handleViewChange}
+                ></lightning-combobox>
+            </div>
+            <div class="search-wrap">
+                <lightning-icon icon-name="utility:search" size="x-small" class="search-icon"></lightning-icon>
+                <input
+                    type="text"
+                    class="search-input"
+                    placeholder="Search this list..."
+                    onkeyup={handleSearchInput}
+                />
+            </div>
+        </div>
+
+        <div class="panel-meta">
+            <span>{totalCount} {itemsLabel} · Sorted by Last Modified</span>
+        </div>
+
+        <template if:true={isLoading}>
+            <div class="spinner-wrap">
+                <lightning-spinner alternative-text="Loading tickets" size="small"></lightning-spinner>
+            </div>
+        </template>
+
+        <template if:true={hasError}>
+            <div class="error-banner">{errorMessage}</div>
+        </template>
+
+        <template if:false={isLoading}>
+            <template if:false={isEmpty}>
+                <table class="ticket-table">
+                    <thead>
+                        <tr>
+                            <th class="col-number">TICKET #</th>
+                            <th class="col-subject">SUBJECT</th>
+                            <th class="col-status">STATUS</th>
+                            <th class="col-modified">MODIFIED</th>
+                            <th class="col-contact">CONTACT</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <template for:each={tickets} for:item="ticket">
+                            <tr key={ticket.ticketId}>
+                                <td class="col-number">
+                                    <a
+                                        href="javascript:void(0);"
+                                        data-id={ticket.ticketId}
+                                        onclick={handleTicketClick}
+                                        >{ticket.ticketNumber}</a
+                                    >
+                                </td>
+                                <td class="col-subject">
+                                    <a
+                                        href="javascript:void(0);"
+                                        data-id={ticket.ticketId}
+                                        onclick={handleTicketClick}
+                                        >{ticket.subject}</a
+                                    >
+                                </td>
+                                <td class="col-status">
+                                    <span class="status-pill">{ticket.status}</span>
+                                </td>
+                                <td class="col-modified">
+                                    <lightning-formatted-date-time
+                                        value={ticket.lastModifiedDate}
+                                        year="numeric"
+                                        month="2-digit"
+                                        day="2-digit"
+                                        hour="2-digit"
+                                        minute="2-digit"
+                                    ></lightning-formatted-date-time>
+                                </td>
+                                <td class="col-contact">{ticket.contactName}</td>
+                            </tr>
+                        </template>
+                    </tbody>
+                </table>
+            </template>
+
+            <template if:true={isEmpty}>
+                <p class="no-records">No record found</p>
+            </template>
+
+            <div class="view-all-bar">
+                <button
+                    type="button"
+                    class="view-all-btn"
+                    onclick={handleViewAll}
+                >
+                    View All
+                </button>
+            </div>
+
+            <div class="pagination-bar">
+                <div class="page-size-select">
+                    <lightning-combobox
+                        label="Per page"
+                        variant="label-hidden"
+                        value={pageSize}
+                        options={pageSizeOptions}
+                        onchange={handlePageSizeChange}
+                    ></lightning-combobox>
+                </div>
+                <div class="page-info">Showing {startRecord}-{endRecord} of {totalCount}</div>
+                <div class="page-buttons">
+                    <button class="page-btn" disabled={isPreviousDisabled} onclick={handlePrevious}>Previous</button>
+                    <button class="page-btn page-btn-primary" disabled={isNextDisabled} onclick={handleNext}>
+                        Next
+                    </button>
+                </div>
+            </div>
+        </template>
+    </div>
+</template>

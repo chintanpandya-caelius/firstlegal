@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Multi-Contact Review Outcome --></label>
+    <name>Multi_Contact_Review_Outcome__c</name>
+    <picklistValues>
+        <masterLabel>Add Buying Group Contacts</masterLabel>
+        <translation><!-- Add Buying Group Contacts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Change Campaign Strategy</masterLabel>
+        <translation><!-- Change Campaign Strategy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Continue Nurture</masterLabel>
+        <translation><!-- Continue Nurture --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Escalate ABM Segment</masterLabel>
+        <translation><!-- Escalate ABM Segment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Action Needed</masterLabel>
+        <translation><!-- No Action Needed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales Handoff Recommended</masterLabel>
+        <translation><!-- Sales Handoff Recommended --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

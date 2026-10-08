@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Delivery_Recipient__c</fullName>
+    <description>Recipient snapshot. Required when sent. (Text type maxes out at 255 chars in Salesforce; using LongTextArea to preserve the documented 1,000-char length.)</description>
+    <label>Delivery Recipient</label>
+    <length>1000</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

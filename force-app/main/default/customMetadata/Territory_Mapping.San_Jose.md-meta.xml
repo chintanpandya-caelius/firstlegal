@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>San Jose</label>
+    <protected>false</protected>
+    <values>
+        <field>Zip_Codes__c</field>
+        <value xsi:type="xsd:string">92112,93901,93908,93923,93924,93940,93950,94022,94024,94025,94040,94041,94043,94061,94062,94063,94065,94086,94301,94303,94306,94538,94587,95001,95003,95006,95008,95010,95014,95020,95023,95030,95031,95032,95035,95037,95050,95054,95060,95062,95070,95076,95110,95112,95113,95118,95119,95120,95121,95125,95126,95129,95131,95134,95138,95156,95159</value>
+    </values>
+</CustomMetadata>

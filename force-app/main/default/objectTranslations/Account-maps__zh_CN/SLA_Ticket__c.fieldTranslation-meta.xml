@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- References the Case created to track the Customer Account SLA review. SLA automation uses this lookup to update the existing ticket and prevent duplicate SLA Cases. --></help>
+    <label><!-- SLA Ticket --></label>
+    <name>SLA_Ticket__c</name>
+    <relationshipLabel><!-- Accounts --></relationshipLabel>
+</CustomFieldTranslation>

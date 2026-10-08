@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Source of truth for which Public Group should be a member of which Queue. QueueGroupLinkReconciler reads this to create any missing GroupMember records, so it self-heals if a Copado deployment brings the Queue and Group in without re-establishing the membership.</description>
+    <label>Queue Group Link</label>
+    <pluralLabel>Queue Group Links</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

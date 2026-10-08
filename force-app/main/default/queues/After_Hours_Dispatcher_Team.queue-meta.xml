@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesIncludeBosses>false</doesIncludeBosses>
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>afterhours@firstlegal.com</email>
+    <name>After-Hours Dispatcher Team</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>After_Hours_Dispatcher_Team</publicGroup>
+        </publicGroups>
+    </queueMembers>
+    <queueRoutingConfig>Ticket_Routing_Config</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

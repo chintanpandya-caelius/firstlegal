@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Team --></label>
+    <name>Team__c</name>
+    <picklistValues>
+        <masterLabel>Account Admin</masterLabel>
+        <translation><!-- Account Admin --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>After-Hours Dispatcher</masterLabel>
+        <translation><!-- After-Hours Dispatcher --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>All Pods</masterLabel>
+        <translation><!-- All Pods --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cash Application</masterLabel>
+        <translation><!-- Cash Application --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Collections</masterLabel>
+        <translation><!-- Collections --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Depo Calendar</masterLabel>
+        <translation><!-- Depo Calendar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Depo Client Care</masterLabel>
+        <translation><!-- Depo Client Care --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Digital Fresno</masterLabel>
+        <translation><!-- Digital Fresno --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Digital LA AZ</masterLabel>
+        <translation><!-- Digital LA AZ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Digital San Diego</masterLabel>
+        <translation><!-- Digital San Diego --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Digital San Francisco Oakland</masterLabel>
+        <translation><!-- Digital San Francisco Oakland --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Escalation Level 1</masterLabel>
+        <translation><!-- Escalation Level 1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Escalation Level 2</masterLabel>
+        <translation><!-- Escalation Level 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Escalation Level 3</masterLabel>
+        <translation><!-- Escalation Level 3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Escalation Level 4</masterLabel>
+        <translation><!-- Escalation Level 4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD1</masterLabel>
+        <translation><!-- FCP POD1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD10</masterLabel>
+        <translation><!-- FCP POD10 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD11</masterLabel>
+        <translation><!-- FCP POD11 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD12</masterLabel>
+        <translation><!-- FCP POD12 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD13</masterLabel>
+        <translation><!-- FCP POD13 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD14</masterLabel>
+        <translation><!-- FCP POD14 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD15</masterLabel>
+        <translation><!-- FCP POD15 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD16</masterLabel>
+        <translation><!-- FCP POD16 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD17</masterLabel>
+        <translation><!-- FCP POD17 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD18</masterLabel>
+        <translation><!-- FCP POD18 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD19</masterLabel>
+        <translation><!-- FCP POD19 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD2</masterLabel>
+        <translation><!-- FCP POD2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD20</masterLabel>
+        <translation><!-- FCP POD20 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD21</masterLabel>
+        <translation><!-- FCP POD21 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD22</masterLabel>
+        <translation><!-- FCP POD22 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD23</masterLabel>
+        <translation><!-- FCP POD23 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD24</masterLabel>
+        <translation><!-- FCP POD24 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD25</masterLabel>
+        <translation><!-- FCP POD25 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD3</masterLabel>
+        <translation><!-- FCP POD3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD4</masterLabel>
+        <translation><!-- FCP POD4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD5</masterLabel>
+        <translation><!-- FCP POD5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD6</masterLabel>
+        <translation><!-- FCP POD6 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD7</masterLabel>
+        <translation><!-- FCP POD7 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD8</masterLabel>
+        <translation><!-- FCP POD8 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP POD9</masterLabel>
+        <translation><!-- FCP POD9 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSP Court &amp; Process POD</masterLabel>
+        <translation><!-- FSP Court &amp; Process POD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSP Deposition POD</masterLabel>
+        <translation><!-- FSP Deposition POD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSP Digital POD</masterLabel>
+        <translation><!-- FSP Digital POD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSP Financial &amp; Billing POD</masterLabel>
+        <translation><!-- FSP Financial &amp; Billing POD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSP General POD</masterLabel>
+        <translation><!-- FSP General POD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSP Investigations POD</masterLabel>
+        <translation><!-- FSP Investigations POD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSP Records POD</masterLabel>
+        <translation><!-- FSP Records POD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSP Tech POD</masterLabel>
+        <translation><!-- FSP Tech POD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fairfield - Court</masterLabel>
+        <translation><!-- Fairfield - Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fairfield - Process</masterLabel>
+        <translation><!-- Fairfield - Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Florida - Court</masterLabel>
+        <translation><!-- Florida - Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Florida - Process</masterLabel>
+        <translation><!-- Florida - Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fresno - Court</masterLabel>
+        <translation><!-- Fresno - Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fresno - Process</masterLabel>
+        <translation><!-- Fresno - Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Investigations</masterLabel>
+        <translation><!-- Investigations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Investigations After Hours Urgent</masterLabel>
+        <translation><!-- Investigations After Hours Urgent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Investigations International Team</masterLabel>
+        <translation><!-- Investigations International Team --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Investigations Skip Trace</masterLabel>
+        <translation><!-- Investigations Skip Trace --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Investigations Special Team</masterLabel>
+        <translation><!-- Investigations Special Team --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Investigations Summaries</masterLabel>
+        <translation><!-- Investigations Summaries --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Investigations Surveillance</masterLabel>
+        <translation><!-- Investigations Surveillance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Invoicing</masterLabel>
+        <translation><!-- Invoicing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Las Vegas - Court</masterLabel>
+        <translation><!-- Las Vegas - Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Las Vegas - Process</masterLabel>
+        <translation><!-- Las Vegas - Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Los Angeles - Court</masterLabel>
+        <translation><!-- Los Angeles - Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Los Angeles - Process</masterLabel>
+        <translation><!-- Los Angeles - Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Midwest Pod</masterLabel>
+        <translation><!-- Midwest Pod --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NY Info Queue</masterLabel>
+        <translation><!-- NY Info Queue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NY Process Queue</masterLabel>
+        <translation><!-- NY Process Queue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>National Court</masterLabel>
+        <translation><!-- National Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>National Orders</masterLabel>
+        <translation><!-- National Orders --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>National Process</masterLabel>
+        <translation><!-- National Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New York - Court</masterLabel>
+        <translation><!-- New York - Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New York - Process</masterLabel>
+        <translation><!-- New York - Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Northeast Pod</masterLabel>
+        <translation><!-- Northeast Pod --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Orange County - Court</masterLabel>
+        <translation><!-- Orange County - Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Orange County - Process</masterLabel>
+        <translation><!-- Orange County - Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PTSSupport</masterLabel>
+        <translation><!-- PTSSupport --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phoenix - Court</masterLabel>
+        <translation><!-- Phoenix - Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phoenix - Process</masterLabel>
+        <translation><!-- Phoenix - Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pod 1 – LA Civil / San Joaquin / Ventura</masterLabel>
+        <translation><!-- Pod 1 – LA Civil / San Joaquin / Ventura --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pod 10 - eFME</masterLabel>
+        <translation><!-- Pod 10 - eFME --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pod 11 – FSF (File/Serve/File)</masterLabel>
+        <translation><!-- Pod 11 – FSF (File/Serve/File) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pod 2 – A-Ma JTI</masterLabel>
+        <translation><!-- Pod 2 – A-Ma JTI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pod 3 – Mo-Z JTI</masterLabel>
+        <translation><!-- Pod 3 – Mo-Z JTI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pod 4 – A-O Odyssey / OC All / LA Family + Probate / San Francisco</masterLabel>
+        <translation><!-- Pod 4 – A-O Odyssey / OC All / LA Family + Probate / San Francisco --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pod 5 – P-Z Odyssey [No San Francisco]</masterLabel>
+        <translation><!-- Pod 5 – P-Z Odyssey [No San Francisco] --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pod 6 – Evening</masterLabel>
+        <translation><!-- Pod 6 – Evening --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pod 7 – eResearch</masterLabel>
+        <translation><!-- Pod 7 – eResearch --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pod 8 – Federal + Out-of-State</masterLabel>
+        <translation><!-- Pod 8 – Federal + Out-of-State --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pod 9 – Training</masterLabel>
+        <translation><!-- Pod 9 – Training --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Records Billing</masterLabel>
+        <translation><!-- Records Billing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Records Customer Support</masterLabel>
+        <translation><!-- Records Customer Support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Records Driver</masterLabel>
+        <translation><!-- Records Driver --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Records General Inquiry</masterLabel>
+        <translation><!-- Records General Inquiry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Records Interstate</masterLabel>
+        <translation><!-- Records Interstate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Records Interstate Leadership</masterLabel>
+        <translation><!-- Records Interstate Leadership --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Records JCCP</masterLabel>
+        <translation><!-- Records JCCP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Records Opposing Counsel</masterLabel>
+        <translation><!-- Records Opposing Counsel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Records Orders</masterLabel>
+        <translation><!-- Records Orders --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Records Production</masterLabel>
+        <translation><!-- Records Production --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Records QC</masterLabel>
+        <translation><!-- Records QC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Records Radiology</masterLabel>
+        <translation><!-- Records Radiology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Records Receiving</masterLabel>
+        <translation><!-- Records Receiving --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Records Receiving (Inquiry)</masterLabel>
+        <translation><!-- Records Receiving (Inquiry) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Records Shipping</masterLabel>
+        <translation><!-- Records Shipping --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Records Summary</masterLabel>
+        <translation><!-- Records Summary --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Redding</masterLabel>
+        <translation><!-- Redding --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Riverside - Court</masterLabel>
+        <translation><!-- Riverside - Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Riverside - Process</masterLabel>
+        <translation><!-- Riverside - Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sacramento - Court</masterLabel>
+        <translation><!-- Sacramento - Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sacramento - Process</masterLabel>
+        <translation><!-- Sacramento - Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Diego - Court</masterLabel>
+        <translation><!-- San Diego - Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Diego - Process</masterLabel>
+        <translation><!-- San Diego - Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Francisco / Oakland - Court</masterLabel>
+        <translation><!-- San Francisco / Oakland - Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Francisco / Oakland - Process</masterLabel>
+        <translation><!-- San Francisco / Oakland - Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Jose - Court</masterLabel>
+        <translation><!-- San Jose - Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Jose - Orders</masterLabel>
+        <translation><!-- San Jose - Orders --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Jose - Process</masterLabel>
+        <translation><!-- San Jose - Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Southeast Pod</masterLabel>
+        <translation><!-- Southeast Pod --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Southwest Pod</masterLabel>
+        <translation><!-- Southwest Pod --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Texas - Court</masterLabel>
+        <translation><!-- Texas - Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Texas - Process</masterLabel>
+        <translation><!-- Texas - Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tucson - Court</masterLabel>
+        <translation><!-- Tucson - Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tucson - Process</masterLabel>
+        <translation><!-- Tucson - Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ventura - Court</masterLabel>
+        <translation><!-- Ventura - Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ventura - Process</masterLabel>
+        <translation><!-- Ventura - Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>West Pod</masterLabel>
+        <translation><!-- West Pod --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>eDiscovery Billing</masterLabel>
+        <translation><!-- eDiscovery Billing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>eDiscovery Main</masterLabel>
+        <translation><!-- eDiscovery Main --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>eDiscovery Theodora Oringher PC</masterLabel>
+        <translation><!-- eDiscovery Theodora Oringher PC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>eFiling Dispatcher</masterLabel>
+        <translation><!-- eFiling Dispatcher --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>eFiling Leadership Escalation</masterLabel>
+        <translation><!-- eFiling Leadership Escalation --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

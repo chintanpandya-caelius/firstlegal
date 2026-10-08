@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- ABM journey type --></label>
+    <name>ABM_journey_type__c</name>
+    <picklistValues>
+        <masterLabel>Do Not Enroll</masterLabel>
+        <translation><!-- Do Not Enroll --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Standard ABM</masterLabel>
+        <translation><!-- Standard ABM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Strategic ABM</masterLabel>
+        <translation><!-- Strategic ABM --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

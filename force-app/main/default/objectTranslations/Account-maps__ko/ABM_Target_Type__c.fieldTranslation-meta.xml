@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- ABM Target Type --></label>
+    <name>ABM_Target_Type__c</name>
+    <picklistValues>
+        <masterLabel>Cross-Sell</masterLabel>
+        <translation><!-- Cross-Sell --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Expansion</masterLabel>
+        <translation><!-- Expansion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Prospect</masterLabel>
+        <translation><!-- New Prospect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reactivation</masterLabel>
+        <translation><!-- Reactivation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retention</masterLabel>
+        <translation><!-- Retention --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

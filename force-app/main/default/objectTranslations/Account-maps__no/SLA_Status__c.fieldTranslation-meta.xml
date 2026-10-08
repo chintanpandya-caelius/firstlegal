@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Displays the current SLA status based on the SLA Due Date and SLA Completion Date. Approaching SLA applies when an incomplete SLA is within 15 minutes of its due date. This field is calculated automatically. --></help>
+    <label><!-- SLA Status --></label>
+    <name>SLA_Status__c</name>
+</CustomFieldTranslation>

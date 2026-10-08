@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Classifies the type of customer. Maintained by: Marketing Operations. --></help>
+    <label><!-- Customer Type --></label>
+    <name>Customer_Type__c</name>
+    <picklistValues>
+        <masterLabel>At-Risk Customer</masterLabel>
+        <translation><!-- At-Risk Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Growth Customer</masterLabel>
+        <translation><!-- Growth Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>High Volume Loyal Customer</masterLabel>
+        <translation><!-- High Volume Loyal Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lapsing Customer</masterLabel>
+        <translation><!-- Lapsing Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Multi-Service Line Customer</masterLabel>
+        <translation><!-- Multi-Service Line Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reactivation Customer</masterLabel>
+        <translation><!-- Reactivation Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Single Service Line Customer</masterLabel>
+        <translation><!-- Single Service Line Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Standard Customer</masterLabel>
+        <translation><!-- Standard Customer --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

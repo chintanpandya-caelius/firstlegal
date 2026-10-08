@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- System-calculated score based on the Lead’s profile, interests, and engagement. Do not update manually unless authorized. --></help>
+    <label><!-- Lead Score --></label>
+    <name>Lead_Score__c</name>
+</CustomFieldTranslation>

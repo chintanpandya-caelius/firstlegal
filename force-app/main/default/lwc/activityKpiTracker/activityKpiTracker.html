@@ -1,0 +1,98 @@
+<template>
+    <lightning-card title="Activity KPI Tracker" icon-name="standard:dashboard">
+        <!-- Header Controls -->
+        <div slot="actions" class="slds-grid slds-grid_vertical-align-center">
+            <div class="slds-m-right_small dropdown-container">
+                <lightning-combobox
+                    name="periodSelector"
+                    value={selectedPeriod}
+                    options={periodOptions}
+                    onchange={handlePeriodChange}
+                    variant="label-hidden"
+                    aria-label="Select Period">
+                </lightning-combobox>
+            </div>
+            
+            <lightning-button-icon 
+                icon-name="utility:refresh" 
+                alternative-text="Refresh" 
+                onclick={refreshTracker}>
+            </lightning-button-icon>
+        </div>
+
+        <div class="slds-p-horizontal_medium">
+            <template if:true={isLoading}>
+                <div class="slds-align_absolute-center slds-p-vertical_large">
+                    <lightning-spinner alt="Loading Metrics..." size="medium"></lightning-spinner>
+                </div>
+            </template>
+
+            <template if:false={isLoading}>
+                <template if:true={hasKpiData}>
+                    <!-- 2-Column Grid ONLY for Regular Cards -->
+                    <div class="slds-grid slds-wrap slds-gutters_x-small">
+                        <template for:each={regularKpiData} for:item="row">
+                            <div key={row.activityType} class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-p-vertical_x-small">
+                                <div class="slds-box slds-box_x-small shadow-container">
+                                    <div class="slds-grid slds-grid_align-spread slds-m-bottom_x-small">
+                                        <span class="slds-text-heading_small slds-truncate"><strong>{row.activityType}</strong></span>
+                                        <span class={row.statusClass}>{row.statusLabel}</span>
+                                    </div>
+                                    
+                                    <lightning-progress-bar value={row.progressPercent} size="large" variant="circular"></lightning-progress-bar>
+
+                                    <!-- Virtual vs In-Person Badges for Events -->
+                                    <template if:true={row.isEventTile}>
+                                        <div class="slds-m-top_x-small slds-grid slds-grid_align-spread slds-text-body_small">
+                                            <span class="slds-badge slds-theme_light">💻 Virtual: {row.virtualCount}</span>
+                                            <span class="slds-badge slds-theme_light">🤝 In-Person: {row.inPersonCount}</span>
+                                        </div>
+                                    </template>
+
+                                    <!-- Actual vs Target Row -->
+                                    <div class="slds-grid slds-grid_align-spread slds-m-top_x-small slds-text-body_small text-muted">
+                                        <span>Actual: <strong>{row.currentTouchPoints}</strong> / Target: <strong>{row.targetGoal}</strong></span>
+                                        <span>Remaining: <strong>{row.remainingTouchPoints}</strong> ({row.displayProgress})</span>
+                                    </div>
+
+                                    <!-- YTD Display -->
+                                    <template if:true={row.showYtd}>
+                                        <div class="slds-m-top_xx-small slds-text-body_small text-muted slds-border_top slds-p-top_xx-small">
+                                            <span>YTD Actual: <strong>{row.ytdCount}</strong></span>
+                                        </div>
+                                    </template>
+                                </div>
+                            </div>
+                        </template>
+                    </div>
+
+                    <!-- Separate Row for TOTAL (No Vertical Gap) -->
+                    <template if:true={totalKpiData}>
+                        <div class="slds-p-vertical_x-small">
+                            <div class="slds-box slds-box_x-small shadow-container">
+                                <div class="slds-grid slds-grid_align-spread slds-m-bottom_x-small">
+                                    <span class="slds-text-heading_small slds-truncate"><strong>{totalKpiData.activityType}</strong></span>
+                                    <span class={totalKpiData.statusClass}>{totalKpiData.statusLabel}</span>
+                                </div>
+                                
+                                <lightning-progress-bar value={totalKpiData.progressPercent} size="large" variant="circular"></lightning-progress-bar>
+
+                                <!-- Actual vs Target Row -->
+                                <div class="slds-grid slds-grid_align-spread slds-m-top_x-small slds-text-body_small text-muted">
+                                    <span>Actual: <strong>{totalKpiData.currentTouchPoints}</strong> / Target: <strong>{totalKpiData.targetGoal}</strong></span>
+                                    <span>Remaining: <strong>{totalKpiData.remainingTouchPoints}</strong> ({totalKpiData.displayProgress})</span>
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+                </template>
+
+                <template if:true={error}>
+                    <div class="slds-text-color_error slds-align_absolute-center slds-p-vertical_medium">
+                        Failed to retrieve KPI metrics. Please check active goals or permissions.
+                    </div>
+                </template>
+            </template>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- ABM Revenue Benchmark Tier --></label>
+    <name>ABM_Revenue_Benchmark_Tier__c</name>
+    <picklistValues>
+        <masterLabel>Above Peer Average</masterLabel>
+        <translation><!-- Above Peer Average --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>At Peer Average</masterLabel>
+        <translation><!-- At Peer Average --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Below Peer Average</masterLabel>
+        <translation><!-- Below Peer Average --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Top Performer</masterLabel>
+        <translation><!-- Top Performer --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

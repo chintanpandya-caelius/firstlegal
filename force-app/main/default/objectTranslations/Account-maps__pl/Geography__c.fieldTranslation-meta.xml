@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Geography --></label>
+    <name>Geography__c</name>
+    <picklistValues>
+        <masterLabel>High Priority</masterLabel>
+        <translation><!-- High Priority --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Low Priority</masterLabel>
+        <translation><!-- Low Priority --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medium Priority</masterLabel>
+        <translation><!-- Medium Priority --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

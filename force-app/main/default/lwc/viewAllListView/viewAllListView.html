@@ -1,0 +1,214 @@
+<template>
+    <div class="ticket-panel">
+
+        <!-- Top navigation -->
+        <div class="top-bar">
+
+            <button
+                type="button"
+                class="home-btn"
+                onclick={handleHome}
+            >
+                <lightning-icon
+                    icon-name="utility:back"
+                    size="x-small"
+                    alternative-text="Back"
+                    class="home-icon"
+                ></lightning-icon>
+
+                <span>Home</span>
+            </button>
+
+        </div>
+
+
+        <!-- Header -->
+        <div class="panel-header">
+
+            <div class="view-heading">
+                {currentViewOption}
+            </div>
+
+            <div class="header-actions">
+
+                <button
+                    type="button"
+                    class="export-btn"
+                    onclick={handleExport}
+                >
+                    <lightning-icon
+                        icon-name="utility:download"
+                        size="x-small"
+                        alternative-text="Export"
+                        class="export-icon"
+                    ></lightning-icon>
+
+                    <span>Export</span>
+                </button>
+
+                <div class="search-wrap">
+                    <lightning-icon
+                        icon-name="utility:search"
+                        size="x-small"
+                        class="search-icon"
+                    ></lightning-icon>
+
+                    <input
+                        type="text"
+                        class="search-input"
+                        placeholder="Search this list..."
+                        onkeyup={handleSearchInput}
+                    />
+                </div>
+            </div>
+        </div>
+
+        <!-- Same metadata area -->
+        <div class="panel-meta">
+            <span>
+                {totalCount} {itemsLabel} · Sorted by Last Modified
+            </span>
+        </div>
+
+        <!-- Loading -->
+        <template if:true={isLoading}>
+            <div class="spinner-wrap">
+                <lightning-spinner
+                    alternative-text="Loading tickets"
+                    size="small"
+                ></lightning-spinner>
+            </div>
+        </template>
+
+        <!-- Error -->
+        <template if:true={hasError}>
+            <div class="error-banner">
+                {errorMessage}
+            </div>
+        </template>
+
+        <template if:false={isLoading}>
+
+            <template if:false={isEmpty}>
+
+                <table class="ticket-table">
+                    <thead>
+                        <tr>
+
+                            <!-- NEW -->
+                            <th class="col-checkbox master-checkbox-cell">
+                                <input
+                                    type="checkbox"
+                                    class="master-checkbox"
+                                    checked={areAllVisibleSelected}
+                                    onchange={handleSelectAll}
+                                    aria-label="Select all tickets"
+                                />
+                            </th>
+
+                            <th class="col-number">
+                                TICKET #
+                            </th>
+
+                            <th class="col-subject">
+                                SUBJECT
+                            </th>
+
+                            <th class="col-status">
+                                STATUS
+                            </th>
+
+                            <th class="col-modified">
+                                MODIFIED
+                            </th>
+
+                            <th class="col-contact">
+                                CONTACT
+                            </th>
+
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <template
+                            for:each={tickets}
+                            for:item="ticket"
+                        >
+                            <tr key={ticket.ticketId}>
+
+                                <!-- NEW CHECKBOX -->
+                                <td class="col-checkbox ticket-checkbox-cell">
+                                    <input
+                                        type="checkbox"
+                                        class="ticket-checkbox"
+                                        checked={ticket.isSelected}
+                                        data-id={ticket.ticketId}
+                                        onchange={handleTicketSelection}
+                                        aria-label="Select ticket"
+                                    />
+                                </td>
+
+                                <td class="col-number">
+                                    <a
+                                        href="javascript:void(0);"
+                                        data-id={ticket.ticketId}
+                                        onclick={handleTicketClick}
+                                    >
+                                        {ticket.ticketNumber}
+                                    </a>
+                                </td>
+
+                                <td class="col-subject">
+                                    <a
+                                        href="javascript:void(0);"
+                                        data-id={ticket.ticketId}
+                                        onclick={handleTicketClick}
+                                    >
+                                        {ticket.subject}
+                                    </a>
+                                </td>
+
+                                <td class="col-status">
+                                    <span class="status-pill">
+                                        {ticket.status}
+                                    </span>
+                                </td>
+
+                                <td class="col-modified">
+                                    <lightning-formatted-date-time
+                                        value={ticket.lastModifiedDate}
+                                        year="numeric"
+                                        month="2-digit"
+                                        day="2-digit"
+                                        hour="2-digit"
+                                        minute="2-digit"
+                                    ></lightning-formatted-date-time>
+                                </td>
+
+                                <td class="col-contact">
+                                    {ticket.contactName}
+                                </td>
+
+                            </tr>
+                        </template>
+                    </tbody>
+                </table>
+
+            </template>
+
+            <template if:true={isEmpty}>
+                <p class="no-records">
+                    No record found
+                </p>
+            </template>
+
+        </template>
+
+    </div>
+    <template if:true={showExportModal}>
+        <c-ticket-export-modal
+            onexport={handleExportConfirm}
+            onclose={handleExportModalClose}
+        ></c-ticket-export-modal>
+    </template>
+</template>

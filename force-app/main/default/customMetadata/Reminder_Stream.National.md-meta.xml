@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>National</label>
+    <protected>false</protected>
+    <values>
+        <field>Agent_Notification_Delay__c</field>
+        <value xsi:type="xsd:double">0.0</value>
+    </values>
+    <values>
+        <field>Agent_Notification_Template__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Allow_Waiting_on_3rd_Person_Reminders__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Auto_Close_Email_Template__c</field>
+        <value xsi:type="xsd:string">Ticket Closed thro Automation (Stage=Closed)</value>
+    </values>
+    <values>
+        <field>Auto_Close__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Business_Hour_Name__c</field>
+        <value xsi:type="xsd:string">Court and Process - National</value>
+    </values>
+    <values>
+        <field>Close_After_Last_Reminder__c</field>
+        <value xsi:type="xsd:double">1.0</value>
+    </values>
+    <values>
+        <field>Notify_Agent__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Queue_to_Reassign__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Queues__c</field>
+        <value xsi:type="xsd:string">National_Orders_Team;National_Court_Team;National_Process_Team</value>
+    </values>
+    <values>
+        <field>Record_Type_Developer_Name__c</field>
+        <value xsi:type="xsd:string">Court_and_Process</value>
+    </values>
+    <values>
+        <field>Reminder_Email_Templates__c</field>
+        <value xsi:type="xsd:string">Reminder 1 (Stage=Waiting on Customer);Reminder 2 before autoclose (Stage=Waiting on Customer);Reminder 3 before autoclose (Stage=Waiting on Customer)</value>
+    </values>
+    <values>
+        <field>Reminder_Intervals__c</field>
+        <value xsi:type="xsd:string">1;1;1</value>
+    </values>
+    <values>
+        <field>Service_Line__c</field>
+        <value xsi:type="xsd:string">National</value>
+    </values>
+    <values>
+        <field>Source_Emails__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Use_Business_Hours__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Waiting_on_3rd_Person_Email_Template__c</field>
+        <value xsi:type="xsd:string">Court / Vendor Response Delay (Stage=Waiting on Third Party)</value>
+    </values>
+    <values>
+        <field>Waiting_on_3rd_Person_Interval__c</field>
+        <value xsi:type="xsd:double">2.0</value>
+    </values>
+</CustomMetadata>

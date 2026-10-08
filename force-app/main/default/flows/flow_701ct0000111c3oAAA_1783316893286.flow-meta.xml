@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_Email_Message_Action_M960</name>
+        <label>Send Email Message Action</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>sendEmailMessage</actionName>
+        <actionType>sendEmailMessage</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>clickTracking</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>openTracking</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <nameSegment>sendEmailMessage</nameSegment>
+    </actionCalls>
+    <apiVersion>67.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <dataSpace>default</dataSpace>
+    <environments>Default</environments>
+    <interviewLabel>Legal Summit 2026 - Pre Outreach Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Legal Summit 2026 - Pre Outreach Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Send_Email_Message_Action_M960</targetReference>
+        </connector>
+        <object>UnifiedIndividual__dlm</object>
+        <segment>1sgct0000000bE5AAI</segment>
+        <triggerType>Segment</triggerType>
+    </start>
+    <status>InvalidDraft</status>
+</Flow>

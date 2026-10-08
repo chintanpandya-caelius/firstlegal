@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Form Type --></label>
+    <name>Form_Type__c</name>
+    <picklistValues>
+        <masterLabel>CLE</masterLabel>
+        <translation><!-- CLE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Event</masterLabel>
+        <translation><!-- Event --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General Inquiry</masterLabel>
+        <translation><!-- General Inquiry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MCLE</masterLabel>
+        <translation><!-- MCLE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service Interest</masterLabel>
+        <translation><!-- Service Interest --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

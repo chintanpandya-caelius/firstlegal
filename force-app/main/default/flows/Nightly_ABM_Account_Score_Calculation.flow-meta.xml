@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>67.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assignment_1</name>
+        <label>Assignment 1</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>Loop_Through_Accounts.Previous_ABM_Account_Score__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Loop_Through_Accounts.ABM_Account_Score__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Loop_Through_Accounts.ABM_Account_Score__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Formula_TotalABMScore</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Loop_Through_Accounts.ABM_Profile_Fit_Score__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Formula_ProfileFitCapped</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Loop_Through_Accounts.ABM_Score_Tier__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Formula_ScoreTier</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Loop_Through_Accounts.ABM_Score_Summary__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Formula_ScoreSummaryText</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Loop_Through_Accounts.ABM_Score_Change__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Formula_ScoreChange</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Loop_Through_Accounts.Significant_Score_Drop__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Formula_SignificantDrop</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Loop_Through_Accounts.ABM_Score_Last_Calculated_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Loop_Through_Accounts.Engagement_Score__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <numberValue>0.0</numberValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Account_Score</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Check_for_Significant_Drop</name>
+        <label>Check for Significant Drop</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Loop_Through_Accounts</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Significant_Drop_Occurred</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Formula_SignificantDrop</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Create_Score_Drop_Review_Task</targetReference>
+            </connector>
+            <label>Significant Drop Occurred</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>Formula_AccountTypeScore</name>
+        <dataType>Number</dataType>
+        <expression>CASE({!Loop_Through_Accounts.Type},
+  &quot;Customer&quot;, 10,
+  &quot;Court&quot;, 10,
+  &quot;Professional Association&quot;, 5,
+  &quot;Facility&quot;, 5,
+  &quot;Vendor&quot;, 0,
+  0)</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>Formula_GeographyScore</name>
+        <dataType>Number</dataType>
+        <expression>CASE({!Get_Matching_State_Tier.Priority_Tier__c},
+  &quot;High&quot;, 10,
+  &quot;Medium&quot;, 5,
+  &quot;Low&quot;, 0,
+  0)</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>Formula_ProfileFitCapped</name>
+        <dataType>Number</dataType>
+        <expression>IF({!Formula_ProfileFitRaw} &gt; 53, 53, {!Formula_ProfileFitRaw})</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>Formula_ProfileFitRaw</name>
+        <dataType>Number</dataType>
+        <expression>{!Formula_TargetSegmentScore} + {!Formula_AccountTypeScore} + {!Formula_GeographyScore} +
+{!Formula_ServiceLineFitScore} + {!Formula_StrategicFlagScore} + {!Formula_SegmentGranularityBonus}</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>Formula_ScoreChange</name>
+        <dataType>Number</dataType>
+        <expression>{!Formula_TotalABMScore} - {!Loop_Through_Accounts.Previous_ABM_Account_Score__c}</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>Formula_ScoreSummaryText</name>
+        <dataType>String</dataType>
+        <expression>IF({!Loop_Through_Accounts.Marketing_Suppressed__c},
+  &quot;Account is excluded from ABM action due to suppression or ineligible status.&quot;,
+IF({!Formula_TotalABMScore} &gt;= 35,
+  &quot;High Profile/Fit score (&quot; &amp; TEXT({!Formula_TotalABMScore}) &amp; &quot;). Strong ABM candidate based on segment, geography, and account type. Engagement scoring not yet factored in.&quot;,
+IF({!Formula_TotalABMScore} &gt;= 22,
+  &quot;Good Profile/Fit score (&quot; &amp; TEXT({!Formula_TotalABMScore}) &amp; &quot;). Reasonable ABM fit. Engagement scoring not yet factored in.&quot;,
+IF({!Formula_TotalABMScore} &gt;= 10,
+  &quot;Moderate Profile/Fit score (&quot; &amp; TEXT({!Formula_TotalABMScore}) &amp; &quot;). Some fit signals present.&quot;,
+  &quot;Low Profile/Fit score (&quot; &amp; TEXT({!Formula_TotalABMScore}) &amp; &quot;). Limited fit based on current data.&quot;))))</expression>
+    </formulas>
+    <formulas>
+        <name>Formula_ScoreTier</name>
+        <dataType>String</dataType>
+        <expression>IF({!Loop_Through_Accounts.Marketing_Suppressed__c}, &quot;Suppressed&quot;,
+IF({!Formula_TotalABMScore} &gt;= 35, &quot;Tier 1 - Strategic / Diamond&quot;,
+IF({!Formula_TotalABMScore} &gt;= 22, &quot;Tier 2 - Named / Gold&quot;,
+IF({!Formula_TotalABMScore} &gt;= 10, &quot;Tier 3 - Nurture / Silver&quot;,
+&quot;Not Prioritized&quot;))))</expression>
+    </formulas>
+    <formulas>
+        <name>Formula_SegmentGranularityBonus</name>
+        <dataType>Number</dataType>
+        <expression>IF(INCLUDES({!Loop_Through_Accounts.Segment__c}, &quot;Am Law 100&quot;), 3,
+IF(INCLUDES({!Loop_Through_Accounts.Segment__c}, &quot;Am Law 200&quot;), 2,
+IF(INCLUDES({!Loop_Through_Accounts.Segment__c}, &quot;Top 100 Revenue&quot;), 1,
+0)))</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>Formula_ServiceLineFitScore</name>
+        <dataType>Number</dataType>
+        <expression>IF(NOT(ISBLANK({!Loop_Through_Accounts.Service_Line__c})), 10, 0)</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>Formula_SignificantDrop</name>
+        <dataType>Boolean</dataType>
+        <expression>IF({!Formula_ScoreChange} &lt;= -20, TRUE, FALSE)</expression>
+    </formulas>
+    <formulas>
+        <name>Formula_StrategicFlagScore</name>
+        <dataType>Number</dataType>
+        <expression>IF({!Loop_Through_Accounts.ABM_Manually_Flagged__c}, 5, 0)</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>Formula_TargetSegmentScore</name>
+        <dataType>Number</dataType>
+        <expression>CASE({!Loop_Through_Accounts.ABM_Segment__c},
+  &quot;Strategic&quot;, 15,
+  &quot;AmLaw&quot;, 12,
+  &quot;Growth&quot;, 9,
+  &quot;Insurance&quot;, 6,
+  &quot;PI&quot;, 6,
+  &quot;Lemon Law&quot;, 3,
+  &quot;Standard&quot;, 3,
+  0)</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>Formula_TotalABMScore</name>
+        <dataType>Number</dataType>
+        <expression>{!Formula_ProfileFitCapped}</expression>
+        <scale>2</scale>
+    </formulas>
+    <interviewLabel>Nightly_ABM_Account_Score_Calculation {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Nightly_ABM_Account_Score_Calculation</label>
+    <loops>
+        <name>Loop_Through_Accounts</name>
+        <label>Loop Through Accounts</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <collectionReference>Get_Eligible_ABM_Accounts</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Get_Matching_State_Tier</targetReference>
+        </nextValueConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Create_Score_Drop_Review_Task</name>
+        <label>Create Score Drop Review Task</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Loop_Through_Accounts</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Description</field>
+            <value>
+                <stringValue>&quot;ABM Account Score dropped significantly during nightly recalculation.&quot; &amp; BR() &amp; &quot;Previous Score: &quot; &amp; TEXT({!Loop_Through_Accounts.Previous_ABM_Account_Score__c}) &amp; BR() &amp; &quot;Current Score: &quot; &amp; TEXT({!Formula_TotalABMScore}) &amp; BR() &amp; &quot;Score Change: &quot; &amp; TEXT({!Formula_ScoreChange}) &amp; BR() &amp; &quot;Current Tier: &quot; &amp; {!Formula_ScoreTier} &amp; BR() &amp; &quot;Score Summary: &quot; &amp; {!Formula_ScoreSummaryText} &amp; BR() &amp; BR() &amp; &quot;Please review whether engagement has declined, data inputs changed, or the Account requires a different ABM approach.&quot;</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>Loop_Through_Accounts.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>High</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>New</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Review ABM Account Score Drop</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>Loop_Through_Accounts.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <name>Get_Eligible_ABM_Accounts</name>
+        <label>Get Eligible ABM Accounts</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Loop_Through_Accounts</targetReference>
+        </connector>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>ABM_Target__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>ABM_Eligible__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Account</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Matching_State_Tier</name>
+        <label>Get Matching State Tier</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Assignment_1</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>State_Code__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Loop_Through_Accounts.BillingStateCode</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>State_Priority_Mapping__mdt</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Account_Score</name>
+        <label>Update Account Score</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_for_Significant_Drop</targetReference>
+        </connector>
+        <inputReference>Loop_Through_Accounts</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Eligible_ABM_Accounts</targetReference>
+        </connector>
+        <schedule>
+            <frequency>Once</frequency>
+            <startDate>2026-08-12</startDate>
+            <startTime>04:00:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

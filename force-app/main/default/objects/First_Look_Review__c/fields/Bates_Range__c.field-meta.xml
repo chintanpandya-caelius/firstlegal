@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bates_Range__c</fullName>
+    <description>Display range (formula: Start + &quot; - &quot; + End). Verify formula syntax after Bates_Range_Start__c/Bates_Range_End__c are deployed.</description>
+    <externalId>false</externalId>
+    <formula>Bates_Range_Start__c &amp; &quot; - &quot; &amp; Bates_Range_End__c</formula>
+    <label>Bates Range</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

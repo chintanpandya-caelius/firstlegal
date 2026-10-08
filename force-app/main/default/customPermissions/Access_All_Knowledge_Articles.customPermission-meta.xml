@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>The permission that has to go to internal users so that they can access all the Knowledge Articles (Internal + External)</description>
+    <isLicensed>false</isLicensed>
+    <label>Access All Knowledge Articles</label>
+</CustomPermission>

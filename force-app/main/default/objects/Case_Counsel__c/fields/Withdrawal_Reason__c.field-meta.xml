@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Withdrawal_Reason__c</fullName>
+    <label>Withdrawal Reason</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Substitution of Counsel</fullName>
+                <default>false</default>
+                <label>Substitution of Counsel</label>
+            </value>
+            <value>
+                <fullName>Case Concluded</fullName>
+                <default>false</default>
+                <label>Case Concluded</label>
+            </value>
+            <value>
+                <fullName>Conflict Identified</fullName>
+                <default>false</default>
+                <label>Conflict Identified</label>
+            </value>
+            <value>
+                <fullName>Client Decision</fullName>
+                <default>false</default>
+                <label>Client Decision</label>
+            </value>
+            <value>
+                <fullName>Attorney Departure from Firm</fullName>
+                <default>false</default>
+                <label>Attorney Departure from Firm</label>
+            </value>
+            <value>
+                <fullName>Court Order</fullName>
+                <default>false</default>
+                <label>Court Order</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

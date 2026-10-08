@@ -1,0 +1,30 @@
+<template>
+
+    <lightning-quick-action-panel header="Generate Global Account ID">
+
+        <div class="slds-p-around_medium">
+            <p class="slds-m-top_small">Clicking Continue will generate a Global Account ID and send related Account and Contact records to Systems of Records.</p> 
+            <br><p class="slds-m-top_small">Click yes if you wish to proceed.</p>
+        </div>
+
+        <div slot="footer">
+
+            <lightning-button
+                label="Cancel"
+                onclick={handleCancel}
+                disabled={isProcessing}>
+            </lightning-button>
+
+            <lightning-button
+                class="slds-m-left_small"
+                variant="brand"
+                label="Yes"
+                onclick={handleConfirm}
+                disabled={isProcessing}>
+            </lightning-button>
+
+        </div>
+
+    </lightning-quick-action-panel>
+
+</template>

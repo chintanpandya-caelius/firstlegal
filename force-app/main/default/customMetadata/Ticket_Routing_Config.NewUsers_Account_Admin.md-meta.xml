@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>NewUsers - Account Admin</label>
+    <protected>false</protected>
+    <values>
+        <field>QueueToAssign__c</field>
+        <value xsi:type="xsd:string">Account_Administration_Team</value>
+    </values>
+    <values>
+        <field>RecordType_API_Name__c</field>
+        <value xsi:type="xsd:string">Accounting</value>
+    </values>
+    <values>
+        <field>RouteToTier2__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>ToEmailAddress__c</field>
+        <value xsi:type="xsd:string">qa_newusers@firstlegal.com</value>
+    </values>
+</CustomMetadata>

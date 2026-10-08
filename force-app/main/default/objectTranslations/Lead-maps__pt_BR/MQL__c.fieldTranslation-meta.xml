@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- MQL --></label>
+    <name>MQL__c</name>
+    <picklistValues>
+        <masterLabel>MQL</masterLabel>
+        <translation><!-- MQL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NOT MQL</masterLabel>
+        <translation><!-- NOT MQL --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

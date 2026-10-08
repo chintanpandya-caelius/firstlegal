@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesIncludeBosses>true</doesIncludeBosses>
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Pod 11 – FSF (File/Serve/File)</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>Pod_11_FSF_File_Serve_File</publicGroup>
+        </publicGroups>
+        <users>
+            <user>npravallika@firstlegal.com</user>
+            <user>fcpagent@firstlegal.com</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>Ticket_Routing_Config</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>WorkOrder</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Performance Review Outcome --></label>
+    <name>Performance_Review_Outcome__c</name>
+    <picklistValues>
+        <masterLabel>Change Approach</masterLabel>
+        <translation><!-- Change Approach --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Needs Leadership Review</masterLabel>
+        <translation><!-- Needs Leadership Review --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Action Needed</masterLabel>
+        <translation><!-- No Action Needed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Re-engage</masterLabel>
+        <translation><!-- Re-engage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Remove from ABM Target List</masterLabel>
+        <translation><!-- Remove from ABM Target List --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

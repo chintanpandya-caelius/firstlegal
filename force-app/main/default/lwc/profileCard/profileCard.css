@@ -1,0 +1,181 @@
+:host {
+    display: block;
+}
+
+.profile-card {
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 0.5rem;
+    padding: 1.5rem 2rem 1rem 2rem;
+    max-width: 960px;
+    margin: 0 auto;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    font-family: inherit;
+}
+
+.profile-header {
+    margin-bottom: 1rem;
+}
+
+.profile-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #181818;
+    margin: 0;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.field-row {
+    padding: 0.85rem 0.5rem;
+    box-sizing: border-box;
+}
+
+.field-label {
+    display: flex;
+    align-items: center;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: #3e3e3c;
+    margin-bottom: 0.35rem;
+}
+
+.field-value-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding-bottom: 0.5rem;
+    min-height: 2rem;
+}
+
+.output-value {
+    flex: 1 1 auto;
+    font-size: 0.9375rem;
+    color: #181818;
+    word-break: break-word;
+}
+
+.edit-input {
+    flex: 1 1 auto;
+}
+
+.edit-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1 1 auto;
+}
+
+.edit-icon {
+    flex-shrink: 0;
+    opacity: 0.55;
+    transition: opacity 0.15s ease-in-out;
+}
+
+.edit-icon:hover,
+.edit-icon:focus {
+    opacity: 1;
+}
+
+.save-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.75rem;
+    padding-top: 1rem;
+    margin-top: 0.5rem;
+    border-top: 1px solid #e5e5e5;
+}
+
+.save-button,
+.cancel-button {
+    min-width: 6rem;
+}
+
+.profile-photo-section {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0 1.25rem 0;
+    /* border-bottom: 1px solid #e5e5e5; */
+}
+
+.profile-photo-wrapper {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-photo {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+.photo-edit-icon {
+    margin-left: 0.5rem;
+}
+
+.photo-modal .slds-modal__container {
+    max-width: 34rem;
+    width: 90%;
+}
+
+.photo-modal-header {
+    padding: 1rem 1.5rem;
+}
+
+.photo-modal-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #032d60;
+    margin: 0;
+}
+
+.photo-modal-content {
+    text-align: center;
+    padding: 1.25rem 1.5rem 1.5rem;
+}
+
+.photo-upload-info {
+    margin: 0 0 0.75rem;
+    font-size: 0.875rem;
+    color: #666666;
+}
+
+.photo-upload-button-container {
+    margin-bottom: 0.75rem;
+}
+
+.current-photo-label {
+    margin-bottom: 0.25rem;
+    font-size: 0.875rem;
+    color: #666666;
+}
+
+.modal-photo-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.25rem;
+}
+
+.modal-profile-photo {
+    width: 190px;
+    height: 190px;
+    border-radius: 0.9rem;
+    object-fit: cover;
+    display: block;
+}
+
+.photo-file-input {
+    display: none;
+}
+
+.photo-modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.75rem;
+}

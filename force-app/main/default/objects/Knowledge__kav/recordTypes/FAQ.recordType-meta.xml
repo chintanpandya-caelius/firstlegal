@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FAQ</fullName>
+    <active>true</active>
+    <description>This can be used for simple question and answer articles</description>
+    <label>FAQ</label>
+    <picklistValues>
+        <picklist>Division__c</picklist>
+        <values>
+            <fullName>Client_Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Court_and_Process</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Court_and_Process_eFiling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Depositions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>First_Class_Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>First_Connect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Records</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>eDiscovery</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Topic__c</picklist>
+        <values>
+            <fullName>Account %26 Access</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Billing %26 Payments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Court %26 Process</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Depositions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investigations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Records</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trial Support Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>eDiscovery</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

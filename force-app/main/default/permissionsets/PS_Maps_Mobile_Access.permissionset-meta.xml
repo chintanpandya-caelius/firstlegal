@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Mobile: Maps Mobile and Maps tabs, their Visualforce pages, and API Enabled for the Salesforce mobile app. Used with SF Maps via PSG_Maps_Mobile. Needs a Salesforce Maps license.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>PS_Maps_Mobile_Access</label>
+    <pageAccesses>
+        <apexPage>maps__Maps</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>maps__Mobile</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <tabSettings>
+        <tab>maps__Maps</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>maps__Mobile</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ApiEnabled</name>
+    </userPermissions>
+</PermissionSet>

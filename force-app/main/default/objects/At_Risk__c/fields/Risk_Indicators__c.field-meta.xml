@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Risk_Indicators__c</fullName>
+    <label>Risk Indicators</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Declining Volume or Revenue</fullName>
+                <default>false</default>
+                <label>Declining Volume or Revenue</label>
+            </value>
+            <value>
+                <fullName>Reduced Engagement / Responsiveness</fullName>
+                <default>false</default>
+                <label>Reduced Engagement / Responsiveness</label>
+            </value>
+            <value>
+                <fullName>Service Issues or Escalations</fullName>
+                <default>false</default>
+                <label>Service Issues or Escalations</label>
+            </value>
+            <value>
+                <fullName>Competitive Displacement Risk</fullName>
+                <default>false</default>
+                <label>Competitive Displacement Risk</label>
+            </value>
+            <value>
+                <fullName>Pricing Pressure</fullName>
+                <default>false</default>
+                <label>Pricing Pressure</label>
+            </value>
+            <value>
+                <fullName>Key Contact Turnover</fullName>
+                <default>false</default>
+                <label>Key Contact Turnover</label>
+            </value>
+            <value>
+                <fullName>Lack of Executive Relationships</fullName>
+                <default>false</default>
+                <label>Lack of Executive Relationships</label>
+            </value>
+            <value>
+                <fullName>No recent QBR</fullName>
+                <default>false</default>
+                <label>No recent QBR</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Error Type --></label>
+    <name>Error_Type__c</name>
+    <picklistValues>
+        <masterLabel>Auth</masterLabel>
+        <translation><!-- Auth --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Connectivity</masterLabel>
+        <translation><!-- Connectivity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ingestion Failure</masterLabel>
+        <translation><!-- Ingestion Failure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mapping</masterLabel>
+        <translation><!-- Mapping --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Timeout</masterLabel>
+        <translation><!-- Timeout --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Validation</masterLabel>
+        <translation><!-- Validation --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

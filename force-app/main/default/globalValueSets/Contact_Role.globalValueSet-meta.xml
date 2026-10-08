@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Adjuster</fullName>
+        <default>false</default>
+        <label>Adjuster</label>
+    </customValue>
+    <customValue>
+        <fullName>Administrator</fullName>
+        <default>false</default>
+        <label>Administrator</label>
+    </customValue>
+    <customValue>
+        <fullName>Associate</fullName>
+        <default>false</default>
+        <label>Associate</label>
+    </customValue>
+    <customValue>
+        <fullName>Attorney</fullName>
+        <default>false</default>
+        <label>Attorney</label>
+    </customValue>
+    <customValue>
+        <fullName>Billing Manager</fullName>
+        <default>false</default>
+        <label>Billing Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>Claims Manager</fullName>
+        <default>false</default>
+        <label>Claims Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>Customer Care</fullName>
+        <default>false</default>
+        <label>Customer Care</label>
+    </customValue>
+    <customValue>
+        <fullName>Freelance Attorney</fullName>
+        <default>false</default>
+        <label>Freelance Attorney</label>
+    </customValue>
+    <customValue>
+        <fullName>General Council</fullName>
+        <default>false</default>
+        <label>General Council</label>
+    </customValue>
+    <customValue>
+        <fullName>Influencer</fullName>
+        <default>false</default>
+        <label>Influencer</label>
+    </customValue>
+    <customValue>
+        <fullName>Legal Secretary</fullName>
+        <default>false</default>
+        <label>Legal Secretary</label>
+    </customValue>
+    <customValue>
+        <fullName>Litigation Support Manager</fullName>
+        <default>false</default>
+        <label>Litigation Support Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>Managing Partner</fullName>
+        <default>false</default>
+        <label>Managing Partner</label>
+    </customValue>
+    <customValue>
+        <fullName>Marketing</fullName>
+        <default>false</default>
+        <label>Marketing</label>
+    </customValue>
+    <customValue>
+        <fullName>Office Manager</fullName>
+        <default>false</default>
+        <label>Office Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Client</fullName>
+        <default>false</default>
+        <label>Other Client</label>
+    </customValue>
+    <customValue>
+        <fullName>Paralegal</fullName>
+        <default>false</default>
+        <label>Paralegal</label>
+    </customValue>
+    <customValue>
+        <fullName>Partner</fullName>
+        <default>false</default>
+        <label>Partner</label>
+    </customValue>
+    <customValue>
+        <fullName>Technical Decision Maker</fullName>
+        <default>false</default>
+        <label>Technical Decision Maker</label>
+    </customValue>
+    <masterLabel>Role</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

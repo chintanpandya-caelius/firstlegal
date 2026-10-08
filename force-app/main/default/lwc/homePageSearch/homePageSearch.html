@@ -1,0 +1,105 @@
+<template>
+    <div class="search-container">
+        <div class="search-bar">
+            <lightning-icon
+                icon-name="utility:search"
+                size="x-small"
+                class="search-icon">
+            </lightning-icon>
+            <input
+                type="text"
+                class="search-input"
+                placeholder="Search Knowledge Base or Ticket"
+                value={searchTerm}
+                oninput={handleInput}
+                onkeyup={handleKeyUp}
+                aria-label="Search Knowledge Base or Ticket"
+            />
+            <template if:true={searchTerm}>
+                <button class="clear-btn" onclick={handleClear} aria-label="Clear search">
+                    <lightning-icon icon-name="utility:close" size="xx-small"></lightning-icon>
+                </button>
+            </template>
+        </div>
+    </div>
+
+    <template if:true={showResults}>
+        <template if:true={isLoading}>
+            <div class="spinner-container">
+                <lightning-spinner alternative-text="Searching..." size="small"></lightning-spinner>
+            </div>
+        </template>
+
+        <template if:false={isLoading}>
+
+            <template if:true={errorMessage}>
+                <div class="error-banner" role="alert">
+                    <lightning-icon icon-name="utility:error" size="x-small" variant="error"></lightning-icon>
+                    <span class="error-text">{errorMessage}</span>
+                </div>
+            </template>
+
+            <template if:true={hasArticles}>
+                <div class="results-container">
+                    <p class="section-title">Knowledge Articles</p>
+                    <p class="section-subtitle">All matching knowledge articles displayed</p>
+                    <template for:each={articles} for:item="article">
+                        <a
+                            key={article.knowledgeArticleId}
+                            class="article-card"
+                            href="javascript:void(0)"
+                            data-id={article.id}
+                            onclick={handleArticleClick}    
+                        >
+                            <div class="article-content">
+                                <h3 class="article-title">{article.title}</h3>
+                                <p class="article-excerpt">{article.excerpt}</p>
+                                <span class="article-date">{article.formattedDate}</span>
+                            </div>
+                            <lightning-icon
+                                icon-name="utility:chevronright"
+                                size="x-small"
+                                class="article-chevron">
+                            </lightning-icon>
+                        </a>
+                    </template>
+                </div>
+            </template>
+
+            <template if:true={hasTickets}>
+                <div class="results-container">
+                    <p class="section-title">Tickets</p>
+                    <p class="section-subtitle">All matching tickets displayed</p>
+
+                    <template for:each={tickets} for:item="ticket">
+                        <a
+                            key={ticket.id}
+                            class="article-card"
+                            href="javascript:void(0)"
+                            data-id={ticket.id}
+                            onclick={handleTicketClick}>
+                            <div class="article-content">
+                                <h3 class="article-title">Case #{ticket.caseNumber}</h3>
+                                <p class="article-excerpt">{ticket.subject}</p>
+                            </div>
+                            <lightning-icon
+                                icon-name="utility:chevronright"
+                                size="x-small"
+                                class="article-chevron">
+                            </lightning-icon>
+                        </a>
+                    </template>
+                </div>
+            </template>
+
+            <template if:true={showEmptyState}>
+                <div class="empty-state">
+                    <lightning-icon icon-name="utility:search" size="large"></lightning-icon>
+                    <p class="empty-title">No articles found</p>
+                    <p class="empty-subtitle">Try different keywords or check your spelling.</p>
+                </div>
+            </template>
+
+        </template>
+    </template>
+</template>

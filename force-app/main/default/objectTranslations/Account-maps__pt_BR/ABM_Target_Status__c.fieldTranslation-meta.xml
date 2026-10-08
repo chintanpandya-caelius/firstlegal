@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- ABM Target Status --></label>
+    <name>ABM_Target_Status__c</name>
+    <picklistValues>
+        <masterLabel>Active</masterLabel>
+        <translation><!-- Active --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved</masterLabel>
+        <translation><!-- Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Converted</masterLabel>
+        <translation><!-- Converted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Handed to Sales</masterLabel>
+        <translation><!-- Handed to Sales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending Review</masterLabel>
+        <translation><!-- Pending Review --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Proposed</masterLabel>
+        <translation><!-- Proposed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Removal Requested</masterLabel>
+        <translation><!-- Removal Requested --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Removed</masterLabel>
+        <translation><!-- Removed --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

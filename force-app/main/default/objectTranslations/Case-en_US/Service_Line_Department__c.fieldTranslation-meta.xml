@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Service Line Department --></label>
+    <name>Service_Line_Department__c</name>
+    <picklistValues>
+        <masterLabel>Court &amp; Process</masterLabel>
+        <translation><!-- Court &amp; Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Depositions - Calendar</masterLabel>
+        <translation><!-- Depositions - Calendar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Depositions - Client Care</masterLabel>
+        <translation><!-- Depositions - Client Care --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Finance / Billing</masterLabel>
+        <translation><!-- Finance / Billing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Records - Custodian</masterLabel>
+        <translation><!-- Records - Custodian --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Records - Document Review</masterLabel>
+        <translation><!-- Records - Document Review --></translation>
+    </picklistValues>
+</CustomFieldTranslation>
