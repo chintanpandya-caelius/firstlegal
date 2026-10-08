@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Source System --></label>
+    <name>Source_System__c</name>
+    <picklistValues>
+        <masterLabel>CaseGator</masterLabel>
+        <translation><!-- CaseGator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Datatrac</masterLabel>
+        <translation><!-- Datatrac --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Doculogix</masterLabel>
+        <translation><!-- Doculogix --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ProcessMaster</masterLabel>
+        <translation><!-- ProcessMaster --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ServeManager</masterLabel>
+        <translation><!-- ServeManager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Solaria</masterLabel>
+        <translation><!-- Solaria --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tristar</masterLabel>
+        <translation><!-- Tristar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WinCopy</masterLabel>
+        <translation><!-- WinCopy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WinServe Plus</masterLabel>
+        <translation><!-- WinServe Plus --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter the business reason why this Account is being manually added to the ABM target list outside of standard criteria. Required for manual ABM additions. Maintained by Marketing Operations. --></help>
+    <label><!-- ABM Manual Flag Reason --></label>
+    <name>ABM_Manual_Flag_Reason__c</name>
+</CustomFieldTranslation>

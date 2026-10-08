@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Party</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Parties</value>
+    </caseValues>
+    <recordTypes>
+        <label><!-- Delivery --></label>
+        <name>Delivery</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Deponent --></label>
+        <name>Deponent</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Pickup --></label>
+        <name>Pickup</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Servee --></label>
+        <name>Servee</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Subject/Patient --></label>
+        <name>Subject_Patient</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

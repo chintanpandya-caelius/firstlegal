@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Lead_Path_Override for Status change override , can be added to PS where we need to bypass status path blockage</description>
+    <isLicensed>false</isLicensed>
+    <label>Lead_Path_Override</label>
+</CustomPermission>

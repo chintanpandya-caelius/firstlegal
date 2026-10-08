@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Docusign Status --></label>
+    <name>Docusign_Status__c</name>
+    <picklistValues>
+        <masterLabel>Sent</masterLabel>
+        <translation><!-- Sent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Signed</masterLabel>
+        <translation><!-- Signed --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

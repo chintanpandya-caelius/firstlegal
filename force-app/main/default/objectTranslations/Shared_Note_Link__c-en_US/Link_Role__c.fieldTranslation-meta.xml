@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Link Role --></label>
+    <name>Link_Role__c</name>
+    <picklistValues>
+        <masterLabel>Historical</masterLabel>
+        <translation><!-- Historical --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Primary</masterLabel>
+        <translation><!-- Primary --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Referenced</masterLabel>
+        <translation><!-- Referenced --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Related</masterLabel>
+        <translation><!-- Related --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Source</masterLabel>
+        <translation><!-- Source --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

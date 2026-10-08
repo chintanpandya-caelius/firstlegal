@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+	<isExposed>true</isExposed>
+	<apiVersion>68.0</apiVersion>
+	<description>The page that will be shown when the user clicks on view all from any list view on list view component on home page</description>
+	<targets>
+		<target>lightningCommunity__Default</target>
+		<target>lightningCommunity__Page</target>
+	</targets>
+</LightningComponentBundle>

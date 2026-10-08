@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Notice Served To Party Side --></label>
+    <name>Notice_Served_To_Party_Side__c</name>
+    <picklistValues>
+        <masterLabel>Defendent</masterLabel>
+        <translation><!-- Defendent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plaintiff</masterLabel>
+        <translation><!-- Plaintiff --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

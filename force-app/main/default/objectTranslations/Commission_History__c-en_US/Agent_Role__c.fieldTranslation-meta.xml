@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Agent Role --></label>
+    <name>Agent_Role__c</name>
+    <picklistValues>
+        <masterLabel>AE</masterLabel>
+        <translation><!-- AE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AM</masterLabel>
+        <translation><!-- AM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BDR</masterLabel>
+        <translation><!-- BDR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CCT</masterLabel>
+        <translation><!-- CCT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FLD</masterLabel>
+        <translation><!-- FLD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FLDS</masterLabel>
+        <translation><!-- FLDS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FLED</masterLabel>
+        <translation><!-- FLED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FLI</masterLabel>
+        <translation><!-- FLI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRR</masterLabel>
+        <translation><!-- FRR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IC</masterLabel>
+        <translation><!-- IC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MMAE</masterLabel>
+        <translation><!-- MMAE --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

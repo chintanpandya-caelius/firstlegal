@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Source --></label>
+    <name>Source__c</name>
+    <picklistValues>
+        <masterLabel>Chat</masterLabel>
+        <translation><!-- Chat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Email</masterLabel>
+        <translation><!-- Email --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phone</masterLabel>
+        <translation><!-- Phone --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Portal</masterLabel>
+        <translation><!-- Portal --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

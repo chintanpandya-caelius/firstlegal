@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- VIP --></label>
+    <name>VIP__c</name>
+    <picklistValues>
+        <masterLabel>High Revenue</masterLabel>
+        <translation><!-- High Revenue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Client</masterLabel>
+        <translation><!-- New Client --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Problematic</masterLabel>
+        <translation><!-- Problematic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service Issues</masterLabel>
+        <translation><!-- Service Issues --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VIP Court &amp; Process</masterLabel>
+        <translation><!-- VIP Court &amp; Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VIP Depos</masterLabel>
+        <translation><!-- VIP Depos --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Invoicing Frequency --></label>
+    <name>Invoicing_Frequency__c</name>
+    <picklistValues>
+        <masterLabel>Monthly</masterLabel>
+        <translation><!-- Monthly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Semi-Monthly</masterLabel>
+        <translation><!-- Semi-Monthly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Weekly</masterLabel>
+        <translation><!-- Weekly --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

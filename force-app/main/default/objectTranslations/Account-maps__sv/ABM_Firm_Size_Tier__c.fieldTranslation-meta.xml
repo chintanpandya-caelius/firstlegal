@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- ABM Firm Size Tier --></label>
+    <name>ABM_Firm_Size_Tier__c</name>
+    <picklistValues>
+        <masterLabel>Enterprise (500+)</masterLabel>
+        <translation><!-- Enterprise (500+) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Large (201–500)</masterLabel>
+        <translation><!-- Large (201–500) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mid-Size (51–200)</masterLabel>
+        <translation><!-- Mid-Size (51–200) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Small (1–50)</masterLabel>
+        <translation><!-- Small (1–50) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

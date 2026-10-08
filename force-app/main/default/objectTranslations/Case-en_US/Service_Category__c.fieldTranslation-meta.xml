@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Service Category --></label>
+    <name>Service_Category__c</name>
+    <picklistValues>
+        <masterLabel>Civil &amp; Business Litigation Investigations</masterLabel>
+        <translation><!-- Civil &amp; Business Litigation Investigations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Conference Rooms &amp; Suites</masterLabel>
+        <translation><!-- Conference Rooms &amp; Suites --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Court Reporting</masterLabel>
+        <translation><!-- Court Reporting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Data Processing &amp; Hosting</masterLabel>
+        <translation><!-- Data Processing &amp; Hosting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Defensible Collections</masterLabel>
+        <translation><!-- Defensible Collections --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deposition Officer Designation</masterLabel>
+        <translation><!-- Deposition Officer Designation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Digital Media Duplication and Conversion</masterLabel>
+        <translation><!-- Digital Media Duplication and Conversion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Document Depository</masterLabel>
+        <translation><!-- Document Depository --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Document Management</masterLabel>
+        <translation><!-- Document Management --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Document Printing &amp; Scanning</masterLabel>
+        <translation><!-- Document Printing &amp; Scanning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Document Production</masterLabel>
+        <translation><!-- Document Production --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Document Shredding</masterLabel>
+        <translation><!-- Document Shredding --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Easy Case Assessment</masterLabel>
+        <translation><!-- Easy Case Assessment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flexible Ordering</masterLabel>
+        <translation><!-- Flexible Ordering --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In-Person Court Filing</masterLabel>
+        <translation><!-- In-Person Court Filing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>International Service of Process</masterLabel>
+        <translation><!-- International Service of Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Large Format Copying and Printing</masterLabel>
+        <translation><!-- Large Format Copying and Printing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Legal Videography</masterLabel>
+        <translation><!-- Legal Videography --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mail-Outs</masterLabel>
+        <translation><!-- Mail-Outs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>On-Site Scanning</masterLabel>
+        <translation><!-- On-Site Scanning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Onsite &amp; Offsite Scanning</masterLabel>
+        <translation><!-- Onsite &amp; Offsite Scanning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Out-of-State Subpoenas</masterLabel>
+        <translation><!-- Out-of-State Subpoenas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Personal Injury Investigations</masterLabel>
+        <translation><!-- Personal Injury Investigations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Presercation &amp; Litigation Holds</masterLabel>
+        <translation><!-- Presercation &amp; Litigation Holds --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Privacy &amp; Data Security</masterLabel>
+        <translation><!-- Privacy &amp; Data Security --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Remote Online Notary</masterLabel>
+        <translation><!-- Remote Online Notary --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Research</masterLabel>
+        <translation><!-- Research --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service of Process</masterLabel>
+        <translation><!-- Service of Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Specialized Case Consultation</masterLabel>
+        <translation><!-- Specialized Case Consultation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sub Rosa</masterLabel>
+        <translation><!-- Sub Rosa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Subpoena &amp; Authorization Services</masterLabel>
+        <translation><!-- Subpoena &amp; Authorization Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transcription</masterLabel>
+        <translation><!-- Transcription --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Translation &amp; Interpreting</masterLabel>
+        <translation><!-- Translation &amp; Interpreting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trial Services</masterLabel>
+        <translation><!-- Trial Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trial Support Services</masterLabel>
+        <translation><!-- Trial Support Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trial and Exhibit Binder Production</masterLabel>
+        <translation><!-- Trial and Exhibit Binder Production --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>eFiling</masterLabel>
+        <translation><!-- eFiling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>eRecording</masterLabel>
+        <translation><!-- eRecording --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

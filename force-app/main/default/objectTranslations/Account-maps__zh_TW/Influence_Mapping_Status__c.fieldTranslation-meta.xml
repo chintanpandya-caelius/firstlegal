@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Influence Mapping Status --></label>
+    <name>Influence_Mapping_Status__c</name>
+    <picklistValues>
+        <masterLabel>Complete</masterLabel>
+        <translation><!-- Complete --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gap Identified</masterLabel>
+        <translation><!-- Gap Identified --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Progress</masterLabel>
+        <translation><!-- In Progress --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Needs Review</masterLabel>
+        <translation><!-- Needs Review --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Started</masterLabel>
+        <translation><!-- Not Started --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- TimeZone --></label>
+    <name>TimeZone__c</name>
+    <picklistValues>
+        <masterLabel>CST</masterLabel>
+        <translation><!-- CST --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EST</masterLabel>
+        <translation><!-- EST --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MST</masterLabel>
+        <translation><!-- MST --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PST</masterLabel>
+        <translation><!-- PST --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

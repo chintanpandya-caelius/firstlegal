@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StaticResource xmlns="http://soap.sforce.com/2006/04/metadata">
+    <cacheControl>Public</cacheControl>
+    <contentType>application/zip</contentType>
+    <description>System-generated SNA sf_default_cdn ESW_FL_Portal_Guest_User_17905924928171</description>
+</StaticResource>

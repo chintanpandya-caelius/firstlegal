@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Acc Layout</layout>
+        <sections>
+            <label><!-- Account Summary --></label>
+            <section>Account Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Marketing Suppression --></label>
+            <section>Marketing Suppression</section>
+        </sections>
+        <sections>
+            <label><!-- SLA --></label>
+            <section>SLA</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Account Layout</layout>
+        <sections>
+            <label><!-- Account Summary --></label>
+            <section>Account Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Marketing Suppression --></label>
+            <section>Marketing Suppression</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Assign to Me --></label>
+        <name>Assign_to_Me</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Child Account --></label>
+        <name>Child_Account</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Generate GlobalAccountId --></label>
+        <name>Generate_GlobalAccountId</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Join Team Request --></label>
+        <name>Join_Team_Request</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Log a Call --></label>
+        <name>Log_a_Followup_Call</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Request --></label>
+        <name>Update</name>
+    </quickActions>
+    <recordTypes>
+        <description><!-- Record type for use for Courts --></description>
+        <label><!-- Court --></label>
+        <name>Court</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Account record type for customers of First Legal --></description>
+        <label><!-- Customer --></label>
+        <name>Customer</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Facility --></label>
+        <name>Facility</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Professional Association --></label>
+        <name>Professional_Association</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Vendor --></label>
+        <name>Vendor</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- ABM Manual Flag Reason is required when ABM Target is active. --></errorMessage>
+        <name>ABM_Target_Requires_Manual_Flag_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Start Date must be a past or present date. --></errorMessage>
+        <name>Account_Start_Date_Cannot_Be_Future</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You do not have permission to edit the Start Date. Please contact a Sales Operations and Accounting and Collection Agent/Manage user to edit this field. --></errorMessage>
+        <name>Account_Start_Date_Edit_Restriction</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Account status cannot be active until the terms and condition are completed --></errorMessage>
+        <name>Account_status_cannot_be_changed_toactiv</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- ABM Segment can only be set for Accounts with an approved ABM-eligible Type and Sub Type combination. --></errorMessage>
+        <name>Am_Eligible</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This Account is no longer in &apos;New&apos; status. Critical fields (billing, invoicing, shipping, tax, terms, etc.) can’t be edited. Please submit a request/ticket to the Account Admin team for changes. --></errorMessage>
+        <name>Lock_Critical_Fields_After_New</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This Account has been claimed by another user and is locked for edits. --></errorMessage>
+        <name>Prevent_Editing_By_Non_Assigned_User</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Account Admin may edit Customer Account Records. Click Update Request to submit an update ticket. --></errorMessage>
+        <name>Prevent_Edits_On_Non_Customer_Accounts</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This Account cannot be assigned to the selected parent because the selected parent is already a child Account. The MVP hierarchy supports only one parent-to-child level. --></errorMessage>
+        <name>Prevent_Grandchild_Account</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only integration specialist user by MuleSoft can update the global accountId. --></errorMessage>
+        <name>Prevent_Non_Integration_user_for_GlAccId</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Enter an ABM Manual Flag Reason when manually adding this Account to the ABM target list. --></errorMessage>
+        <name>Require_ABM_Manual_Flag_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You do not have permission to modify ABM targeting fields. Please contact Marketing Operations. --></errorMessage>
+        <name>Restrict_ABM_Field_Changes</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You do not have permission to manually update ABM target fields. --></errorMessage>
+        <name>Restrict_ABM_Target_Manual_Update</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You do not have permission to create or edit Customer Account records. Please contact your administrator. --></errorMessage>
+        <name>Restrict_Customer_Accounts_Edit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Dispatch Zone must contain exactly 2 numeric digits (e.g., 01, 10, 99). --></errorMessage>
+        <name>VR_DispatchZone_Must_Be_Two_Digits</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Deca0Wct000003W4GTEA0 --></label>
+        <name>Deca0Wct000003W4GTEA0</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Onboarding_Documents --></label>
+        <name>Send_Onboarding_Documents</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- test --></label>
+        <name>test</name>
+    </webLinks>
+</CustomObjectTranslation>

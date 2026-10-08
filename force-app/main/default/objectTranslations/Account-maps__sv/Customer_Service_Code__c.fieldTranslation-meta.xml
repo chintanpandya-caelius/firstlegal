@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Customer Service Code --></label>
+    <name>Customer_Service_Code__c</name>
+    <picklistValues>
+        <masterLabel>Copying</masterLabel>
+        <translation><!-- Copying --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Data Handling</masterLabel>
+        <translation><!-- Data Handling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Depository</masterLabel>
+        <translation><!-- Depository --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Printing</masterLabel>
+        <translation><!-- Printing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scanning</masterLabel>
+        <translation><!-- Scanning --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

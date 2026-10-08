@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesIncludeBosses>false</doesIncludeBosses>
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>efilingmanagement@firstlegal.com</email>
+    <name>eFiling leadership escalation Team</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>eFiling_leadership_escalation_Team</publicGroup>
+        </publicGroups>
+    </queueMembers>
+    <queueRoutingConfig>Ticket_Routing_Config</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Area Designation 2 --></label>
+    <name>Area_Designation_2__c</name>
+    <relationshipLabel><!-- Zipcodes (Area Designation 2) --></relationshipLabel>
+</CustomFieldTranslation>

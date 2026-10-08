@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status --></label>
+    <name>Status__c</name>
+    <picklistValues>
+        <masterLabel>Exception/Escalation Required</masterLabel>
+        <translation><!-- Exception/Escalation Required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Final Release Completed</masterLabel>
+        <translation><!-- Final Release Completed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Final Release Required</masterLabel>
+        <translation><!-- Final Release Required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>First Look Complete - Approved for Final Release</masterLabel>
+        <translation><!-- First Look Complete - Approved for Final Release --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>First Look Expired - No Response</masterLabel>
+        <translation><!-- First Look Expired - No Response --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>First Look Identified</masterLabel>
+        <translation><!-- First Look Identified --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>First Look Sent - Review Pending</masterLabel>
+        <translation><!-- First Look Sent - Review Pending --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending Record Preparation</masterLabel>
+        <translation><!-- Pending Record Preparation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ready for First Look Release</masterLabel>
+        <translation><!-- Ready for First Look Release --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Redaction Request Received</masterLabel>
+        <translation><!-- Redaction Request Received --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Redactions in Process</masterLabel>
+        <translation><!-- Redactions in Process --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

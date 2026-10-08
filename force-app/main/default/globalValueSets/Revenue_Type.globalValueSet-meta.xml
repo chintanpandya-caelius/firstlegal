@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>New Logo</fullName>
+        <default>true</default>
+        <label>New Logo</label>
+    </customValue>
+    <customValue>
+        <fullName>Cross Sell</fullName>
+        <default>false</default>
+        <label>Cross Sell</label>
+    </customValue>
+    <customValue>
+        <fullName>Portfolio Growth</fullName>
+        <default>false</default>
+        <label>Portfolio Growth</label>
+    </customValue>
+    <customValue>
+        <fullName>Class Action</fullName>
+        <default>false</default>
+        <label>Class Action</label>
+    </customValue>
+    <customValue>
+        <fullName>Matter Specific Project</fullName>
+        <default>false</default>
+        <label>Matter Specific Project</label>
+    </customValue>
+    <customValue>
+        <fullName>Worker&apos;s Comp</fullName>
+        <default>false</default>
+        <label>Worker&apos;s Comp</label>
+    </customValue>
+    <customValue>
+        <fullName>Upsell</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Upsell</label>
+    </customValue>
+    <masterLabel>Revenue Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

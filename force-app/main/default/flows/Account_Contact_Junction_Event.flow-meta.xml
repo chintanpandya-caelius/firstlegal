@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>67.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <constants>
+        <name>AccountContactRelationship</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Account Contact Relationship</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <name>CustomerRecordType</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Customer</stringValue>
+        </value>
+    </constants>
+    <decisions>
+        <name>Is_Customer</name>
+        <label>Is Customer</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Customer</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Account.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Account.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>CustomerRecordType</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Publish_Junction_Event</targetReference>
+            </connector>
+            <label>Customer</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>varChangeType</name>
+        <dataType>String</dataType>
+        <expression>IF(ISBLANK({!$Record__Prior.Id}), &quot;Create&quot;, &quot;Update&quot;)</expression>
+    </formulas>
+    <interviewLabel>Account Contact Junction Event {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Account Contact Junction Event</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Account</name>
+        <label>Get Account</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Is_Customer</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.AccountId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Account</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Account</targetReference>
+        </connector>
+        <filterFormula>AND(
+  NOT(ISCHANGED({!$Record.Latest_Sync_Denial_Timestamp__c})),
+  NOT(ISPICKVAL({!$Record.Account.Status__c}, &quot;New&quot;)),
+  NOT(ISBLANK({!$Record.Account.accountID__c})),
+  NOT(ISPICKVAL({!$Record.Contact.Status__c}, &quot;New&quot;))
+)</filterFormula>
+        <object>AccountContactRelation</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>Publish_Junction_Event</name>
+        <label>Publish Junction Event</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <flowName>Publish_Account_Data_Change</flowName>
+        <inputAssignments>
+            <name>inChangeActualId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>inChangedObject</name>
+            <value>
+                <elementReference>AccountContactRelationship</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>inChangeParentId</name>
+            <value>
+                <elementReference>$Record.AccountId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>inChangeType</name>
+            <value>
+                <elementReference>varChangeType</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+</Flow>

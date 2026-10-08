@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Case Counsel --></label>
+    <name>Case_Counsel__c</name>
+    <relationshipLabel><!-- Opposing Counsels --></relationshipLabel>
+</CustomFieldTranslation>

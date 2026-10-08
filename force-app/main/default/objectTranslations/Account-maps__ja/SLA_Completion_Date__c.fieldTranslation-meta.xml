@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The date and time when the SLA was completed. For Leads and Opportunities, this is set on the first qualifying user update. For Customer Accounts, it is set through the authorized SLA Completion action. Once populated, it must not be reset. --></help>
+    <label><!-- SLA Completion Date --></label>
+    <name>SLA_Completion_Date__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Division --></label>
+    <name>Division__c</name>
+    <picklistValues>
+        <masterLabel>Account Admin / Cash Apply /Accounting</masterLabel>
+        <translation><!-- Account Admin / Cash Apply /Accounting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Court and Process (eFiling / Court / Process)</masterLabel>
+        <translation><!-- Court and Process (eFiling / Court / Process) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Depositions</masterLabel>
+        <translation><!-- Depositions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Digital</masterLabel>
+        <translation><!-- Digital --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCP</masterLabel>
+        <translation><!-- FCP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSP</masterLabel>
+        <translation><!-- FSP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Investigations</masterLabel>
+        <translation><!-- Investigations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New York Court and Process</masterLabel>
+        <translation><!-- New York Court and Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Records (FRR)</masterLabel>
+        <translation><!-- Records (FRR) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>eDiscovery</masterLabel>
+        <translation><!-- eDiscovery --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

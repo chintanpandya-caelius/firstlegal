@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Web Attribution Source --></label>
+    <name>Web_Attribution_Source__c</name>
+    <picklistValues>
+        <masterLabel>Analytics Export</masterLabel>
+        <translation><!-- Analytics Export --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Future Integration</masterLabel>
+        <translation><!-- Future Integration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manual Upload</masterLabel>
+        <translation><!-- Manual Upload --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

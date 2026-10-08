@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Latest Service Time --></label>
+    <name>Latest_Service_Time__c</name>
+</CustomFieldTranslation>

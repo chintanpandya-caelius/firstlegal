@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesIncludeBosses>false</doesIncludeBosses>
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>test@firtlegal.com</email>
+    <name>Sales Operations</name>
+    <queueMembers>
+        <users>
+            <user>ayadav@firstlegal.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Account_Team_Approval__c</sobjectType>
+    </queueSobject>
+</Queue>

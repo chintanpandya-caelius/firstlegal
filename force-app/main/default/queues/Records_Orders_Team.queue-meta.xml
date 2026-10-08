@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesIncludeBosses>true</doesIncludeBosses>
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Records Orders Team</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>Records_Orders_Team</publicGroup>
+        </publicGroups>
+    </queueMembers>
+    <queueRoutingConfig>Ticket_Routing_Config</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

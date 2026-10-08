@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lower_Court_Case__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Lower Court Case</label>
+    <referenceTo>Case__c</referenceTo>
+    <relationshipName>Higher_Court_Cases</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

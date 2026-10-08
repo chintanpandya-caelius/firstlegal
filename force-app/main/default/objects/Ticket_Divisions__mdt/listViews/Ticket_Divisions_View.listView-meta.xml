@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ticket_Divisions_View</fullName>
+    <columns>Record_Type_Label__c</columns>
+    <columns>Record_Type_API_Name__c</columns>
+    <columns>Display_Order__c</columns>
+    <columns>Supported_Objects__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Ticket Divisions View</label>
+</ListView>

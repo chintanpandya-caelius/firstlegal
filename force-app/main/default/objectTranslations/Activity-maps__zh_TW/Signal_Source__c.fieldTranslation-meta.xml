@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Signal Source --></label>
+    <name>Signal_Source__c</name>
+    <picklistValues>
+        <masterLabel>Data Cloud</masterLabel>
+        <translation><!-- Data Cloud --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Event Upload</masterLabel>
+        <translation><!-- Event Upload --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Google Ads Manual Upload</masterLabel>
+        <translation><!-- Google Ads Manual Upload --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MCLE Attendance Upload</masterLabel>
+        <translation><!-- MCLE Attendance Upload --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manual Entry</masterLabel>
+        <translation><!-- Manual Entry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing Cloud</masterLabel>
+        <translation><!-- Marketing Cloud --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salesforce Campaign</masterLabel>
+        <translation><!-- Salesforce Campaign --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salesforce Flow</masterLabel>
+        <translation><!-- Salesforce Flow --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Web Form</masterLabel>
+        <translation><!-- Web Form --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Status Weight % × Lead Score. Feeds into composite score once qualification signal weights are confirmed. --></help>
+    <label><!-- Weighted Status Score --></label>
+    <name>Weighted_Status_Score__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Territory2Rule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <name>Generated Boundary Rule</name>
+    <objectType>Account</objectType>
+    <ruleItems>
+        <field>Account.BillingPostalCode</field>
+        <operation>startsWith</operation>
+        <value>USA_Arizona,USA_California,USA_Colorado,USA_Florida,USA_Georgia,USA_Illinois,USA_Indiana,USA_Kansas,USA_Kentucky,USA_Louisiana,USA_Maine,USA_Massachusetts,USA_Mississippi,USA_Missouri,USA_Montana,USA_Nevada,USA_New Hampshire,USA_New Mexico,USA_New York,USA_North Carolina,USA_North Dakota,USA_Oklahoma,USA_Oregon,USA_Pennsylvania,USA_Rhode Island,USA_South Carolina,USA_Tennessee,USA_Texas,USA_Virginia,USA_Washington,USA_Wyoming</value>
+    </ruleItems>
+</Territory2Rule>

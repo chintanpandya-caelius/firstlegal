@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Territory2 xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accountAccessLevel>Read</accountAccessLevel>
+    <caseAccessLevel>Read</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <name>AS</name>
+    <opportunityAccessLevel>None</opportunityAccessLevel>
+    <parentTerritory>t_0MAct000000BXyLGAW_0MIct000000B8rtGAC_a1yct000000cbJZAAY_673d0f0dff929e3aaa608</parentTerritory>
+    <ruleAssociations>
+        <inherited>false</inherited>
+        <ruleName>r_assignment_0_0MAct000000BXyLGAW_0MIct000000B8tXGAS_a1yct000000cbKEAAY_5ffd2e85</ruleName>
+    </ruleAssociations>
+    <territory2Type>National</territory2Type>
+</Territory2>

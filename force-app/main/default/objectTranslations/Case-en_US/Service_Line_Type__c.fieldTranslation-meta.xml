@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Service Line Type --></label>
+    <name>Service_Line_Type__c</name>
+    <picklistValues>
+        <masterLabel>A la carte</masterLabel>
+        <translation><!-- A la carte --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Account Maintenance</masterLabel>
+        <translation><!-- Account Maintenance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COD</masterLabel>
+        <translation><!-- COD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Calendar Response</masterLabel>
+        <translation><!-- Calendar Response --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Comp Copy</masterLabel>
+        <translation><!-- Comp Copy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Conference Room</masterLabel>
+        <translation><!-- Conference Room --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Confirmation Request</masterLabel>
+        <translation><!-- Confirmation Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Court Call</masterLabel>
+        <translation><!-- Court Call --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Court Reporter Questions</masterLabel>
+        <translation><!-- Court Reporter Questions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Court Reporter Transcript / Invoice</masterLabel>
+        <translation><!-- Court Reporter Transcript / Invoice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Declaration</masterLabel>
+        <translation><!-- Declaration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Declarations / CNR</masterLabel>
+        <translation><!-- Declarations / CNR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Documentation / Information</masterLabel>
+        <translation><!-- Documentation / Information --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Errata / Read &amp; Sign Request</masterLabel>
+        <translation><!-- Errata / Read &amp; Sign Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal</masterLabel>
+        <translation><!-- Internal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Invoice Approval</masterLabel>
+        <translation><!-- Invoice Approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Invoice Handling</masterLabel>
+        <translation><!-- Invoice Handling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Invoices</masterLabel>
+        <translation><!-- Invoices --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Motion to Quash / Objection</masterLabel>
+        <translation><!-- Motion to Quash / Objection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Account Forms (Delivery Options)</masterLabel>
+        <translation><!-- New Account Forms (Delivery Options) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Filing</masterLabel>
+        <translation><!-- New Filing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Setting</masterLabel>
+        <translation><!-- New Setting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Setting – Next-Day Add-On</masterLabel>
+        <translation><!-- New Setting – Next-Day Add-On --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Website Lead</masterLabel>
+        <translation><!-- New Website Lead --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Action Needed</masterLabel>
+        <translation><!-- No Action Needed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Original / Hard Copy</masterLabel>
+        <translation><!-- Original / Hard Copy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Portal Request</masterLabel>
+        <translation><!-- Portal Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Production Location Inquiry</masterLabel>
+        <translation><!-- Production Location Inquiry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Production Response</masterLabel>
+        <translation><!-- Production Response --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quote Request</masterLabel>
+        <translation><!-- Quote Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Record Received</masterLabel>
+        <translation><!-- Record Received --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Record Received Unidentified</masterLabel>
+        <translation><!-- Record Received Unidentified --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Request for Court Reporter Info</masterLabel>
+        <translation><!-- Request for Court Reporter Info --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Revision Request</masterLabel>
+        <translation><!-- Revision Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rough Request</masterLabel>
+        <translation><!-- Rough Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales Rep Question</masterLabel>
+        <translation><!-- Sales Rep Question --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transcript Status</masterLabel>
+        <translation><!-- Transcript Status --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Translation / Transcription</masterLabel>
+        <translation><!-- Translation / Transcription --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vendor Cancel</masterLabel>
+        <translation><!-- Vendor Cancel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vendor Confirm</masterLabel>
+        <translation><!-- Vendor Confirm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Video Request</masterLabel>
+        <translation><!-- Video Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Video Response</masterLabel>
+        <translation><!-- Video Response --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Voicemail</masterLabel>
+        <translation><!-- Voicemail --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

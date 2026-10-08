@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Division --></label>
+    <name>Division__c</name>
+    <picklistValues>
+        <masterLabel>Client Care</masterLabel>
+        <translation><!-- Client Care --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Court and Process</masterLabel>
+        <translation><!-- Court and Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Court and Process (eFiling)</masterLabel>
+        <translation><!-- Court and Process (eFiling) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Depositions</masterLabel>
+        <translation><!-- Depositions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Digital</masterLabel>
+        <translation><!-- Digital --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>First Class Program</masterLabel>
+        <translation><!-- First Class Program --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>First Connect</masterLabel>
+        <translation><!-- First Connect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Records</masterLabel>
+        <translation><!-- Records --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>eDiscovery</masterLabel>
+        <translation><!-- eDiscovery --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

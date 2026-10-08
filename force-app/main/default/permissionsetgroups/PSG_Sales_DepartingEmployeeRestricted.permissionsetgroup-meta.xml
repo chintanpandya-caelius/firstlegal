@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>PSG_Sales_DepartingEmployeeRestricted</label>
+    <mutingPermissionSets>MPS_DepartingEmployee_Restrictions</mutingPermissionSets>
+    <permissionSets>PS_ConvertLead</permissionSets>
+    <permissionSets>PS_Dashboards_Create_Edit</permissionSets>
+    <permissionSets>PS_DuplicateRecordSetRead_edit</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

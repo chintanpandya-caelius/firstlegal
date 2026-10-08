@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Case SubType --></label>
+    <name>Case_SubType__c</name>
+    <picklistValues>
+        <masterLabel>Adversary Proceeding</masterLabel>
+        <translation><!-- Adversary Proceeding --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agency Appeal</masterLabel>
+        <translation><!-- Agency Appeal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Antitrust</masterLabel>
+        <translation><!-- Antitrust --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Arbitration Confirmation</masterLabel>
+        <translation><!-- Arbitration Confirmation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chapter 11</masterLabel>
+        <translation><!-- Chapter 11 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chapter 13</masterLabel>
+        <translation><!-- Chapter 13 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chapter 15</masterLabel>
+        <translation><!-- Chapter 15 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chapter 7</masterLabel>
+        <translation><!-- Chapter 7 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Civil Rights</masterLabel>
+        <translation><!-- Civil Rights --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consumer Protection</masterLabel>
+        <translation><!-- Consumer Protection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contract Dispute</masterLabel>
+        <translation><!-- Contract Dispute --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Drug Offense</masterLabel>
+        <translation><!-- Drug Offense --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ERISA</masterLabel>
+        <translation><!-- ERISA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Employment</masterLabel>
+        <translation><!-- Employment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Environmental</masterLabel>
+        <translation><!-- Environmental --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Federal Indictment</masterLabel>
+        <translation><!-- Federal Indictment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Felony</masterLabel>
+        <translation><!-- Felony --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Foreign Judgment</masterLabel>
+        <translation><!-- Foreign Judgment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fraud</masterLabel>
+        <translation><!-- Fraud --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Garnishment</masterLabel>
+        <translation><!-- Garnishment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intellectual Property</masterLabel>
+        <translation><!-- Intellectual Property --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>License / Permit</masterLabel>
+        <translation><!-- License / Permit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Misdemeanor</masterLabel>
+        <translation><!-- Misdemeanor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product Liability</masterLabel>
+        <translation><!-- Product Liability --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Regulatory Proceeding</masterLabel>
+        <translation><!-- Regulatory Proceeding --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Securities</masterLabel>
+        <translation><!-- Securities --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Subpoena</masterLabel>
+        <translation><!-- Subpoena --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tort – Negligence</masterLabel>
+        <translation><!-- Tort – Negligence --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tort – Personal Injury</masterLabel>
+        <translation><!-- Tort – Personal Injury --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tort – Property Damage</masterLabel>
+        <translation><!-- Tort – Property Damage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Violent Crime</masterLabel>
+        <translation><!-- Violent Crime --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>White Collar</masterLabel>
+        <translation><!-- White Collar --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>PSG CO (Party) - Manager</label>
+    <permissionSets>PS_Party_Create</permissionSets>
+    <permissionSets>PS_Party_Delete</permissionSets>
+    <permissionSets>PS_Party_ModifyAll</permissionSets>
+    <permissionSets>PS_Party_RT_Delivery</permissionSets>
+    <permissionSets>PS_Party_RT_Deponent</permissionSets>
+    <permissionSets>PS_Party_RT_Pickup</permissionSets>
+    <permissionSets>PS_Party_RT_Servee</permissionSets>
+    <permissionSets>PS_Party_RT_Subject_Patient</permissionSets>
+    <permissionSets>PS_Party_Read</permissionSets>
+    <permissionSets>PS_Party_Update</permissionSets>
+    <permissionSets>PS_Party_ViewAll</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

@@ -1,0 +1,308 @@
+<template>
+    <div class="profile-card">
+        <div class="profile-header">
+            <h2 class="profile-title">Profile</h2>
+        </div>
+
+        <!-- Profile Photo -->
+        <div class="profile-photo-section">
+            <div class="profile-photo-wrapper">
+                <img
+                    src={profilePhotoUrl}
+                    alt="Profile Photo"
+                    class="profile-photo"
+                />
+
+                <lightning-button-icon
+                    icon-name="utility:edit"
+                    variant="bare"
+                    size="x-small"
+                    class="photo-edit-icon"
+                    onclick={openPhotoModal}
+                    alternative-text="Change Profile Photo"
+                    title="Change Profile Photo"
+                ></lightning-button-icon>
+            </div>
+        </div>
+
+        <template if:true={isLoading}>
+            <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+        </template>
+
+        <lightning-record-edit-form
+            object-api-name={objectApiName}
+            record-id={userId}
+            onsuccess={handleSuccess}
+            onerror={handleError}
+        >
+            <div class="slds-grid slds-wrap slds-gutters_medium">
+                <!-- Name -->
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 field-row">
+                    <span class="field-label">Name</span>
+                    <div class="field-value-row">
+                        <template if:true={isEditingName}>
+                            <div class="edit-stack">
+                                <lightning-input-field
+                                    field-name={firstNameField}
+                                    variant="label-hidden"
+                                    class="edit-input"
+                                ></lightning-input-field>
+                                <lightning-input-field
+                                    field-name={lastNameField}
+                                    variant="label-hidden"
+                                    class="edit-input"
+                                ></lightning-input-field>
+                            </div>
+                        </template>
+                        <template if:false={isEditingName}>
+                            <lightning-output-field field-name={nameField} variant="label-hidden" class="output-value"></lightning-output-field>
+                            <lightning-button-icon
+                                icon-name="utility:edit"
+                                variant="bare"
+                                size="x-small"
+                                class="edit-icon"
+                                data-field="Name"
+                                onclick={handleEdit}
+                                alternative-text="Edit Name"
+                                title="Edit Name"
+                            ></lightning-button-icon>
+                        </template>
+                    </div>
+                </div>
+
+                <!-- Company Name -->
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 field-row">
+                    <span class="field-label">Company Name</span>
+                    <div class="field-value-row">
+                        <template if:true={isEditingCompany}>
+                            <lightning-input-field
+                                field-name={companyNameField}
+                                variant="label-hidden"
+                                class="edit-input"
+                            ></lightning-input-field>
+                        </template>
+                        <template if:false={isEditingCompany}>
+                            <lightning-output-field field-name={companyNameField} variant="label-hidden" class="output-value"></lightning-output-field>
+                            <lightning-button-icon
+                                icon-name="utility:edit"
+                                variant="bare"
+                                size="x-small"
+                                class="edit-icon"
+                                data-field="Company"
+                                onclick={handleEdit}
+                                alternative-text="Edit Company Name"
+                                title="Edit Company Name"
+                            ></lightning-button-icon>
+                        </template>
+                    </div>
+                </div>
+
+                <!-- Email (read only) -->
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 field-row">
+                    <span class="field-label">
+                        Email
+                    </span>
+                    <div class="field-value-row">
+                        <lightning-output-field field-name={emailField} variant="label-hidden" class="output-value"></lightning-output-field>
+                    </div>
+                </div>
+
+                <!-- Phone -->
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 field-row">
+                    <span class="field-label">Phone</span>
+                    <div class="field-value-row">
+                        <template if:true={isEditingPhone}>
+                            <lightning-input-field
+                                field-name={phoneField}
+                                variant="label-hidden"
+                                class="edit-input"
+                            ></lightning-input-field>
+                        </template>
+                        <template if:false={isEditingPhone}>
+                            <lightning-output-field field-name={phoneField} variant="label-hidden" class="output-value"></lightning-output-field>
+                            <lightning-button-icon
+                                icon-name="utility:edit"
+                                variant="bare"
+                                size="x-small"
+                                class="edit-icon"
+                                data-field="Phone"
+                                onclick={handleEdit}
+                                alternative-text="Edit Phone"
+                                title="Edit Phone"
+                            ></lightning-button-icon>
+                        </template>
+                    </div>
+                </div>
+
+                <!-- Mobile -->
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 field-row">
+                    <span class="field-label">Mobile</span>
+                    <div class="field-value-row">
+                        <template if:true={isEditingMobile}>
+                            <lightning-input-field
+                                field-name={mobilePhoneField}
+                                variant="label-hidden"
+                                class="edit-input"
+                            ></lightning-input-field>
+                        </template>
+                        <template if:false={isEditingMobile}>
+                            <lightning-output-field field-name={mobilePhoneField} variant="label-hidden" class="output-value"></lightning-output-field>
+                            <lightning-button-icon
+                                icon-name="utility:edit"
+                                variant="bare"
+                                size="x-small"
+                                class="edit-icon"
+                                data-field="Mobile"
+                                onclick={handleEdit}
+                                alternative-text="Edit Mobile"
+                                title="Edit Mobile"
+                            ></lightning-button-icon>
+                        </template>
+                    </div>
+                </div>
+
+                <!-- About Me (full width) -->
+                <div class="slds-col slds-size_1-of-1 field-row">
+                    <span class="field-label">About Me</span>
+                    <div class="field-value-row">
+                        <template if:true={isEditingAboutMe}>
+                            <lightning-input-field
+                                field-name={aboutMeField}
+                                variant="label-hidden"
+                                class="edit-input"
+                            ></lightning-input-field>
+                        </template>
+                        <template if:false={isEditingAboutMe}>
+                            <lightning-output-field field-name={aboutMeField} variant="label-hidden" class="output-value"></lightning-output-field>
+                            <lightning-button-icon
+                                icon-name="utility:edit"
+                                variant="bare"
+                                size="x-small"
+                                class="edit-icon"
+                                data-field="AboutMe"
+                                onclick={handleEdit}
+                                alternative-text="Edit About Me"
+                                title="Edit About Me"
+                            ></lightning-button-icon>
+                        </template>
+                    </div>
+                </div>
+            </div>
+
+            <template if:true={isAnyFieldEditing}>
+                <div class="save-bar">
+                    <lightning-button
+                        variant="neutral"
+                        type="button"
+                        label="Cancel"
+                        class="cancel-button"
+                        onclick={handleCancel}
+                    ></lightning-button>
+                    <lightning-button
+                        variant="brand"
+                        type="submit"
+                        label="Save"
+                        class="save-button"
+                    ></lightning-button>
+                </div>
+            </template>
+        </lightning-record-edit-form>
+    </div>
+
+    <!-- Update Photo Modal -->
+<template if:true={isPhotoModalOpen}>
+    <section
+        role="dialog"
+        tabindex="-1"
+        aria-modal="true"
+        aria-labelledby="update-photo-heading"
+        class="slds-modal slds-fade-in-open photo-modal"
+    >
+        <div class="slds-modal__container">
+
+            <!-- Header -->
+            <header class="slds-modal__header photo-modal-header">
+                <button
+                    class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                    title="Close"
+                    onclick={closePhotoModal}
+                >
+                    <lightning-icon
+                        icon-name="utility:close"
+                        alternative-text="Close"
+                        size="small"
+                    ></lightning-icon>
+                </button>
+
+                <h2
+                    id="update-photo-heading"
+                    class="photo-modal-title"
+                >
+                    Update Photo
+                </h2>
+            </header>
+
+            <!-- Body -->
+            <div class="slds-modal__content photo-modal-content">
+
+                <p class="photo-upload-info">
+                    You can upload a JPG, GIF or PNG file.
+                    Maximum file size is 16 MB.
+                </p>
+
+                <div class="photo-upload-button-container">
+
+                    <input
+                        type="file"
+                        class="photo-file-input"
+                        accept=".jpg,.jpeg,.gif,.png,image/jpeg,image/gif,image/png"
+                        onchange={handlePhotoSelected}
+                    />
+
+                    <lightning-button
+                        variant="neutral"
+                        label="Upload Image"
+                        icon-name="utility:upload"
+                        onclick={triggerPhotoUpload}
+                    ></lightning-button>
+
+                </div>
+
+                <div class="current-photo-label">
+                    Current Photo:
+                </div>
+
+                <div class="modal-photo-wrapper">
+                    <img
+                        src={photoPreviewUrl}
+                        alt="Current Profile Photo"
+                        class="modal-profile-photo"
+                    />
+                </div>
+
+            </div>
+
+            <!-- Footer -->
+            <footer class="slds-modal__footer photo-modal-footer">
+
+                <lightning-button
+                    label="Cancel"
+                    variant="neutral"
+                    onclick={closePhotoModal}
+                ></lightning-button>
+
+                <lightning-button
+                    label="Save"
+                    variant="brand"
+                    onclick={savePhoto}
+                    disabled={isPhotoSaveDisabled}
+                ></lightning-button>
+
+            </footer>
+
+        </div>
+    </section>
+
+    <div class="slds-backdrop slds-backdrop_open"></div>
+</template>
+</template>

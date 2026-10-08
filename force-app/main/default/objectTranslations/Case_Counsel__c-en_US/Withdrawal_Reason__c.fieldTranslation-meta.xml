@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Withdrawal Reason --></label>
+    <name>Withdrawal_Reason__c</name>
+    <picklistValues>
+        <masterLabel>Attorney Departure from Firm</masterLabel>
+        <translation><!-- Attorney Departure from Firm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Case Concluded</masterLabel>
+        <translation><!-- Case Concluded --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Client Decision</masterLabel>
+        <translation><!-- Client Decision --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Conflict Identified</masterLabel>
+        <translation><!-- Conflict Identified --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Court Order</masterLabel>
+        <translation><!-- Court Order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Substitution of Counsel</masterLabel>
+        <translation><!-- Substitution of Counsel --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

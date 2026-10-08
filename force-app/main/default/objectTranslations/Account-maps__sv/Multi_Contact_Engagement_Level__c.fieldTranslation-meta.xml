@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Multi-Contact Engagement Level --></label>
+    <name>Multi_Contact_Engagement_Level__c</name>
+    <picklistValues>
+        <masterLabel>High Multi-Contact Engagement</masterLabel>
+        <translation><!-- High Multi-Contact Engagement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Multi-Contact Engagement</masterLabel>
+        <translation><!-- Multi-Contact Engagement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>None</masterLabel>
+        <translation><!-- None --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Single Contact Engagement</masterLabel>
+        <translation><!-- Single Contact Engagement --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

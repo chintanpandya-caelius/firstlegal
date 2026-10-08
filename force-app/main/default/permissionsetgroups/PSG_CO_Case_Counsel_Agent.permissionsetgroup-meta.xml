@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>PSG CO (Case Counsel) - Agent</label>
+    <permissionSets>PS_CaseCounsel_Create</permissionSets>
+    <permissionSets>PS_CaseCounsel_Read</permissionSets>
+    <permissionSets>PS_CaseCounsel_Update</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

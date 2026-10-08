@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>PSG COs (Room Related) - Agent</label>
+    <permissionSets>PS_DepositionSession_Create</permissionSets>
+    <permissionSets>PS_DepositionSession_Read</permissionSets>
+    <permissionSets>PS_DepositionSession_Update</permissionSets>
+    <permissionSets>PS_RoomRate_Create</permissionSets>
+    <permissionSets>PS_RoomRate_Read</permissionSets>
+    <permissionSets>PS_RoomRate_Update</permissionSets>
+    <permissionSets>PS_Room_Create</permissionSets>
+    <permissionSets>PS_Room_Read</permissionSets>
+    <permissionSets>PS_Room_Update</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

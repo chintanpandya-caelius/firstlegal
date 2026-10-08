@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>AccountIdentityEndtPointURL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AccountIdentityEndtPointURL</shortDescription>
+        <value>https://api-qa.usw2.firstlegal.com/web-exp/v1/api/accountidentity</value>
+    </labels>
+    <labels>
+        <fullName>AccountIdentity_Client_id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AccountIdentity_Client_id</shortDescription>
+        <value>a4a2951fd1cf493aae2c1ab3b9d56dec</value>
+    </labels>
+    <labels>
+        <fullName>AccountIdentity_Client_secret</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AccountIdentity_Client_secret</shortDescription>
+        <value>B0d96250916a43079f6597F899E68E4D</value>
+    </labels>
+    <labels>
+        <fullName>Account_At_Risk_Days_Threshold</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Account At Risk Days Threshold</shortDescription>
+        <value>60</value>
+    </labels>
+    <labels>
+        <fullName>Bypass_Account_Lifecycle_Validation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Bypass_Account_Lifecycle_Validation</shortDescription>
+        <value>False</value>
+    </labels>
+    <labels>
+        <fullName>Bypass_Account_Validation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Bypass Account Validation</shortDescription>
+        <value>False</value>
+    </labels>
+    <labels>
+        <fullName>DefaultFCPCallUsNumber</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DefaultFCPCallUsNumber</shortDescription>
+        <value>800-181-2233</value>
+    </labels>
+    <labels>
+        <fullName>DefaultFSPCallUsNumber</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DefaultFSPCallUsNumber</shortDescription>
+        <value>800-899-0111</value>
+    </labels>
+    <labels>
+        <fullName>Excluded_Ack_Emails</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Excluded Ack Emails</shortDescription>
+        <value>aphelp@gtlaw.com,support@ecovadis.com,crmsupport@firstlegal.com,ds.noreply@firstlegal.com,ds.no-reply@firstlegal.com,ocinfo@aaasvc.com,invoicecaptureprocessing@concursolutions.com,accountspayable@keystonepacific.com,conciergesupport@firstlegal.com,acctpaydept@hklaw.com,updates@freshstatus.io,bdcvcss@comdata.com</value>
+    </labels>
+    <labels>
+        <fullName>External_Case_Detail_Base</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The base to use for hyperlinks in emails | External</shortDescription>
+        <value>https://firstlegallitigation--qa.sandbox.my.site.com/help/case/</value>
+    </labels>
+    <labels>
+        <fullName>FSP_General_POD</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FSP General POD</shortDescription>
+        <value>FSP_General_POD</value>
+    </labels>
+    <labels>
+        <fullName>FirstServiceProgram_Email</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FirstServiceProgram Email</shortDescription>
+        <value>qa_service@firstlegal.com</value>
+    </labels>
+    <labels>
+        <fullName>Internal_Case_Detail_Base</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The base to use for hyperlinks in emails</shortDescription>
+        <value>https://firstlegallitigation--qa.sandbox.lightning.force.com/lightning/r/Case/</value>
+    </labels>
+    <labels>
+        <fullName>Internal_Notification_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The custom notification to send to internal users based on ticker statuses</shortDescription>
+        <value>Ticket {0} is currently {1}.</value>
+    </labels>
+    <labels>
+        <fullName>MuleSoft_Integration_Company_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MuleSoft Integration Company Id</shortDescription>
+        <value>COMP-7890</value>
+    </labels>
+    <labels>
+        <fullName>MuleSoft_Integration_Corporate_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MuleSoft Integration Corporate Id</shortDescription>
+        <value>CORP-1001</value>
+    </labels>
+    <labels>
+        <fullName>MuleSoft_Integration_Customer_Code</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MuleSoft Integration Customer Code</shortDescription>
+        <value>CUST-4567</value>
+    </labels>
+    <labels>
+        <fullName>Mulesoft_Integration_User_Email</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MuleSoft Integration User Email</shortDescription>
+        <value>salesforcetraininguser@firstlegal.com</value>
+    </labels>
+    <labels>
+        <fullName>Rush_Priority_Keywords</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Rush_Priority_Keywords</shortDescription>
+        <value>URGENT, ASAP, AS SOON AS POSSIBLE, RUSH, ASSOONASPOSSIBLE</value>
+    </labels>
+    <labels>
+        <fullName>Template_Autoclose</fullName>
+        <categories>Ticket</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Template Autoclose</shortDescription>
+        <value>Ticket Closed thro Automation (Stage=Closed)</value>
+    </labels>
+    <labels>
+        <fullName>Template_Reminder_1</fullName>
+        <categories>Ticket</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Template Reminder 1</shortDescription>
+        <value>Reminder 1 (Stage=Waiting on Customer)</value>
+    </labels>
+    <labels>
+        <fullName>Template_Reminder_2</fullName>
+        <categories>Ticket</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Template Reminder 2</shortDescription>
+        <value>Reminder 2 before autoclose (Stage=Waiting on Customer)</value>
+    </labels>
+    <labels>
+        <fullName>Template_Reminder_3</fullName>
+        <categories>Ticket</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Template Reminder 3</shortDescription>
+        <value>Reminder 3 before autoclose (Stage=Waiting on Customer)</value>
+    </labels>
+    <labels>
+        <fullName>Template_SLA_Breach</fullName>
+        <categories>Ticket</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Template SLA Breach</shortDescription>
+        <value>SLA Breach – Internal Alert</value>
+    </labels>
+    <labels>
+        <fullName>Template_SLA_Warning</fullName>
+        <categories>Ticket</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Template SLA Warning</shortDescription>
+        <value>SLA Breach Warning – Internal Alert</value>
+    </labels>
+    <labels>
+        <fullName>Template_Waiting_on_3rd_party</fullName>
+        <categories>Ticket</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Template Waiting on 3rd party</shortDescription>
+        <value>Court / Vendor Response Delay (Stage=Waiting on Third Party)</value>
+    </labels>
+    <labels>
+        <fullName>Ticket_Creation_via_LWC</fullName>
+        <categories>Ticket</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Ticket Creation via LWC</shortDescription>
+        <value>Your ticket ${ticketNumber} has been created successfully.</value>
+    </labels>
+    <labels>
+        <fullName>eDiscovery_Escalation_Supervisor</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>eDiscovery_Escalation_Supervisor</shortDescription>
+        <value>005aZ00000b5QZFQA2</value>
+    </labels>
+    <labels>
+        <fullName>eDiscovery_Queue_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>eDiscovery_Queue_Id</shortDescription>
+        <value>00Gct0000055EMbEAM</value>
+    </labels>
+    <labels>
+        <fullName>eDiscovery_Supervisor_Backup_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>eDiscovery_Supervisor_Backup_Id</shortDescription>
+        <value>005aZ00000b5QZFQA2</value>
+    </labels>
+    <labels>
+        <fullName>eDiscovery_Supervisor_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>eDiscovery_Supervisor_Id</shortDescription>
+        <value>005aZ00000b5QZFQA2</value>
+    </labels>
+</CustomLabels>

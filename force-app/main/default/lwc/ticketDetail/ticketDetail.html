@@ -1,0 +1,209 @@
+<template>
+    <div class="ticket-detail">
+
+        <a href="javascript:void(0);" class="back-link" onclick={handleBackClick}>
+            &larr; Back
+        </a>
+
+        <template if:true={isLoading}>
+            <lightning-spinner alternative-text="Loading ticket" size="small"></lightning-spinner>
+        </template>
+
+        <template if:true={errorMessage}>
+            <div class="error-banner">{errorMessage}</div>
+        </template>
+
+        <template if:true={ticket}>
+            <div class="ticket-header">
+                <p class="eyebrow">TICKET</p>
+                <h1 class="ticket-title">{ticket.caseNumber} &mdash; {ticket.subject}</h1>
+
+                <div class="meta-grid">
+                    <div class="meta-item">
+                        <p class="meta-label">OPENED</p>
+                        <p class="meta-value">
+                            <lightning-formatted-date-time value={ticket.openedDate} month="2-digit" day="2-digit" year="numeric"></lightning-formatted-date-time>
+                        </p>
+                    </div>
+                    <div class="meta-item">
+                        <p class="meta-label">STATUS</p>
+                        <p class="meta-value">{ticket.status}</p>
+                    </div>
+                    <div class="meta-item">
+                        <p class="meta-label">PRIORITY</p>
+                        <p class="meta-value">{ticket.priority}</p>
+                    </div>
+                    <div class="meta-item">
+                        <p class="meta-label">TICKET TYPE</p>
+                        <p class="meta-value">{ticket.type}</p>
+                    </div>
+                    <div class="meta-item">
+                        <p class="meta-label">DUE DATE</p>
+                        <p class="meta-value">
+                            <template if:true={ticket.dueDate}>
+                                <lightning-formatted-date-time value={ticket.dueDate} month="2-digit" day="2-digit" year="numeric"></lightning-formatted-date-time>
+                            </template>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <lightning-tabset variant="default" class="ticket-tabset">
+
+                <lightning-tab label="Details">
+                    <div class="details-panel">
+                        <div class="details-grid">
+                            <div class="field">
+                                <p class="field-label">TICKET TYPE</p>
+                                <p class="field-value">{ticket.type}</p>
+                            </div>
+                            <div class="field">
+                                <p class="field-label">SUB-TYPE</p>
+                                <p class="field-value">{ticket.subType}</p>
+                            </div>
+                            <div class="field">
+                                <p class="field-label">PRIORITY</p>
+                                <p class="field-value">{ticket.priority}</p>
+                            </div>
+                            <div class="field">
+                                <p class="field-label">STATUS</p>
+                                <p class="field-value">{ticket.status}</p>
+                            </div>
+                            <div class="field">
+                                <p class="field-label">MATTER NUMBER</p>
+                                <p class="field-value">{ticket.matterNumber}</p>
+                            </div>
+                            <div class="field">
+                                <p class="field-label">CASE NUMBER</p>
+                                <p class="field-value">{ticket.externalCaseNumber}</p>
+                            </div>
+                            <div class="field">
+                                <p class="field-label">CREATED BY</p>
+                                <p class="field-value">{ticket.createdByName}</p>
+                            </div>
+                        </div>
+
+                        <div class="field field-full">
+                            <p class="field-label">DESCRIPTION</p>
+                            <p class="field-value">{ticket.description}</p>
+                        </div>
+
+                        <!-- <div class="field field-full">
+                            <p class="field-label">ATTACHMENTS</p>
+                            <template if:true={hasAttachments}>
+                                <template for:each={formattedAttachments} for:item="att">
+                                    <div key={att.contentDocumentId} class="attachment-card">
+                                        <div class="attachment-info" onclick={handlePreviewClick} data-version-id={att.contentVersionId}>
+                                            <span class="attachment-name">{att.title}.{att.fileExtension}</span>
+                                            <span class="attachment-meta">
+                                                <lightning-formatted-date-time value={att.uploadDate} month="short" day="2-digit" year="numeric"></lightning-formatted-date-time>
+                                                &nbsp;&middot;&nbsp;{att.sizeLabel}
+                                            </span>
+                                        </div>
+                                        <lightning-button-icon
+                                            icon-name="utility:download"
+                                            alternative-text="Download"
+                                            title="Download"
+                                            variant="border-filled"
+                                            onclick={handleDownloadClick}
+                                            data-version-id={att.contentVersionId}
+                                        ></lightning-button-icon>
+                                    </div>
+                                </template>
+                            </template>
+                            <template if:false={hasAttachments}>
+                                <p class="empty-text">No attachments</p>
+                            </template>
+                        </div> -->
+                        <div class="field field-full">
+                        <p class="field-label">ATTACHMENTS</p>
+                        <template if:true={hasAttachments}>
+                            <template for:each={formattedAttachments} for:item="att">
+                                <div key={att.contentDocumentId} class="attachment-card">
+                                    <button
+                                        type="button"
+                                        class="attachment-link"
+                                        onclick={handlePreviewClick}
+                                        data-version-id={att.contentVersionId}
+                                        title="Preview"
+                                    >
+                                        <span class="attachment-name">{att.title}.{att.fileExtension}</span>
+                                        <span class="attachment-meta">
+                                            <lightning-formatted-date-time
+                                                value={att.uploadDate}
+                                                month="short"
+                                                day="2-digit"
+                                                year="numeric"
+                                            ></lightning-formatted-date-time>
+                                            &nbsp;&middot;&nbsp;{att.sizeLabel}
+                                        </span>
+                                    </button>
+
+                                    <lightning-button-icon
+                                        icon-name="utility:download"
+                                        alternative-text="Download"
+                                        title="Download"
+                                        variant="border-filled"
+                                        onclick={handleDownloadClick}
+                                        data-version-id={att.contentVersionId}
+                                    ></lightning-button-icon>
+                                </div>
+                            </template>
+                        </template>
+                        <template if:false={hasAttachments}>
+                            <p class="empty-text">No attachments</p>
+                        </template>
+                    </div>
+                    </div>
+                </lightning-tab>
+
+    <lightning-tab label="Activities">
+        <div class="activities-panel">
+            <div class="post-box">
+                <lightning-textarea
+                    variant="label-hidden"
+                    placeholder="Share an update or ask a question…"
+                    value={newComment}
+                    onchange={handleCommentChange}
+                ></lightning-textarea>
+                <button class="post-button" disabled={isPostDisabled} onclick={handlePost}>Post</button>
+            </div>
+
+            <template if:true={hasActivities}>
+                <template for:each={activities} for:item="activity">
+                    <div key={activity.Id} class="activity-item">
+                        <div class="avatar">{activity.initials}</div>
+
+                        <div class="activity-body">
+                            <p class="activity-meta">
+                                <span class="activity-author">{activity.authorName}</span>
+                                <lightning-formatted-date-time
+                                    value={activity.CreatedDate}
+                                    month="2-digit"
+                                    day="2-digit"
+                                    year="numeric"
+                                    hour="2-digit"
+                                    minute="2-digit"
+                                >
+                                </lightning-formatted-date-time>
+                            </p>
+
+                            <lightning-formatted-rich-text
+                                value={activity.body}
+                                class="activity-text">
+                            </lightning-formatted-rich-text>
+                        </div>
+                    </div>
+                </template>
+            </template>
+
+            <template if:false={hasActivities}>
+                <p class="empty-text">No activity yet</p>
+            </template>
+        </div>
+    </lightning-tab>
+
+            </lightning-tabset>
+        </template>
+    </div>
+</template>

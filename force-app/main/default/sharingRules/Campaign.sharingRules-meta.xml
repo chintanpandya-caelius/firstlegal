@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Marketing_Campaign_Access</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Marketing Campaign Access</label>
+        <sharedTo>
+            <group>Campaign_Access</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Marketing_Users</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

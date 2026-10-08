@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Am Law 100</fullName>
+        <default>false</default>
+        <label>Am Law 100</label>
+    </customValue>
+    <customValue>
+        <fullName>Am Law 200</fullName>
+        <default>false</default>
+        <label>Am Law 200</label>
+    </customValue>
+    <customValue>
+        <fullName>Growth</fullName>
+        <default>false</default>
+        <label>Growth</label>
+    </customValue>
+    <customValue>
+        <fullName>Top 100 Revenue</fullName>
+        <default>false</default>
+        <label>Top 100 Revenue</label>
+    </customValue>
+    <customValue>
+        <fullName>House</fullName>
+        <default>false</default>
+        <label>House</label>
+    </customValue>
+    <masterLabel>Segment</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

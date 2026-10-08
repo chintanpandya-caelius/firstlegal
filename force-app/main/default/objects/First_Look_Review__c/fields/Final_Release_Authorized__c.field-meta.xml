@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Final_Release_Authorized__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates review conditions have been satisfied. Required before final release.</description>
+    <label>Final Release Authorized</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This is created to change the last modified date of Account Plans to test NOVA 5695.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>PS_Sales_ChangeLastModifiedDate</label>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>CreateAuditFields</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>UpdateWithInactiveOwner</name>
+    </userPermissions>
+</PermissionSet>

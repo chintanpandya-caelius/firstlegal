@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Account Team Approval</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Account Team Approvals</value>
+    </caseValues>
+    <quickActions>
+        <label><!-- View Join Request --></label>
+        <name>View_Join_Request</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

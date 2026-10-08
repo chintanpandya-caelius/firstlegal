@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Internal_Note</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Shared_Note_Compact_Layout</compactLayoutAssignment>
+    <label>Internal Note</label>
+    <picklistValues>
+        <picklist>Note_Type__c</picklist>
+        <values>
+            <fullName>Agent Note</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call Wrap-Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External Note</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>First Class</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal Note</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PM Note</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pain Point</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Commitment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portal Response</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supervisor Note</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technical</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Publication_Status__c</picklist>
+        <values>
+            <fullName>Archived</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Draft</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Published</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unpublished</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Service_Line__c</picklist>
+        <values>
+            <fullName>Accounting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Court %26 Process</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Depositions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E-Discovery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FCP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Client Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investigations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Records</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Visibility__c</picklist>
+        <values>
+            <fullName>Chatbot Visible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Visible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External Visible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal Only</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Partner Visible</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

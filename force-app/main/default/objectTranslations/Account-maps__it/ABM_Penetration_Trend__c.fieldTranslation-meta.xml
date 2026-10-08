@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- ABM Penetration Trend --></label>
+    <name>ABM_Penetration_Trend__c</name>
+    <picklistValues>
+        <masterLabel>Declining</masterLabel>
+        <translation><!-- Declining --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Growing</masterLabel>
+        <translation><!-- Growing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stable</masterLabel>
+        <translation><!-- Stable --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

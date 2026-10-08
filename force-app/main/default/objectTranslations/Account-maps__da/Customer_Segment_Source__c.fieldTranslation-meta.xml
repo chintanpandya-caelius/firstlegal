@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Source of the customer segment: Manual, Migration, Data Cloud or Sales Review. Maintained by: Marketing Operations. --></help>
+    <label><!-- Customer Segment Source --></label>
+    <name>Customer_Segment_Source__c</name>
+    <picklistValues>
+        <masterLabel>Data Cloud</masterLabel>
+        <translation><!-- Data Cloud --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manual</masterLabel>
+        <translation><!-- Manual --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing Operations</masterLabel>
+        <translation><!-- Marketing Operations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Migration</masterLabel>
+        <translation><!-- Migration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales Review</masterLabel>
+        <translation><!-- Sales Review --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

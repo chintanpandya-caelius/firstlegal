@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_SubType__c</fullName>
+    <label>Case SubType</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Contract Dispute</fullName>
+                <default>false</default>
+                <label>Contract Dispute</label>
+            </value>
+            <value>
+                <fullName>Tort – Personal Injury</fullName>
+                <default>false</default>
+                <label>Tort – Personal Injury</label>
+            </value>
+            <value>
+                <fullName>Tort – Property Damage</fullName>
+                <default>false</default>
+                <label>Tort – Property Damage</label>
+            </value>
+            <value>
+                <fullName>Tort – Negligence</fullName>
+                <default>false</default>
+                <label>Tort – Negligence</label>
+            </value>
+            <value>
+                <fullName>Product Liability</fullName>
+                <default>false</default>
+                <label>Product Liability</label>
+            </value>
+            <value>
+                <fullName>Fraud</fullName>
+                <default>false</default>
+                <label>Fraud</label>
+            </value>
+            <value>
+                <fullName>Intellectual Property</fullName>
+                <default>false</default>
+                <label>Intellectual Property</label>
+            </value>
+            <value>
+                <fullName>Employment</fullName>
+                <default>false</default>
+                <label>Employment</label>
+            </value>
+            <value>
+                <fullName>Civil Rights</fullName>
+                <default>false</default>
+                <label>Civil Rights</label>
+            </value>
+            <value>
+                <fullName>Environmental</fullName>
+                <default>false</default>
+                <label>Environmental</label>
+            </value>
+            <value>
+                <fullName>ERISA</fullName>
+                <default>false</default>
+                <label>ERISA</label>
+            </value>
+            <value>
+                <fullName>Securities</fullName>
+                <default>false</default>
+                <label>Securities</label>
+            </value>
+            <value>
+                <fullName>Antitrust</fullName>
+                <default>false</default>
+                <label>Antitrust</label>
+            </value>
+            <value>
+                <fullName>Consumer Protection</fullName>
+                <default>false</default>
+                <label>Consumer Protection</label>
+            </value>
+            <value>
+                <fullName>Felony</fullName>
+                <default>false</default>
+                <label>Felony</label>
+            </value>
+            <value>
+                <fullName>Misdemeanor</fullName>
+                <default>false</default>
+                <label>Misdemeanor</label>
+            </value>
+            <value>
+                <fullName>Federal Indictment</fullName>
+                <default>false</default>
+                <label>Federal Indictment</label>
+            </value>
+            <value>
+                <fullName>White Collar</fullName>
+                <default>false</default>
+                <label>White Collar</label>
+            </value>
+            <value>
+                <fullName>Drug Offense</fullName>
+                <default>false</default>
+                <label>Drug Offense</label>
+            </value>
+            <value>
+                <fullName>Violent Crime</fullName>
+                <default>false</default>
+                <label>Violent Crime</label>
+            </value>
+            <value>
+                <fullName>Chapter 7</fullName>
+                <default>false</default>
+                <label>Chapter 7</label>
+            </value>
+            <value>
+                <fullName>Chapter 11</fullName>
+                <default>false</default>
+                <label>Chapter 11</label>
+            </value>
+            <value>
+                <fullName>Chapter 13</fullName>
+                <default>false</default>
+                <label>Chapter 13</label>
+            </value>
+            <value>
+                <fullName>Chapter 15</fullName>
+                <default>false</default>
+                <label>Chapter 15</label>
+            </value>
+            <value>
+                <fullName>Adversary Proceeding</fullName>
+                <default>false</default>
+                <label>Adversary Proceeding</label>
+            </value>
+            <value>
+                <fullName>Regulatory Proceeding</fullName>
+                <default>false</default>
+                <label>Regulatory Proceeding</label>
+            </value>
+            <value>
+                <fullName>Agency Appeal</fullName>
+                <default>false</default>
+                <label>Agency Appeal</label>
+            </value>
+            <value>
+                <fullName>License / Permit</fullName>
+                <default>false</default>
+                <label>License / Permit</label>
+            </value>
+            <value>
+                <fullName>Subpoena</fullName>
+                <default>false</default>
+                <label>Subpoena</label>
+            </value>
+            <value>
+                <fullName>Garnishment</fullName>
+                <default>false</default>
+                <label>Garnishment</label>
+            </value>
+            <value>
+                <fullName>Foreign Judgment</fullName>
+                <default>false</default>
+                <label>Foreign Judgment</label>
+            </value>
+            <value>
+                <fullName>Arbitration Confirmation</fullName>
+                <default>false</default>
+                <label>Arbitration Confirmation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

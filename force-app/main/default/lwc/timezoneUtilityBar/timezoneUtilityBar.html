@@ -1,0 +1,19 @@
+<template>
+    <div class="container">
+
+        <template for:each={timezoneRows} for:item="row">
+            <div class="time-row" key={row.label}>
+                <div class="left-section">
+                    <span class={row.statusClass}></span>
+
+                    <div class="label-section">
+                        <div class="label">{row.label}</div>
+                        <div class="timezone">{row.timezone}</div>
+                    </div>
+                </div>
+
+                <div class="time">{row.time}</div>
+            </div>
+        </template>
+    </div>
+</template>

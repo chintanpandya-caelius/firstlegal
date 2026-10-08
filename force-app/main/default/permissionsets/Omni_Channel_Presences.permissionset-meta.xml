@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Omni Channel Presences</label>
+    <servicePresenceStatusAccesses>
+        <enabled>true</enabled>
+        <servicePresenceStatus>After_Call_Work_ACW</servicePresenceStatus>
+    </servicePresenceStatusAccesses>
+    <servicePresenceStatusAccesses>
+        <enabled>true</enabled>
+        <servicePresenceStatus>Available</servicePresenceStatus>
+    </servicePresenceStatusAccesses>
+    <servicePresenceStatusAccesses>
+        <enabled>true</enabled>
+        <servicePresenceStatus>Break</servicePresenceStatus>
+    </servicePresenceStatusAccesses>
+    <servicePresenceStatusAccesses>
+        <enabled>true</enabled>
+        <servicePresenceStatus>Busy_On_Call</servicePresenceStatus>
+    </servicePresenceStatusAccesses>
+    <servicePresenceStatusAccesses>
+        <enabled>true</enabled>
+        <servicePresenceStatus>Lunch</servicePresenceStatus>
+    </servicePresenceStatusAccesses>
+    <servicePresenceStatusAccesses>
+        <enabled>true</enabled>
+        <servicePresenceStatus>Meetings</servicePresenceStatus>
+    </servicePresenceStatusAccesses>
+    <servicePresenceStatusAccesses>
+        <enabled>true</enabled>
+        <servicePresenceStatus>Research</servicePresenceStatus>
+    </servicePresenceStatusAccesses>
+    <servicePresenceStatusAccesses>
+        <enabled>true</enabled>
+        <servicePresenceStatus>Training</servicePresenceStatus>
+    </servicePresenceStatusAccesses>
+</PermissionSet>

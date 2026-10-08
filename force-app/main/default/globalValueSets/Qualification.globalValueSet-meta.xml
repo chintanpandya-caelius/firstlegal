@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>MQL</fullName>
+        <default>false</default>
+        <label>MQL</label>
+    </customValue>
+    <customValue>
+        <fullName>Non-MQL</fullName>
+        <default>false</default>
+        <label>Non-MQL</label>
+    </customValue>
+    <customValue>
+        <fullName>SQL</fullName>
+        <default>false</default>
+        <label>SQL</label>
+    </customValue>
+    <customValue>
+        <fullName>Unqualified</fullName>
+        <default>false</default>
+        <label>Unqualified</label>
+    </customValue>
+    <masterLabel>Qualification</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

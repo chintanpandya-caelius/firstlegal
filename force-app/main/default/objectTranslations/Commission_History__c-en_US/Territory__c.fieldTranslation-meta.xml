@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Territory --></label>
+    <name>Territory__c</name>
+    <picklistValues>
+        <masterLabel>FRE</masterLabel>
+        <translation><!-- FRE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LAS</masterLabel>
+        <translation><!-- LAS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LAX</masterLabel>
+        <translation><!-- LAX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PHX</masterLabel>
+        <translation><!-- PHX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RIV</masterLabel>
+        <translation><!-- RIV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAC</masterLabel>
+        <translation><!-- SAC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAN</masterLabel>
+        <translation><!-- SAN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SFO</masterLabel>
+        <translation><!-- SFO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SJC</masterLabel>
+        <translation><!-- SJC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SNA</masterLabel>
+        <translation><!-- SNA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TUC</masterLabel>
+        <translation><!-- TUC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VEN</masterLabel>
+        <translation><!-- VEN --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

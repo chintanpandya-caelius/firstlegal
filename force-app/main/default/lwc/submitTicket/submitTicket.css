@@ -1,0 +1,24 @@
+.ticket-form {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.section-header {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.0625rem;
+    text-transform: uppercase;
+    color: #514f4d;
+    margin-top: 1rem;
+}
+
+.optional-note {
+    text-transform: none;
+    font-weight: 400;
+    color: #706e6b;
+    font-size: 0.75rem;
+}
+
+.required-note {
+    color: #ba0517;
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- ABM Score Tier --></label>
+    <name>ABM_Score_Tier__c</name>
+    <picklistValues>
+        <masterLabel>Not Prioritized</masterLabel>
+        <translation><!-- Not Prioritized --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Suppressed</masterLabel>
+        <translation><!-- Suppressed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tier 1 - Strategic / Diamond</masterLabel>
+        <translation><!-- Tier 1 - Strategic / Diamond --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tier 2 - Named / Gold</masterLabel>
+        <translation><!-- Tier 2 - Named / Gold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tier 3 - Nurture / Silver</masterLabel>
+        <translation><!-- Tier 3 - Nurture / Silver --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

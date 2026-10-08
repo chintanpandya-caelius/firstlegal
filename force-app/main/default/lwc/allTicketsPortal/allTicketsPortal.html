@@ -1,0 +1,101 @@
+<template>
+    <lightning-card>
+        <div class="slds-grid slds-grid_vertical-align-center header-dropdown-container">
+            <lightning-combobox
+                name="filterType"
+                label="View Filter"
+                variant="label-hidden"
+                value={filterType}
+                options={filterOptions}
+                onchange={handleFilterChange}
+                class="dropdown-filter-title">
+            </lightning-combobox>
+        </div>
+
+        <div class="slds-var-p-horizontal_medium">
+            <div class="slds-grid slds-grid_vertical-align-center slds-wrap slds-var-m-bottom_medium">
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_6-of-12">
+                    <p class="slds-text-color_weak">{totalRecords} items</p>
+                </div>
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_6-of-12 slds-var-p-top_small slds-medium-p-top_none">
+                    <lightning-input 
+                        type="search" 
+                        variant="label-hidden" 
+                        placeholder="Search this list..." 
+                        onchange={handleSearchChange}
+                        value={searchTerm}>
+                    </lightning-input>
+                </div>
+            </div>
+
+            <template if:true={tickets.length}>
+                <div class="slds-scrollable_x">
+                    <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                        <thead>
+                            <tr class="slds-line-height_reset">
+                                <th scope="col"><div class="slds-truncate" title="TICKET #">TICKET #</div></th>
+                                <th scope="col"><div class="slds-truncate" title="SUBJECT">SUBJECT</div></th>
+                                <th scope="col"><div class="slds-truncate" title="STATUS">STATUS</div></th>
+                                <th scope="col"><div class="slds-truncate" title="DATE/TIME MODIFIED">DATE/TIME MODIFIED</div></th>
+                                <th scope="col"><div class="slds-truncate" title="CONTACT FULL NAME">CONTACT FULL NAME</div></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template for:each={tickets} for:item="ticket">
+                                <tr key={ticket.Id} class="slds-hint-parent">
+                                    <td>
+                                        <div class="slds-truncate">
+                                            <a data-id={ticket.Id} onclick={navigateToTicketDetail}>{ticket.CaseNumber}</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="slds-truncate" title={ticket.Subject}>
+                                            <a data-id={ticket.Id} onclick={navigateToTicketDetail}>{ticket.Subject}</a>
+                                        </div>
+                                    </td>
+                                    <td><div class="slds-truncate">{ticket.Status}</div></td>
+                                    <td>
+                                        <div class="slds-truncate">
+                                            <lightning-formatted-date-time value={ticket.LastModifiedDate} year="numeric" month="short" day="2-digit" hour="2-digit" minute="2-digit"></lightning-formatted-date-time>
+                                        </div>
+                                    </td>
+                                    <td><div class="slds-truncate">{ticket.Contact.Name}</div></td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="slds-grid slds-grid_vertical-align-center slds-grid_align-spread slds-var-m-top_medium">
+                    <div class="slds-col flex-row">
+                        <span class="slds-var-m-right_small">Show:</span>
+                        <lightning-combobox
+                            name="pageSize"
+                            label="Page Size"
+                            variant="label-hidden"
+                            value={pageSize}
+                            options={pageSizeOptions}
+                            onchange={handlePageSizeChange}
+                            class="inline-combobox">
+                        </lightning-combobox>
+                    </div>
+                    <div class="slds-col">
+                        <lightning-button label="Previous" onclick={handlePrevious} disabled={isFirstPage} class="slds-var-m-right_x-small"></lightning-button>
+                        <span class="slds-var-p-horizontal_x-small">Page {pageNumber} of {totalPages}</span>
+                        <lightning-button label="Next" onclick={handleNext} disabled={isLastPage} class="slds-var-m-left_x-small"></lightning-button>
+                    </div>
+                </div>
+
+                <div class="slds-border_top slds-var-m-top_medium slds-var-p-top_small slds-text-align_center">
+                    <a onclick={handleViewAllRoute} class="slds-text-link_reset slds-text-heading_small styling-link-color">View All</a>
+                </div>
+            </template>
+
+            <template if:false={tickets.length}>
+                <div class="slds-align_absolute-center slds-var-p-around_large slds-text-color_weak">
+                    No matching records found.
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

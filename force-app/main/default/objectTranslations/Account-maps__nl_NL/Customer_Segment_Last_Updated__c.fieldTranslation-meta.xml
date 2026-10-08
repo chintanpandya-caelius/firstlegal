@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Tracks the latest segmentation update. Maintained by: Marketing Operations. --></help>
+    <label><!-- Customer Segment Last Updated --></label>
+    <name>Customer_Segment_Last_Updated__c</name>
+</CustomFieldTranslation>

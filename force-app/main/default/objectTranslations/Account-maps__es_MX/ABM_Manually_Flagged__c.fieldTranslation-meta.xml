@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Indicates that this Account was manually added to the ABM target list by an authorized user instead of being selected by criteria-based automation. --></help>
+    <label><!-- ABM Manually Flagged --></label>
+    <name>ABM_Manually_Flagged__c</name>
+</CustomFieldTranslation>

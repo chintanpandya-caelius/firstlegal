@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesIncludeBosses>true</doesIncludeBosses>
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>fdsorders@firstlegal.com</email>
+    <name>Digital LA Team</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>Digital_LA_Team</publicGroup>
+        </publicGroups>
+    </queueMembers>
+    <queueRoutingConfig>Ticket_Routing_Config</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

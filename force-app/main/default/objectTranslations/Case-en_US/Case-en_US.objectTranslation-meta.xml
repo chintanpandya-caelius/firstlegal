@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Ticket</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Tickets</value>
+    </caseValues>
+    <layouts>
+        <layout>Ticket Layout</layout>
+        <sections>
+            <label><!-- Accounting --></label>
+            <section>Accounting</section>
+        </sections>
+        <sections>
+            <label><!-- Customer &amp; Contact Information --></label>
+            <section>Customer &amp; Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Interaction and Collaboration --></label>
+            <section>Interaction and Collaboration</section>
+        </sections>
+        <sections>
+            <label><!-- SLA and Service Tracking --></label>
+            <section>SLA and Service Tracking</section>
+        </sections>
+        <sections>
+            <label><!-- System Tracking Fields --></label>
+            <section>System Tracking Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Ticket Identification --></label>
+            <section>Ticket Identification</section>
+        </sections>
+        <sections>
+            <label><!-- Ticket Source and Owner --></label>
+            <section>Ticket Source and Owner</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- CloseCaseLightning --></label>
+        <name>CloseCaseLightning</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewChildCase --></label>
+        <name>NewChildCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- SendEmail --></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Transfer --></label>
+        <name>Transfer</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Transfer (Internal) --></label>
+        <name>Transfer_Internal</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Accounting --></label>
+        <name>Accounting</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- First Class Program --></label>
+        <name>CCT</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- First Service Program --></label>
+        <name>Client_Care</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Court and Process --></label>
+        <name>Court_and_Process</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Depositions --></label>
+        <name>Depositions</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Digital --></label>
+        <name>Digital</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- EDiscovery --></label>
+        <name>EDiscovery</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Investigations --></label>
+        <name>Investigations</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Records --></label>
+        <name>Records</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Due Date cannot be set to a past date and time. --></errorMessage>
+        <name>Due_Date_Past_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The field exceeds the maximum character and formatting limit. --></errorMessage>
+        <name>Notes_Validation_Rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Refund Received must be a positive value. --></errorMessage>
+        <name>Refund_Received_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Requested Refund Amount must be a positive value. --></errorMessage>
+        <name>Requested_Refund_Amount_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- SLA Start Date cannot be set to a past date and time. --></errorMessage>
+        <name>SLA_Start_Date_Past_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- SLA Start Date cannot be after the SLA Stop Date. --></errorMessage>
+        <name>SLA_Stop_Date_Before_Start_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- SLA Stop Date cannot be in the past, nor can it be earlier than the SLA Start Date. --></errorMessage>
+        <name>SLA_Stop_Date_Validation</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Serve Address Type --></label>
+    <name>Serve_Address_Type__c</name>
+    <picklistValues>
+        <masterLabel>Business</masterLabel>
+        <translation><!-- Business --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Residential</masterLabel>
+        <translation><!-- Residential --></translation>
+    </picklistValues>
+</CustomFieldTranslation>
