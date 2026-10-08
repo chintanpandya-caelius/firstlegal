@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Collections Group --></label>
+    <name>Collections_Group__c</name>
+    <picklistValues>
+        <masterLabel>ACH</masterLabel>
+        <translation><!-- ACH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>APY</masterLabel>
+        <translation><!-- APY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CRH</masterLabel>
+        <translation><!-- CRH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FOV</masterLabel>
+        <translation><!-- FOV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INS</masterLabel>
+        <translation><!-- INS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N180</masterLabel>
+        <translation><!-- N180 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N30</masterLabel>
+        <translation><!-- N30 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N360</masterLabel>
+        <translation><!-- N360 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N45</masterLabel>
+        <translation><!-- N45 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N60</masterLabel>
+        <translation><!-- N60 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N720</masterLabel>
+        <translation><!-- N720 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N75</masterLabel>
+        <translation><!-- N75 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N90</masterLabel>
+        <translation><!-- N90 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

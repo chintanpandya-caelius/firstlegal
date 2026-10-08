@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Contact_Added__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Checks whether the associated note is added by the contact associated with the ticket (used for notifications in the service stream)</description>
+    <label>Is Contact Added</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

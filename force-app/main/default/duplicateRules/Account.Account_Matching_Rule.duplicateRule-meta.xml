@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DuplicateRule xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <actionOnInsert>Block</actionOnInsert>
+    <actionOnUpdate>Allow</actionOnUpdate>
+    <alertText>This company already exists.
+Please add the new contact to the existing account instead of creating a duplicate.</alertText>
+    <description xsi:nil="true"/>
+    <duplicateRuleFilter xsi:nil="true"/>
+    <duplicateRuleMatchRules>
+        <matchRuleSObjectType>Contact</matchRuleSObjectType>
+        <matchingRule>Contact_Name_Matching</matchingRule>
+        <objectMapping>
+            <inputObject>Account</inputObject>
+            <mappingFields>
+                <inputField xsi:nil="true"/>
+                <outputField>AccountId</outputField>
+            </mappingFields>
+            <mappingFields>
+                <inputField xsi:nil="true"/>
+                <outputField>FirstName</outputField>
+            </mappingFields>
+            <mappingFields>
+                <inputField xsi:nil="true"/>
+                <outputField>LastName</outputField>
+            </mappingFields>
+            <mappingFields>
+                <inputField>Personal_Email__c</inputField>
+                <outputField>Personal_Email__c</outputField>
+            </mappingFields>
+            <mappingFields>
+                <inputField xsi:nil="true"/>
+                <outputField>Service_Line_Influence__c</outputField>
+            </mappingFields>
+            <mappingFields>
+                <inputField>Work_Email__c</inputField>
+                <outputField>Work_Email__c</outputField>
+            </mappingFields>
+            <outputObject>Contact</outputObject>
+        </objectMapping>
+    </duplicateRuleMatchRules>
+    <isActive>true</isActive>
+    <masterLabel>Account Matching Rule</masterLabel>
+    <operationsOnUpdate>Alert</operationsOnUpdate>
+    <operationsOnUpdate>Report</operationsOnUpdate>
+    <securityOption>EnforceSharingRules</securityOption>
+    <sortOrder>2</sortOrder>
+</DuplicateRule>

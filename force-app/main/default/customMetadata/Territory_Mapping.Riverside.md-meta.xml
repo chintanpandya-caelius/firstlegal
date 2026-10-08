@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Riverside</label>
+    <protected>false</protected>
+    <values>
+        <field>Zip_Codes__c</field>
+        <value xsi:type="xsd:string">91709,91710,91711,91729,91730,91739,91761,91762,91764,91786,92210,92211,92220,92235,92253,92260,92262,92307,92315,92320,92335,92337,92345,92346,92373,92374,92376,92399,92401,92408,92415,92501,92502,92504,92505,92506,92507,92508,92509,92518,92521,92532,92553,92562,92563,92570,92584,92585,92590,92591,92592,92595,92664,92860,92878,92879,92880,92881,92882,92883</value>
+    </values>
+</CustomMetadata>

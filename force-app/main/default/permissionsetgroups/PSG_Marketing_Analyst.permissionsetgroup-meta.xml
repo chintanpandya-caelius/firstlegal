@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Grants foundational marketing platform access required for Marketing Analysts to view and analyze marketing data, reports, dashboards, and campaign performance</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>PSG_Marketing_Analyst</label>
+    <permissionSets>PS_Base_Access</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

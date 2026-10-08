@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>PSG_Sales_MasterDataUsers</label>
+    <permissionSets>PS_AccountContactRelationship_ReadEdit</permissionSets>
+    <permissionSets>PS_AccountTeamApproval_Create</permissionSets>
+    <permissionSets>PS_AccountTeamApproval_Read</permissionSets>
+    <permissionSets>PS_Account_Read</permissionSets>
+    <permissionSets>PS_Contact_Read</permissionSets>
+    <permissionSets>PS_Lead_Read</permissionSets>
+    <permissionSets>PS_Opportunity_Read</permissionSets>
+    <permissionSets>PS_PriceBook_Read</permissionSets>
+    <permissionSets>PS_Product_Read</permissionSets>
+    <permissionSets>PS_Ticket_Create</permissionSets>
+    <permissionSets>PS_WorkOrder_Create</permissionSets>
+    <permissionSets>PS_WorkOrder_Read</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Priority --></label>
+    <name>maps__Priority__c</name>
+    <picklistValues>
+        <masterLabel>High</masterLabel>
+        <translation>Wysoki</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Low</masterLabel>
+        <translation>Niski</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medium</masterLabel>
+        <translation>Średni</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Used</masterLabel>
+        <translation>Nieużywany</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Toewijzing eenheid</label>
+    <name>maps__UnitAssignment__c</name>
+    <relationshipLabel>Aanvullende toewijzingen van eenheden voor territoriumplanningen</relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Risk Indicators --></label>
+    <name>Risk_Indicators__c</name>
+    <picklistValues>
+        <masterLabel>Competitive Displacement Risk</masterLabel>
+        <translation><!-- Competitive Displacement Risk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Declining Volume or Revenue</masterLabel>
+        <translation><!-- Declining Volume or Revenue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Key Contact Turnover</masterLabel>
+        <translation><!-- Key Contact Turnover --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lack of Executive Relationships</masterLabel>
+        <translation><!-- Lack of Executive Relationships --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No recent QBR</masterLabel>
+        <translation><!-- No recent QBR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pricing Pressure</masterLabel>
+        <translation><!-- Pricing Pressure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reduced Engagement / Responsiveness</masterLabel>
+        <translation><!-- Reduced Engagement / Responsiveness --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service Issues or Escalations</masterLabel>
+        <translation><!-- Service Issues or Escalations --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

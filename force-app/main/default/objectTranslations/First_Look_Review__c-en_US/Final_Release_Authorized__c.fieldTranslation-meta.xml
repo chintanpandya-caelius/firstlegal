@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Final Release Authorized --></label>
+    <name>Final_Release_Authorized__c</name>
+</CustomFieldTranslation>

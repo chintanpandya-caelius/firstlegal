@@ -1,0 +1,160 @@
+<template>
+    <!-- Floating Support Button -->
+    <div class="support-fab" onclick={togglePopup}>
+        <lightning-icon icon-name="utility:help" size="small" alternative-text="Support"></lightning-icon>
+        <span>Help</span>
+    </div>
+
+    <template if:true={isPopupOpen}>
+        <div class="popup-wrapper">
+
+            <!-- SCREEN 1: Home -->
+            <template if:true={showHome}>
+                <div class="popup-header">
+                    <span class="header-title">{popupTitle}</span>
+                    <div class="header-icons">
+                        <lightning-icon icon-name="utility:search" size="x-small" onclick={goToSearch} class="icon-btn"></lightning-icon>
+                        <lightning-icon icon-name="utility:chevrondown" size="x-small" onclick={closePopup} class="icon-btn"></lightning-icon>
+                    </div>
+                </div>
+
+                <div class="popup-body">
+                    <p class="tagline">{popupTagline}</p>
+                    <hr />
+
+                    <ul class="menu-list">
+                        <template if:true={showAnnouncements}>
+                            <li class="menu-item" onclick={goToAnnouncements}>
+                                <lightning-icon icon-name="utility:announcement" size="small"></lightning-icon>
+                                <span>Announcements</span>
+                                <lightning-icon icon-name="utility:chevronright" size="x-small" class="chevron"></lightning-icon>
+                            </li>
+                        </template>
+
+                        <template if:true={showGuidedTours}>
+                            <li class="menu-item" onclick={goToGuidedTours}>
+                                <lightning-icon icon-name="utility:journey" size="small"></lightning-icon>
+                                <span>Guided tours</span>
+                                <lightning-icon icon-name="utility:chevronright" size="x-small" class="chevron"></lightning-icon>
+                            </li>
+                        </template>
+
+                        <template if:true={showKbMenuItem}>
+                            <li class="menu-item" onclick={goToKnowledgeBase}>
+                                <lightning-icon icon-name="utility:knowledge_base" size="small"></lightning-icon>
+                                <span>Knowledge base</span>
+                                <lightning-icon icon-name="utility:chevronright" size="x-small" class="chevron"></lightning-icon>
+                            </li>
+                        </template>
+                    </ul>
+
+                    <template if:true={showContactRow}>
+                        <div class="contact-row">
+                            <span class="contact-label">Contact us</span>
+                            <div class="contact-icons">
+                                <template if:true={showEmail}>
+                                    <lightning-icon icon-name="utility:email" size="small" class="icon-btn" onclick={handleEmail}></lightning-icon>
+                                </template>
+                                <template if:true={showPhone}>
+                                    <lightning-icon icon-name="utility:call" size="small" class="icon-btn" onclick={handleCall}></lightning-icon>
+                                </template>
+                                <template if:true={showChat}>
+                                    <lightning-icon icon-name="utility:chat" size="small" class="icon-btn" onclick={handleChat}></lightning-icon>
+                                </template>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+            </template>
+
+            <!-- SCREEN 2: Knowledge Base -->
+            <template if:true={showKnowledgeBase}>
+                <div class="popup-header">
+                    <lightning-icon icon-name="utility:back" size="x-small" onclick={goHome} class="icon-btn"></lightning-icon>
+                    <div class="header-icons">
+                        <lightning-icon icon-name="utility:chevrondown" size="x-small" onclick={closePopup} class="icon-btn"></lightning-icon>
+                    </div>
+                </div>
+
+                <div class="popup-body">
+                    <div class="kb-title-row">
+                        <h2 class="kb-title">Knowledge base</h2>
+                        <template if:true={showKbMenuItem}>
+                            <lightning-icon icon-name="utility:new_window" size="x-small" class="icon-btn" onclick={handleViewAllArticles}></lightning-icon>
+                        </template>
+                    </div>
+
+                    <div class="search-bar">
+                        <lightning-input
+                            type="search"
+                            placeholder="Search"
+                            value={searchTerm}
+                            onchange={handleSearch}
+                            variant="label-hidden">
+                        </lightning-input>
+                    </div>
+
+                    <p class="section-label">Suggested articles</p>
+
+                    <template if:true={hasNoResults}>
+                        <p class="no-results">No articles found.</p>
+                    </template>
+
+                    <ul class="article-list">
+                        <template for:each={displayArticles} for:item="article">
+                            <li key={article.id} class="article-item" data-url={article.urlName} onclick={handleArticleClick}>
+                                <lightning-icon icon-name="utility:file" size="x-small" class="article-icon"></lightning-icon>
+                                <div class="article-content">
+                                    <p class="article-title">{article.title}</p>
+                                    <p class="article-excerpt">{article.excerpt}</p>
+                                </div>
+                            </li>
+                        </template>
+                    </ul>
+                </div>
+            </template>
+
+            <!-- SCREEN 3: Search -->
+            <template if:true={showSearch}>
+                <div class="popup-header">
+                    <lightning-icon icon-name="utility:back" size="x-small" onclick={goHome} class="icon-btn"></lightning-icon>
+                    <span class="header-title">Search</span>
+                    <lightning-icon icon-name="utility:chevrondown" size="x-small" onclick={closePopup} class="icon-btn"></lightning-icon>
+                </div>
+
+                <div class="popup-body">
+                    <div class="search-bar">
+                        <lightning-input
+                            type="search"
+                            placeholder="Search all articles..."
+                            value={searchTerm}
+                            onchange={handleSearch}
+                            variant="label-hidden">
+                        </lightning-input>
+                    </div>
+
+                    <template if:true={isSearching}>
+                        <lightning-spinner alternative-text="Searching..." size="small"></lightning-spinner>
+                    </template>
+
+                    <template if:true={hasNoResults}>
+                        <p class="no-results">No articles found for "<b>{searchTerm}</b>"</p>
+                    </template>
+
+                    <ul class="article-list">
+                        <template for:each={displayArticles} for:item="article">
+                            <li key={article.id} class="article-item" data-url={article.urlName} onclick={handleArticleClick}>
+                                <lightning-icon icon-name="utility:file" size="x-small" class="article-icon"></lightning-icon>
+                                <div class="article-content">
+                                    <p class="article-title">{article.title}</p>
+                                    <p class="article-excerpt">{article.excerpt}</p>
+                                </div>
+                            </li>
+                        </template>
+                    </ul>
+                </div>
+            </template>
+
+        </div>
+    </template>
+</template>

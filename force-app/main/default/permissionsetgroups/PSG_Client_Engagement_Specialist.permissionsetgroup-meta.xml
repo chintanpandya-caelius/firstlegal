@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Grants access to manage accounts, contacts, leads, campaigns, events, tasks, and individual records, with reporting and dashboard capabilities to support client engagement, lead nurturing, and relationship management activities.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>PSG_Client_Engagement_Specialist</label>
+    <permissionSets>PS_Base_Access</permissionSets>
+    <permissionSets>PS_Campaign_CRU</permissionSets>
+    <permissionSets>PS_Dashboards_Create_Edit</permissionSets>
+    <permissionSets>PS_Event_CRUD</permissionSets>
+    <permissionSets>PS_Individual_Edit</permissionSets>
+    <permissionSets>PS_Lead_Edit</permissionSets>
+    <permissionSets>PS_Reports_Create_Edit</permissionSets>
+    <permissionSets>PS_Task_CRUD</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

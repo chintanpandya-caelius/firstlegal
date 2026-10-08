@@ -1,0 +1,28 @@
+<template>
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="#" class="breadcrumb-link" onclick={handleHomeClick}>Knowledge Base</a>
+
+        <template if:true={showDivisionBreadcrumb}>
+            <span class="breadcrumb-separator" aria-hidden="true">›</span>
+            <template if:true={isArticleBreadcrumb}>
+                <a href="#" class="breadcrumb-link" onclick={handleDivisionClick}>{resolvedDivisionLabel}</a>
+            </template>
+            <template if:false={isArticleBreadcrumb}>
+                <span class="breadcrumb-current">{resolvedDivisionLabel}</span>
+            </template>
+        </template>
+
+        <template if:true={showArticleBreadcrumb}>
+            <span class="breadcrumb-separator" aria-hidden="true">›</span>
+            <span class="breadcrumb-current">{resolvedArticleTitle}</span>
+        </template>
+
+        <template if:true={isLoading}>
+            <span class="sr-only">Loading breadcrumb</span>
+        </template>
+
+        <template if:true={hasError}>
+            <span class="sr-only">{errorMessage}</span>
+        </template>
+    </nav>
+</template>

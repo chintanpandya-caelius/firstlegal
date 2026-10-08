@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enforce_Templates_against_Intervals</fullName>
+    <active>true</active>
+    <description>Reminder_Intervals__c and Reminder_Email_Templates__c are two separate CSV text fields, but they only make sense as a pair, matched up position-by-position.</description>
+    <errorConditionFormula>LEN(Reminder_Intervals__c) - LEN(SUBSTITUTE(Reminder_Intervals__c, &quot;;&quot;, &quot;&quot;))
+!=
+LEN(Reminder_Email_Templates__c) - LEN(SUBSTITUTE(Reminder_Email_Templates__c, &quot;;&quot;, &quot;&quot;))</errorConditionFormula>
+    <errorMessage>Please provide same numbers of Reminder Intervals and Reminder Email Templates (Semicolon delimited)</errorMessage>
+</ValidationRule>

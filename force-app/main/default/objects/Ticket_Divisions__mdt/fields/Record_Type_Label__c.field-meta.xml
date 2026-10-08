@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Record_Type_Label__c</fullName>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Record Type Label</label>
+    <required>true</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Tier 1 (FCP/FSP)</fullName>
+                <default>true</default>
+                <label>Tier 1 (FCP/FSP)</label>
+            </value>
+            <value>
+                <fullName>Digital</fullName>
+                <default>false</default>
+                <label>Digital</label>
+            </value>
+            <value>
+                <fullName>Depositions</fullName>
+                <default>false</default>
+                <label>Depositions</label>
+            </value>
+            <value>
+                <fullName>Investigations</fullName>
+                <default>false</default>
+                <label>Investigations</label>
+            </value>
+            <value>
+                <fullName>eDiscovery</fullName>
+                <default>false</default>
+                <label>eDiscovery</label>
+            </value>
+            <value>
+                <fullName>Records</fullName>
+                <default>false</default>
+                <label>Records</label>
+            </value>
+            <value>
+                <fullName>Accounting</fullName>
+                <default>false</default>
+                <label>Accounting</label>
+            </value>
+            <value>
+                <fullName>Court and Process</fullName>
+                <default>false</default>
+                <label>Court and Process</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

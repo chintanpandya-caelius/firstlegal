@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Grants access to accounts, contacts, leads, and individuals, with broad record visibility and reporting capabilities to support data governance, stewardship, and data integrity initiatives.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>PSG_Data_Steward</label>
+    <permissionSets>PS_Account_ViewAll</permissionSets>
+    <permissionSets>PS_Base_Access</permissionSets>
+    <permissionSets>PS_Campaign_View_All_system_permissions</permissionSets>
+    <permissionSets>PS_Dashboards_Create_Edit</permissionSets>
+    <permissionSets>PS_Individual_CRUD</permissionSets>
+    <permissionSets>PS_Lead_Edit</permissionSets>
+    <permissionSets>PS_Reports_Create_Edit</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

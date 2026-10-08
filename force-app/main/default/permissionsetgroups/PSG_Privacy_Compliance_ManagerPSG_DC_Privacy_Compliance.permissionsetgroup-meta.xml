@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Grants access to Data Cloud and privacy compliance functions, enabling users to manage customer data, consent, governance, and regulatory compliance activities while maintaining appropriate access to marketing data.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>PSG_Privacy_Compliance_ManagerPSG_DC_Privacy_Compliance</label>
+    <permissionSets>PS_Base_Access</permissionSets>
+    <permissionSets>force__GenieUserEnhancedSecurity</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

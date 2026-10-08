@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Status</label>
+    <required>true</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New</fullName>
+                <default>true</default>
+                <label>New</label>
+            </value>
+            <value>
+                <fullName>Assigned</fullName>
+                <default>false</default>
+                <label>Assigned</label>
+            </value>
+            <value>
+                <fullName>Escalated</fullName>
+                <default>false</default>
+                <label>Escalated</label>
+            </value>
+            <value>
+                <fullName>SLA Breach</fullName>
+                <default>false</default>
+                <label>SLA Breach</label>
+            </value>
+            <value>
+                <fullName>Waiting on 3rd Party</fullName>
+                <default>false</default>
+                <label>Waiting on 3rd Party</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,58 @@
+<template>
+    <div class="contact-wrapper">
+
+        <div class="header">
+            <p class="eyebrow">GET IN TOUCH</p>
+            <h1 class="title">Contact Client Care</h1>
+            <p class="subtitle">We're here to help. Reach our Client Care team using the details below.</p>
+        </div>
+
+        <!-- <template if:true={isFirstClassProgram}> -->
+            <div class="card fcp-card">
+                <div class="fcp-header">
+                    <div class="fcp-icon">★</div>
+                    <div class="fcp-heading">
+                        <div class="fcp-title-row">
+                            <span class="fcp-title">Your First Class Program team</span>
+                            <span class="badge">Priority support</span>
+                        </div>
+                        <p class="fcp-description">{fcpDescription}</p>
+                    </div>
+                </div>
+
+                <div class="detail-row">
+                    <span class="detail-label">Phone</span>
+                    <span class="detail-value">{fcpPhone}</span>
+                    <span class="detail-hours">Mon–Fri, 5:00am–11:59pm PT</span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">Email</span>
+                    <a class="detail-value link" href={fcpEmailHref}>{fcpEmail}</a>
+                </div>
+            </div>
+        <!-- </template> -->
+
+        <div class="card">
+            <p class="general-description">General support, billing, invoices, case status and live chat. (TBD for FCP)</p>
+
+            <div class="detail-row">
+                <span class="detail-label">Phone</span>
+                <span class="detail-value">{generalPhone}</span>
+                <span class="detail-hours">Mon–Fri, 5:00am–11:59pm PT</span>
+            </div>
+            <div class="detail-row">
+                <span class="detail-label">Email</span>
+                <a class="detail-value link" href={generalEmailHref}>{generalEmail}</a>
+            </div>
+        </div>
+
+        <div class="footer-card">
+            <div class="footer-text">
+                <p class="footer-title">Not sure, or want it tracked?</p>
+                <p class="footer-subtitle">Submit a ticket and we'll route it to the right team.</p>
+            </div>
+            <button class="submit-btn" onclick={handleSubmitTicket}>Submit a ticket</button>
+        </div>
+
+    </div>
+</template>

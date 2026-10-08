@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Ticket SubType --></label>
+    <name>Ticket_SubType__c</name>
+    <picklistValues>
+        <masterLabel>Account Updates</masterLabel>
+        <translation><!-- Account Updates --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Basic Company Information</masterLabel>
+        <translation><!-- Basic Company Information --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Billing Dispute</masterLabel>
+        <translation><!-- Billing Dispute --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancellation</masterLabel>
+        <translation><!-- Cancellation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Case summary Request</masterLabel>
+        <translation><!-- Case summary Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Change to Order</masterLabel>
+        <translation><!-- Change to Order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Charge Explanation</masterLabel>
+        <translation><!-- Charge Explanation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Communication Breakdown</masterLabel>
+        <translation><!-- Communication Breakdown --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Copy / Conformed Copy</masterLabel>
+        <translation><!-- Copy / Conformed Copy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Credit / Refund</masterLabel>
+        <translation><!-- Credit / Refund --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dispute</masterLabel>
+        <translation><!-- Dispute --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hold</masterLabel>
+        <translation><!-- Hold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>How to Place Order</masterLabel>
+        <translation><!-- How to Place Order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>How to Retrieve Documents</masterLabel>
+        <translation><!-- How to Retrieve Documents --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Invoice / Statement Request</masterLabel>
+        <translation><!-- Invoice / Statement Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Login / Password</masterLabel>
+        <translation><!-- Login / Password --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing Related</masterLabel>
+        <translation><!-- Marketing Related --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Missed Deadline</masterLabel>
+        <translation><!-- Missed Deadline --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Missing Confirmation</masterLabel>
+        <translation><!-- Missing Confirmation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Order</masterLabel>
+        <translation><!-- New Order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Services</masterLabel>
+        <translation><!-- New Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Order Error</masterLabel>
+        <translation><!-- Order Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Order Status</masterLabel>
+        <translation><!-- Order Status --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Payments</masterLabel>
+        <translation><!-- Payments --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Permissions</masterLabel>
+        <translation><!-- Permissions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Portal Errors</masterLabel>
+        <translation><!-- Portal Errors --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Portal Navigation</masterLabel>
+        <translation><!-- Portal Navigation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Positive Feedback</masterLabel>
+        <translation><!-- Positive Feedback --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pricing Question</masterLabel>
+        <translation><!-- Pricing Question --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Process / Timeline Questions</masterLabel>
+        <translation><!-- Process / Timeline Questions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quality Issue</masterLabel>
+        <translation><!-- Quality Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejection Explanation</masterLabel>
+        <translation><!-- Rejection Explanation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rerate / Rebill / No Bill</masterLabel>
+        <translation><!-- Rerate / Rebill / No Bill --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resubmission</masterLabel>
+        <translation><!-- Resubmission --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rush / Deadline Concern</masterLabel>
+        <translation><!-- Rush / Deadline Concern --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rush Proof of Service</masterLabel>
+        <translation><!-- Rush Proof of Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service Explanation</masterLabel>
+        <translation><!-- Service Explanation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service Failure</masterLabel>
+        <translation><!-- Service Failure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>System Performance</masterLabel>
+        <translation><!-- System Performance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tax Documents (W9 / 1099)</masterLabel>
+        <translation><!-- Tax Documents (W9 / 1099) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Update Billing Information</masterLabel>
+        <translation><!-- Update Billing Information --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Upload / Submission Failure</masterLabel>
+        <translation><!-- Upload / Submission Failure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>User Setup / Removal</masterLabel>
+        <translation><!-- User Setup / Removal --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

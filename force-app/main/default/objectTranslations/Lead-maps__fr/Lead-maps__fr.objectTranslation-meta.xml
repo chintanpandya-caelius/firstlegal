@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <quickActions>
+        <label><!-- Log a Call --></label>
+        <name>Log_a_Followup_Call</name>
+    </quickActions>
+    <validationRules>
+        <errorMessage><!-- Lead cannot be marked as MQL unless it has an email, is not opted out, has not bounced, and mandatory fields are populated. --></errorMessage>
+        <name>Block_MQL_When_Not_Marketable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Address requires a complete record with Country, Street, City, State, and Zip. --></errorMessage>
+        <name>Lead_Complete_Address_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- First Name, Last Name, Company, Email, Phone, Title, and Zip Code are required. --></errorMessage>
+        <name>Lead_Mandatory_Fields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- First Name, Email, and SLA are required when the status is &quot;New&quot; or transitioning from &quot;New&quot;. --></errorMessage>
+        <name>Lead_New_RequiredAndBlockPastNew</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Ensures Contact Address, Contact Role, Account Address, Industry, and Second Response Date are filled before moving to or past Nurturing stage. You cannot move from Nurturing to Working. --></errorMessage>
+        <name>Lead_Nurturing_Required_Fields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You do not have the required permissions to modify the Lead Status. --></errorMessage>
+        <name>Lead_Path_Override_VR</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Unqualified Reason is required when setting the status to Unqualified. Additionally, Leads in the Unqualified stage can only be transitioned back to &apos;New&apos;. --></errorMessage>
+        <name>Lead_Unqualified_Stage_Req_And_Blocking</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Title, Phone, Lead Source, and Order Type are required when Lead Status is Working. You cannot move back from Working to New. --></errorMessage>
+        <name>Lead_Working_Required_Fields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Event Code is required for CSV Import Event leads. Use TBD if the event code is not known yet. --></errorMessage>
+        <name>Require_Event_Code_For_CSV_Event_Lead</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Lead Channel and Lead Source are required. Please select values for both fields before saving. --></errorMessage>
+        <name>Require_Lead_Channel_And_Lead_Source</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Source Detail is required when Lead Source is Event. --></errorMessage>
+        <name>Require_Source_Detail_For_Event_Lead</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Unqualified Reason is required when Qualification is set to Unqualified. --></errorMessage>
+        <name>Require_Unqualified_Reason</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+</CustomObjectTranslation>

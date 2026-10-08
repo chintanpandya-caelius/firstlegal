@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Max Segment Time --></label>
+    <name>maps__MaxSegmentTime__c</name>
+    <picklistValues>
+        <masterLabel>High</masterLabel>
+        <translation>高</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Low</masterLabel>
+        <translation>低</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medium</masterLabel>
+        <translation>中</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Used</masterLabel>
+        <translation>使用しない</translation>
+    </picklistValues>
+</CustomFieldTranslation>

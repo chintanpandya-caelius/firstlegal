@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Assigned POD --></label>
+    <name>Assigned_POD__c</name>
+    <picklistValues>
+        <masterLabel>test</masterLabel>
+        <translation><!-- test --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

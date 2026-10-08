@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Signal Type --></label>
+    <name>Signal_Type__c</name>
+    <picklistValues>
+        <masterLabel>Account Web Traffic Signal</masterLabel>
+        <translation><!-- Account Web Traffic Signal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Buying Group Engagement</masterLabel>
+        <translation><!-- Buying Group Engagement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Event Attendance</masterLabel>
+        <translation><!-- Event Attendance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Firm Change Signal</masterLabel>
+        <translation><!-- Firm Change Signal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Google Ads / Paid Search Engagement</masterLabel>
+        <translation><!-- Google Ads / Paid Search Engagement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>High-Intent Email Click</masterLabel>
+        <translation><!-- High-Intent Email Click --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MCLE Participation</masterLabel>
+        <translation><!-- MCLE Participation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Multi-Contact Account Engagement</masterLabel>
+        <translation><!-- Multi-Contact Account Engagement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Re-Engagement Signal</masterLabel>
+        <translation><!-- Re-Engagement Signal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Repeated Email Engagement</masterLabel>
+        <translation><!-- Repeated Email Engagement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Web Form Submission</masterLabel>
+        <translation><!-- Web Form Submission --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

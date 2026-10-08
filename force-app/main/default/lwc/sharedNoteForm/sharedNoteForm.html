@@ -1,0 +1,115 @@
+<template>
+    <lightning-card title="Add Note" icon-name="standard:note">
+        <div class="note-form">
+            <div class="form-field">
+                <lightning-combobox
+                    name="noteType"
+                    label="Note Type"
+                    value={noteType}
+                    options={noteTypeOptions}
+                    onchange={handleNoteTypeChange}
+                    disabled={isTicketClosed}
+                    required
+                ></lightning-combobox>
+            </div>
+
+            <div class="form-field">
+                <lightning-textarea
+                    name="body"
+                    label="Note"
+                    value={body}
+                    onchange={handleBodyChange}
+                    max-length="4000"
+                    disabled={isTicketClosed}
+                    required
+                ></lightning-textarea>
+            </div>
+
+            <template if:true={isInternalNote}>
+                <div class="form-field">
+                    <lightning-combobox
+                        data-id="user-tag"
+                        name="userTag"
+                        label="User"
+                        placeholder="Select a user..."
+                        value={userTagId}
+                        options={userTagOptions}
+                        onchange={handleUserTagChange}
+                        disabled={isTicketClosed}
+                    ></lightning-combobox>
+                </div>
+            </template>
+
+            <div class="form-actions">
+                <template if:true={isTicketClosed}>
+                    <span class="posting-disabled-message">
+                        {commentingDisabled}
+                    </span>
+                </template>
+
+                <lightning-button
+                    variant="brand"
+                    label="Post Note"
+                    onclick={handleSubmit}
+                    disabled={isSubmitDisabled}
+                ></lightning-button>
+            </div>
+
+            <template if:true={isSaving}>
+                <lightning-spinner alternative-text="Saving note" size="small"></lightning-spinner>
+            </template>
+        </div>
+
+        <div class="notes-section">
+            <div class="section-heading">Previous Notes</div>
+
+            <div class="notes-container" onscroll={handleNotesScroll}>
+                <template if:true={hasNotes}>
+                    <template for:each={notes} for:item="note">
+                        <article class="note-item" key={note.Id}>
+                            <div class="note-avatar" aria-hidden="true">
+                                {note.initials}
+                            </div>
+
+                            <div class="note-content">
+                                <div class="note-header">
+                                    <span class="note-author">{note.authorName}</span>
+                                    <span class="note-date">{note.formattedDate}</span>
+                                </div>
+
+                                <div class="note-body">
+                                    {note.body}
+                                </div>
+                            </div>
+                        </article>
+                    </template>
+
+                    <div class="notes-sentinel" aria-hidden="true"></div>
+                </template>
+
+                <template if:false={hasNotes}>
+                    <template if:true={isLoadingNotes}>
+                        <div class="notes-state">Loading notes...</div>
+                    </template>
+                    <template if:false={isLoadingNotes}>
+                        <div class="notes-state">No notes yet.</div>
+                    </template>
+                </template>
+
+                <template if:true={isLoadingMore}>
+                    <div class="notes-loading-more">Loading more notes...</div>
+                </template>
+
+                <template if:false={hasMoreNotes}>
+                    <template if:true={hasNotes}>
+                        <div class="notes-end">You've reached the end of the notes.</div>
+                    </template>
+                </template>
+            </div>
+
+            <template if:true={isLoadingNotes}>
+                <lightning-spinner alternative-text="Loading notes" size="small"></lightning-spinner>
+            </template>
+        </div>
+    </lightning-card>
+</template>

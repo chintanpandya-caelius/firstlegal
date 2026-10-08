@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Intended for the Admin Portal User to bypass contact based filter checks and access all the tickets of a parent account</description>
+    <isLicensed>false</isLicensed>
+    <label>Access all tickets related to Account</label>
+</CustomPermission>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>PSG CO (Case) - Manager</label>
+    <permissionSets>PS_CourtCase_Create</permissionSets>
+    <permissionSets>PS_CourtCase_Delete</permissionSets>
+    <permissionSets>PS_CourtCase_ModifyAll</permissionSets>
+    <permissionSets>PS_CourtCase_Read</permissionSets>
+    <permissionSets>PS_CourtCase_Update</permissionSets>
+    <permissionSets>PS_CourtCase_ViewAll</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

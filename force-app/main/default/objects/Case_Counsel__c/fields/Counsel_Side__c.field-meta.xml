@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Counsel_Side__c</fullName>
+    <label>Counsel Side</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Plaintiff / Petitioner</fullName>
+                <default>false</default>
+                <label>Plaintiff / Petitioner</label>
+            </value>
+            <value>
+                <fullName>Defense / Respondent</fullName>
+                <default>false</default>
+                <label>Defense / Respondent</label>
+            </value>
+            <value>
+                <fullName>Neutral</fullName>
+                <default>false</default>
+                <label>Neutral</label>
+            </value>
+            <value>
+                <fullName>Court-Appointed</fullName>
+                <default>false</default>
+                <label>Court-Appointed</label>
+            </value>
+            <value>
+                <fullName>Amicus</fullName>
+                <default>false</default>
+                <label>Amicus</label>
+            </value>
+            <value>
+                <fullName>Third-Party</fullName>
+                <default>false</default>
+                <label>Third-Party</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

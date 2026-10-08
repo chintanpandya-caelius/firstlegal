@@ -1,0 +1,37 @@
+<template>
+    <div class="popular-articles">
+        <p class="section-label">POPULAR ARTICLES</p>
+
+        <template if:true={hasArticles}>
+            <ul class="article-list">
+                <template for:each={articles} for:item="article">
+                    <li key={article.id} class="article-item">
+                        <lightning-icon icon-name="utility:file" size="x-small" class="article-icon"></lightning-icon>
+                        <div class="article-body">
+                            <a
+                                href="javascript:void(0);"
+                                class="article-title"
+                                data-recordid={article.id}
+                                data-articletype={article.articleType}
+                                data-urlname={article.urlName}
+                                onclick={handleArticleClick}
+                            >{article.title}</a>
+                            <template if:true={article.showStatusBadge}>
+                                <lightning-badge label={article.publishStatus} class="status-badge"></lightning-badge>
+                            </template>
+                            <p class="article-meta">{article.category} · {article.viewCountLabel} views</p>
+                        </div>
+                    </li>
+                </template>
+            </ul>
+        </template>
+
+        <template if:true={hasError}>
+            <p class="error-text">Articles are unavailable right now. Please try again later.</p>
+        </template>
+
+        <template if:true={isEmpty}>
+            <p class="empty-text">No articles to show yet.</p>
+        </template>
+    </div>
+</template>

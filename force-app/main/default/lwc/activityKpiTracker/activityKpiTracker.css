@@ -1,0 +1,19 @@
+.shadow-container {
+    background-color: #FAFAFA;
+    border: 1px solid #DDDBDA;
+    border-radius: 4px;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.shadow-container:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.text-muted {
+    color: #514F4D;
+}
+
+.dropdown-container {
+    width: 130px;
+    display: inline-block;
+}

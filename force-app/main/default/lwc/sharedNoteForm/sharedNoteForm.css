@@ -1,0 +1,152 @@
+:host {
+    display: block;
+    --note-border: #e5e5e5;
+    --note-muted: #706e6b;
+    --note-avatar-bg: #eef4ff;
+    --note-avatar-text: #1b5297;
+}
+
+.note-form {
+    position: relative;
+    padding: 0 1rem 1.25rem;
+}
+
+.form-field + .form-field {
+    margin-top: 1rem;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+    padding-top: 0.25rem;
+}
+
+.notes-section {
+    position: relative;
+    border-top: 1px solid var(--note-border);
+    padding: 1rem;
+}
+
+.section-heading {
+    margin-bottom: 0.75rem;
+    color: #181818;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.notes-container {
+    max-height: 22rem;
+    overflow-y: auto;
+    border: 1px solid var(--note-border);
+    border-radius: 0.5rem;
+    background: #ffffff;
+    scroll-behavior: smooth;
+}
+
+.note-item {
+    display: flex;
+    gap: 0.75rem;
+    padding: 0.875rem 1rem;
+}
+
+.note-item + .note-item {
+    border-top: 1px solid #f3f3f3;
+}
+
+.note-avatar {
+    flex: 0 0 2rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: var(--note-avatar-bg);
+    color: var(--note-avatar-text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.note-content {
+    min-width: 0;
+    flex: 1;
+}
+
+.note-header {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.2rem;
+}
+
+.note-author {
+    color: #181818;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.note-date {
+    color: var(--note-muted);
+    font-size: 0.75rem;
+}
+
+.note-body {
+    color: #2e2e2e;
+    font-size: 0.875rem;
+    line-height: 1.45;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+.notes-state,
+.notes-loading-more,
+.notes-end {
+    padding: 1rem;
+    text-align: center;
+    color: var(--note-muted);
+    font-size: 0.8rem;
+}
+
+.notes-loading-more {
+    padding-top: 0.5rem;
+}
+
+.notes-end {
+    border-top: 1px solid #f3f3f3;
+    padding-top: 0.75rem;
+}
+
+.notes-sentinel {
+    height: 1px;
+}
+
+@media (max-width: 479px) {
+    .note-form,
+    .notes-section {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+
+    .form-actions {
+        justify-content: stretch;
+    }
+
+    .form-actions lightning-button {
+        width: 100%;
+    }
+
+    .notes-container {
+        max-height: 18rem;
+    }
+}
+
+.posting-disabled-message {
+    color: #706e6b;
+    font-size: 0.8rem;
+    font-style: italic;
+}

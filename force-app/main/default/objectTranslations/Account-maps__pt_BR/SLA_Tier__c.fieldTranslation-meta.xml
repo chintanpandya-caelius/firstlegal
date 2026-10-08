@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- SLA Tier --></label>
+    <name>SLA_Tier__c</name>
+    <picklistValues>
+        <masterLabel>S1</masterLabel>
+        <translation><!-- S1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S2</masterLabel>
+        <translation><!-- S2 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

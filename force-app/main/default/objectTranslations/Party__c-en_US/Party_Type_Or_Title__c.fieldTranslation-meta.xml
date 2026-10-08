@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Party Type Or Title --></label>
+    <name>Party_Type_Or_Title__c</name>
+    <picklistValues>
+        <masterLabel>Canvas Neighborhood</masterLabel>
+        <translation><!-- Canvas Neighborhood --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Canvass Businesses</masterLabel>
+        <translation><!-- Canvass Businesses --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Claimant</masterLabel>
+        <translation><!-- Claimant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Defendant</masterLabel>
+        <translation><!-- Defendant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insured</masterLabel>
+        <translation><!-- Insured --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Party</masterLabel>
+        <translation><!-- Other Party --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plaintiff</masterLabel>
+        <translation><!-- Plaintiff --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Police Report</masterLabel>
+        <translation><!-- Police Report --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scene</masterLabel>
+        <translation><!-- Scene --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Victim</masterLabel>
+        <translation><!-- Victim --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Witness</masterLabel>
+        <translation><!-- Witness --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

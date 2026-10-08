@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <label>Type</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>FLCP New Business Submission</fullName>
+                <default>false</default>
+                <label>FLCP New Business Submission</label>
+            </value>
+            <value>
+                <fullName>Change Request</fullName>
+                <default>false</default>
+                <label>Change Request</label>
+            </value>
+            <value>
+                <fullName>SME Submission</fullName>
+                <default>false</default>
+                <label>SME Submission</label>
+            </value>
+            <value>
+                <fullName>Management Submission</fullName>
+                <default>false</default>
+                <label>Management Submission</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,16 @@
+<template>
+    <div class="tile-menu-container">
+        <template for:each={tiles} for:item="tile">
+            <button
+                key={tile.key}
+                type="button"
+                class="tile-item"
+                data-url={tile.url}
+                data-target={tile.target}
+                onclick={handleTileClick}
+            >
+                <img src={tile.icon} alt="" class="tile-icon" />
+            </button>
+        </template>
+    </div>
+</template>

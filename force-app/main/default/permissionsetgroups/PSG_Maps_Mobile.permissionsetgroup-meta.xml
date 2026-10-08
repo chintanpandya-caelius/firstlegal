@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Salesforce Maps on mobile. SF Maps (maps__SFMaps) + PS_Maps_Mobile_Access. Assign only to users with a Salesforce Maps permission set license.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>PSG_Maps_Mobile</label>
+    <permissionSets>PS_Maps_Mobile_Access</permissionSets>
+    <permissionSets>maps__SFMaps</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>单位分配</label>
+    <name>maps__UnitAssignment__c</name>
+    <relationshipLabel>TP 单元附加分配</relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Invitation Letter Suggested Print Date2 --></label>
+    <name>Invitation_Letter_Suggested_Print_Date2__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,196 @@
+<template>
+    <lightning-card>
+        <div class="slds-p-around_medium ticket-form">
+
+            <!-- Header -->
+            <div class="slds-m-bottom_small">
+                <h1 class="slds-text-heading_medium slds-m-bottom_xx-small">Submit a Ticket</h1>
+                <p class="slds-text-body_small slds-text-color_weak">
+                    We'll create a ticket and route it to the right team.
+                    <span class="required-note">*</span> indicates a required field.
+                </p>
+            </div>
+
+            <!-- SUCCESS BANNER -->
+            <template if:true={showSuccessBanner}>
+                <div class="slds-scoped-notification slds-media slds-media_center slds-scoped-notification_light slds-theme_success slds-m-bottom_medium" role="status">
+                    <div class="slds-media__figure">
+                        <lightning-icon icon-name="utility:success" alternative-text="Success" variant="inverse" size="small"></lightning-icon>
+                    </div>
+                    <div class="slds-media__body">
+                        <p class="slds-text-color_inverse">{successMessage}</p>
+                    </div>
+                    <div class="slds-media__figure slds-media__figure_reverse">
+                        <lightning-button-icon
+                            icon-name="utility:close"
+                            alternative-text="Dismiss"
+                            variant="bare-inverse"
+                            onclick={handleDismissBanner}
+                        ></lightning-button-icon>
+                    </div>
+                </div>
+            </template>
+
+            <!-- CONTACT INFORMATION -->
+            <div class="section-header">CONTACT INFORMATION</div>
+            <hr class="slds-m-vertical_x-small" />
+
+            <div class="slds-m-bottom_medium">
+                <lightning-input
+                    label="Email"
+                    value={userEmail}
+                    disabled
+                ></lightning-input>
+                <p class="slds-text-body_small slds-text-color_weak slds-m-top_xx-small">
+                    From your signed-in account. To change it, update your profile.
+                </p>
+            </div>
+
+            <!-- TICKET DETAILS -->
+            <div class="section-header">TICKET DETAILS</div>
+            <hr class="slds-m-vertical_x-small" />
+
+            <div class="slds-grid slds-wrap slds-gutters slds-m-bottom_small">
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2">
+                    <lightning-combobox
+                        label="Ticket Type"
+                        placeholder="--None--"
+                        value={ticketType}
+                        options={typeOptions}
+                        onchange={handleTicketTypeChange}
+                        disabled={isPicklistLoading}
+                        required
+                    ></lightning-combobox>
+                </div>
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2">
+                    <lightning-combobox
+                        label="Sub-Type"
+                        placeholder={subTypePlaceholder}
+                        value={subType}
+                        options={subTypeOptions}
+                        onchange={handleFieldChange}
+                        data-field="subType"
+                        disabled={isSubTypeDisabled}
+                        required
+                    ></lightning-combobox>
+                    <p class="slds-text-body_small slds-text-color_weak slds-m-top_xx-small">
+                        Options depend on the selected Ticket Type.
+                    </p>
+                </div>
+            </div>
+
+            <div class="slds-grid slds-wrap slds-gutters slds-m-bottom_small">
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2">
+                    <lightning-combobox
+                        label="Priority"
+                        value={priority}
+                        options={priorityOptions}
+                        onchange={handleFieldChange}
+                        data-field="priority"
+                        required
+                    ></lightning-combobox>
+                </div>
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2">
+                    <lightning-input
+                        label="Subject"
+                        placeholder="Short summary of your request"
+                        value={subject}
+                        onchange={handleFieldChange}
+                        data-field="subject"
+                        required
+                    ></lightning-input>
+                </div>
+            </div>
+
+            <div class="slds-m-bottom_medium">
+                <lightning-textarea
+                    label="Description"
+                    placeholder="Describe what you need, including relevant dates, parties, or reference numbers."
+                    value={description}
+                    onchange={handleFieldChange}
+                    data-field="description"
+                    required
+                ></lightning-textarea>
+            </div>
+
+            <!-- MATTER & CASE INFORMATION -->
+            <div class="section-header">
+                MATTER &amp; CASE INFORMATION
+                <span class="optional-note">(optional)</span>
+            </div>
+            <hr class="slds-m-vertical_x-small" />
+
+            <div class="slds-grid slds-wrap slds-gutters slds-m-bottom_medium">
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2">
+                    <lightning-input
+                        label="Matter Number"
+                        placeholder="e.g. M-100482"
+                        value={matterNumber}
+                        onchange={handleFieldChange}
+                        data-field="matterNumber"
+                    ></lightning-input>
+                </div>
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2">
+                    <lightning-input
+                        label="Case Number"
+                        placeholder="e.g. 24STCV01234"
+                        value={caseNumber}
+                        onchange={handleFieldChange}
+                        data-field="caseNumber"
+                    ></lightning-input>
+                </div>
+            </div>
+
+            <!-- ATTACHMENTS -->
+            <div class="section-header">
+                ATTACHMENTS
+                <span class="optional-note">(optional)</span>
+            </div>
+            <hr class="slds-m-vertical_x-small" />
+
+            <div class="slds-m-bottom_medium">
+                <lightning-file-upload
+                    label="Upload Files"
+                    name="ticketAttachments"
+                    accept={acceptedFormats}
+                    multiple
+                    disabled={isNewTicket}
+                    onuploadfinished={handleUploadFinished}
+                    record-id={draftRecordId}
+                ></lightning-file-upload>
+                <p class="slds-text-body_small slds-text-color_weak slds-m-top_xx-small">
+                    or drop files here &middot; PDF, DOCX, PNG, JPG &mdash; max 25 MB per file
+                </p>
+                <template if:true={uploadedFileNames.length}>
+                    <ul class="slds-m-top_x-small">
+                        <template for:each={uploadedFileNames} for:item="fileName">
+                            <li key={fileName} class="slds-text-body_small">{fileName}</li>
+                        </template>
+                    </ul>
+                </template>
+            </div>
+
+            <hr class="slds-m-vertical_small" />
+
+            <!-- ACTIONS -->
+            <div class="slds-grid slds-grid_align-end slds-gutters_small">
+                <div class="slds-col slds-no-flex">
+                    <lightning-button
+                        label="Cancel"
+                        onclick={handleCancel}
+                        disabled={isSubmitting}
+                    ></lightning-button>
+                </div>
+                <div class="slds-col slds-no-flex">
+                    <lightning-button
+                        variant="brand"
+                        label="Submit Ticket"
+                        onclick={handleSubmit}
+                        disabled={isSubmitting}
+                    ></lightning-button>
+                </div>
+            </div>
+
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Statement Model --></label>
+    <name>Statement_Model__c</name>
+    <picklistValues>
+        <masterLabel>INVOICES -ONLY</masterLabel>
+        <translation><!-- INVOICES -ONLY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STMTONLY</masterLabel>
+        <translation><!-- STMTONLY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STMTREINVOICE</masterLabel>
+        <translation><!-- STMTREINVOICE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SUM-CLAIM</masterLabel>
+        <translation><!-- SUM-CLAIM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SUM-CLAIM-REINVOICE</masterLabel>
+        <translation><!-- SUM-CLAIM-REINVOICE --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

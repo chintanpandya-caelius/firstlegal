@@ -1,0 +1,57 @@
+<template>
+    <template if:true={isLoading}>
+        <div style="padding: 24px;">
+            <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+        </div>
+    </template>
+
+    <template if:true={article}>
+        <div class="article-wrapper">
+
+            <!-- Title -->
+            <h1 class="article-title">{article.Title}</h1>
+
+            <!-- Meta: last updated + read time -->
+            <p class="article-meta">
+                Last updated {lastUpdatedLabel}
+                <template if:true={readTime}>
+                    &nbsp;·&nbsp;{readTime} min read
+                </template>
+            </p>
+
+            <!-- Body -->
+            <div class="article-body">
+                <lightning-formatted-rich-text value={article.Answer__c}></lightning-formatted-rich-text>
+            </div>
+
+            <!-- Divider -->
+            <hr class="article-divider" />
+
+            <!-- Rate this article -->
+            <div class="rating-section">
+                <p class="rating-title">Rate this article</p>
+                <p class="rating-subtitle">Let us know how helpful this was</p>
+                <div class="stars">
+                    <template for:each={stars} for:item="star">
+                        <span
+                            key={star.index}
+                            class={star.cssClass}
+                            data-index={star.index}
+                            onclick={handleStarClick}
+                        >&#9733;</span>
+                    </template>
+                </div>
+                <template if:true={ratingSubmitted}>
+                    <p class="rating-thanks">Thanks for your feedback!</p>
+                </template>
+            </div>
+
+        </div>
+    </template>
+
+    <template if:true={errorMessage}>
+        <div class="error-msg">
+            <p>{errorMessage}</p>
+        </div>
+    </template>
+</template>

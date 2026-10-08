@@ -1,0 +1,32 @@
+.styling-link-color:hover {
+    text-decoration: underline;
+}
+
+.header-dropdown-container {
+    width: fit-content;
+}
+
+.inline-combobox {
+    display: inline-block;
+    width: 4.375rem;
+    --sds-c-combobox-input-roundness: 0.25rem;
+}
+
+.flex-row {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-filter-title {
+    font-weight: bold;
+    font-size: 1.15rem;
+    --sds-c-input-line-height: 2rem;
+    border: none;
+    padding-left: 0.9375rem;
+}
+
+.styling-link-color {
+    color: #0070d2;
+    text-decoration: none;
+    font-weight: 600;
+}

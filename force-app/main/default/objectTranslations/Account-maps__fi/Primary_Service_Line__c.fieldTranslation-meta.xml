@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Primary Service Line --></label>
+    <name>Primary_Service_Line__c</name>
+    <picklistValues>
+        <masterLabel>Court &amp; Process</masterLabel>
+        <translation><!-- Court &amp; Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Depositions</masterLabel>
+        <translation><!-- Depositions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Digital</masterLabel>
+        <translation><!-- Digital --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E-Discovery</masterLabel>
+        <translation><!-- E-Discovery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Investigations</masterLabel>
+        <translation><!-- Investigations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Records</masterLabel>
+        <translation><!-- Records --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

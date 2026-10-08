@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Grants access to view all campaign records and individual data, with reporting and dashboard capabilities to monitor marketing performance, business outcomes, and key operational metrics for strategic decision-making.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>PSG_Business_Leader</label>
+    <permissionSets>PS_Base_Access</permissionSets>
+    <permissionSets>PS_Campaign_View_All</permissionSets>
+    <permissionSets>PS_Campaign_View_All_system_permissions</permissionSets>
+    <permissionSets>PS_Dashboards_Create_Edit</permissionSets>
+    <permissionSets>PS_Individual_Read</permissionSets>
+    <permissionSets>PS_Reports_Create_Edit</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

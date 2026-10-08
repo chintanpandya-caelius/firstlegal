@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>PSG_Serv_VendorFacilityManagement</label>
+    <permissionSets>PS_Account_Read</permissionSets>
+    <permissionSets>PS_Contact_Read</permissionSets>
+    <permissionSets>PS_Employee_Read</permissionSets>
+    <permissionSets>PS_KnowledgeArticle_Read</permissionSets>
+    <permissionSets>PS_Restrict_Customer_Accounts_Edit</permissionSets>
+    <permissionSets>PS_Ticket_Create</permissionSets>
+    <permissionSets>PS_Ticket_Read</permissionSets>
+    <permissionSets>PS_Ticket_Update</permissionSets>
+    <permissionSets>PS_WorkOrder_Create</permissionSets>
+    <permissionSets>PS_WorkOrder_Read</permissionSets>
+    <permissionSets>PS_WorkOrder_Update</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>First_Look_Agreement__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <label>First Look Agreement</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>First_Look_Agreement__c.Case__c</field>
+            <operation>equals</operation>
+            <value>$Source.WorkOrder__r.Legal_Case__c</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>First_Look_Agreement__c</referenceTo>
+    <relationshipLabel>First Look Reviews</relationshipLabel>
+    <relationshipName>First_Look_Reviews</relationshipName>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

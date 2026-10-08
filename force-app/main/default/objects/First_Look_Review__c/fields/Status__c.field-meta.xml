@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <description>First Look production lifecycle.</description>
+    <label>Status</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>First Look Identified</fullName>
+                <default>true</default>
+                <label>First Look Identified</label>
+            </value>
+            <value>
+                <fullName>Pending Record Preparation</fullName>
+                <default>false</default>
+                <label>Pending Record Preparation</label>
+            </value>
+            <value>
+                <fullName>Ready for First Look Release</fullName>
+                <default>false</default>
+                <label>Ready for First Look Release</label>
+            </value>
+            <value>
+                <fullName>First Look Sent - Review Pending</fullName>
+                <default>false</default>
+                <label>First Look Sent - Review Pending</label>
+            </value>
+            <value>
+                <fullName>Redaction Request Received</fullName>
+                <default>false</default>
+                <label>Redaction Request Received</label>
+            </value>
+            <value>
+                <fullName>Redactions in Process</fullName>
+                <default>false</default>
+                <label>Redactions in Process</label>
+            </value>
+            <value>
+                <fullName>First Look Expired - No Response</fullName>
+                <default>false</default>
+                <label>First Look Expired - No Response</label>
+            </value>
+            <value>
+                <fullName>First Look Complete - Approved for Final Release</fullName>
+                <default>false</default>
+                <label>First Look Complete - Approved for Final Release</label>
+            </value>
+            <value>
+                <fullName>Exception/Escalation Required</fullName>
+                <default>false</default>
+                <label>Exception/Escalation Required</label>
+            </value>
+            <value>
+                <fullName>Final Release Required</fullName>
+                <default>false</default>
+                <label>Final Release Required</label>
+            </value>
+            <value>
+                <fullName>Final Release Completed</fullName>
+                <default>false</default>
+                <label>Final Release Completed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

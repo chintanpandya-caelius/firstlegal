@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type --></label>
+    <name>Type__c</name>
+    <picklistValues>
+        <masterLabel>Billing</masterLabel>
+        <translation><!-- Billing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pay-To</masterLabel>
+        <translation><!-- Pay-To --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shipping</masterLabel>
+        <translation><!-- Shipping --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sold-To</masterLabel>
+        <translation><!-- Sold-To --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

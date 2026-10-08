@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Grants read-only access to campaigns, reports, and dashboards, enabling external agencies to review marketing performance, monitor campaign activities, and collaborate on marketing initiatives without modifying Salesforce data.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>PSG_External_Agency_Partner</label>
+    <permissionSets>PS_Campaign_Read</permissionSets>
+    <permissionSets>PS_Campaign_View_All_system_permissions</permissionSets>
+    <permissionSets>PS_Dashboards_Read</permissionSets>
+    <permissionSets>PS_Individual_Edit</permissionSets>
+    <permissionSets>PS_Individual_Read</permissionSets>
+    <permissionSets>PS_Individual_ViewAll</permissionSets>
+    <permissionSets>PS_Reports_Read</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

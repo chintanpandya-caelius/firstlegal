@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>67.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <constants>
+        <name>Account</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Account</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <name>AccountCreate</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Create</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <name>AccountUpdate</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Update</stringValue>
+        </value>
+    </constants>
+    <decisions>
+        <name>Create_or_Update</name>
+        <label>Create or Update</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>No Event</defaultConnectorLabel>
+        <rules>
+            <name>Create</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>fxGlobalIdJustPopulated</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Publish_Account_Create</targetReference>
+            </connector>
+            <label>Create</label>
+        </rules>
+        <rules>
+            <name>Update</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>fxGlobalIdAlreadyExisted</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>New</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Publish_Account_Update</targetReference>
+            </connector>
+            <label>Update</label>
+        </rules>
+    </decisions>
+    <description>Use Case 1 New Account: 
+
+Conditions: 
+
+Record Type = Customer
+
+When the Global Account ID is populated and saved:
+
+Account_Data_Change__e is called:
+
+For Account:
+
+ChangedObject = Account
+
+ChangeType = Create
+
+ChangeParentId = Account ID
+
+ChangeActualId = Account ID
+
+ChangeTimestamp = timestamp of the change
+
+Use Case 2 Account Record Update
+
+Conditions:
+
+Record Type = Customer
+
+Account Status &lt;&gt; New
+
+Record is updated and saved.
+
+Account_Data_Change__e is called:
+
+For Account:
+
+ChangedObject = Account
+
+ChangeType = Update
+
+ChangeParentId = Account ID
+
+ChangeActualId = Account ID
+
+ChangeTimestamp = timestamp of the change</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>fxGlobalIdAlreadyExisted</description>
+        <name>fxGlobalIdAlreadyExisted</name>
+        <dataType>Boolean</dataType>
+        <expression>NOT(ISBLANK(PRIORVALUE({!$Record.accountID__c})))</expression>
+    </formulas>
+    <formulas>
+        <name>fxGlobalIdJustPopulated</name>
+        <dataType>Boolean</dataType>
+        <expression>ISBLANK(PRIORVALUE({!$Record.accountID__c}))</expression>
+    </formulas>
+    <interviewLabel>Account Data Change Event (UC1 + UC2) {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Account Data Change Event (UC1 + UC2)</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Create_or_Update</targetReference>
+        </connector>
+        <filterFormula>AND(
+  NOT(ISCHANGED({!$Record.Latest_Sync_Denial_Timestamp__c})),
+  {!$Record.RecordType.DeveloperName} = &quot;Customer&quot;,
+  NOT(ISBLANK({!$Record.accountID__c}))
+)</filterFormula>
+        <object>Account</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <description>Publish Account Create</description>
+        <name>Publish_Account_Create</name>
+        <label>Publish Account Create</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <flowName>Publish_Account_Data_Change</flowName>
+        <inputAssignments>
+            <name>inChangeActualId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>inChangedObject</name>
+            <value>
+                <elementReference>Account</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>inChangeParentId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>inChangeType</name>
+            <value>
+                <elementReference>AccountCreate</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <subflows>
+        <name>Publish_Account_Update</name>
+        <label>Publish Account Update</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <flowName>Publish_Account_Data_Change</flowName>
+        <inputAssignments>
+            <name>inChangeActualId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>inChangedObject</name>
+            <value>
+                <elementReference>Account</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>inChangeParentId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>inChangeType</name>
+            <value>
+                <elementReference>AccountUpdate</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+</Flow>

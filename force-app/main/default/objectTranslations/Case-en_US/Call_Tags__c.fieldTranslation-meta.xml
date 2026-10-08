@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Call Tags --></label>
+    <name>Call_Tags__c</name>
+    <picklistValues>
+        <masterLabel>Access &amp; Account</masterLabel>
+        <translation><!-- Access &amp; Account --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dispute</masterLabel>
+        <translation><!-- Dispute --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FC Support</masterLabel>
+        <translation><!-- FC Support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Feedback - Negative</masterLabel>
+        <translation><!-- Feedback - Negative --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Feedback - Positive</masterLabel>
+        <translation><!-- Feedback - Positive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Follow up</masterLabel>
+        <translation><!-- Follow up --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Guidance - Basic FL Info</masterLabel>
+        <translation><!-- Guidance - Basic FL Info --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Guidance - How To</masterLabel>
+        <translation><!-- Guidance - How To --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hang Up</masterLabel>
+        <translation><!-- Hang Up --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Invoice &amp; Billing</masterLabel>
+        <translation><!-- Invoice &amp; Billing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC Support</masterLabel>
+        <translation><!-- LC Support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Left message</masterLabel>
+        <translation><!-- Left message --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Order Status/Request</masterLabel>
+        <translation><!-- Order Status/Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Payments</masterLabel>
+        <translation><!-- Payments --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transfer</masterLabel>
+        <translation><!-- Transfer --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

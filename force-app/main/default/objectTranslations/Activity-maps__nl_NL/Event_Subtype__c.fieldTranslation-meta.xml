@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Event Subtype --></label>
+    <name>Event_Subtype__c</name>
+    <picklistValues>
+        <masterLabel>Drop By</masterLabel>
+        <translation><!-- Drop By --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Event</masterLabel>
+        <translation><!-- Event --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Holiday Gift</masterLabel>
+        <translation><!-- Holiday Gift --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Person Meeting</masterLabel>
+        <translation><!-- In Person Meeting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Virtual Meeting</masterLabel>
+        <translation><!-- Virtual Meeting --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

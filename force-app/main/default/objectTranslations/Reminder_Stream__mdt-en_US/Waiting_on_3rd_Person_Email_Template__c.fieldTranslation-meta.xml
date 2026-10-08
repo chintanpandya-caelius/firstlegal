@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Waiting on 3rd Person Email Template --></label>
+    <name>Waiting_on_3rd_Person_Email_Template__c</name>
+</CustomFieldTranslation>

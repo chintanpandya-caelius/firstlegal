@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Deposition Officer Only --></label>
+    <name>Deposition_Officer_Only__c</name>
+</CustomFieldTranslation>

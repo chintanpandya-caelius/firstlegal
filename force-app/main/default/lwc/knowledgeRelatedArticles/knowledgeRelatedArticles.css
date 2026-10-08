@@ -1,0 +1,51 @@
+.loading-wrapper {
+    padding: 12px 0;
+}
+
+.related-wrapper {
+    padding: 0;
+    font-family: 'Salesforce Sans', Arial, sans-serif;
+}
+
+/* ── Section label ── */
+.related-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #444444;
+    margin: 0 0 12px 0;
+}
+
+/* ── List ── */
+.related-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.related-item {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #F3F2F2;
+}
+
+.related-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* ── Link ── */
+.related-link {
+    font-size: 0.9rem;
+    color: #0176D3;
+    text-decoration: none;
+    line-height: 1.4;
+    display: block;
+}
+
+.related-link:hover {
+    text-decoration: underline;
+    color: #014486;
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>區域類型識別碼</label>
+    <name>maps__AreaTypeId__c</name>
+    <relationshipLabel>區域</relationshipLabel>
+</CustomFieldTranslation>

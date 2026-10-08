@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Association Type --></label>
+    <name>Association_Type__c</name>
+    <picklistValues>
+        <masterLabel>Bar Association</masterLabel>
+        <translation><!-- Bar Association --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paralegal Association</masterLabel>
+        <translation><!-- Paralegal Association --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

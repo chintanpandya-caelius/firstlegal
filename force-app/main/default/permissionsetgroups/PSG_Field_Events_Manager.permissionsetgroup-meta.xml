@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Grants access to manage campaigns, events, leads, and tasks, with reporting and dashboard capabilities, while providing visibility into accounts, contacts, and individuals to support field marketing and event operations.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>PSG_Field_Events_Manager</label>
+    <permissionSets>PS_Campaign_CRU</permissionSets>
+    <permissionSets>PS_Dashboards_Create_Edit</permissionSets>
+    <permissionSets>PS_Dashboards_Read</permissionSets>
+    <permissionSets>PS_Event_CRUD</permissionSets>
+    <permissionSets>PS_Individual_Read</permissionSets>
+    <permissionSets>PS_Lead_CRU</permissionSets>
+    <permissionSets>PS_Reports_Create_Edit</permissionSets>
+    <permissionSets>PS_Task_CRUD</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

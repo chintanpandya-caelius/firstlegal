@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type --></label>
+    <name>maps__Type__c</name>
+    <picklistValues>
+        <masterLabel>Custom Boundary</masterLabel>
+        <translation>사용자 정의 경계</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Grouped Boundary</masterLabel>
+        <translation>그룹화된 경계</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,158 @@
+<template>
+    <section class="division-page">
+        <div class="division-header">
+            <template if:true={currentDivision}>
+                <c-knowledge-bread-crumbs
+                    division={currentDivision.divisionValue}
+                    division-label={currentDivision.label}
+                    home-page-name={homePageName}
+                    division-page-name={divisionPageName}
+                ></c-knowledge-bread-crumbs>
+                <div class="title-row">
+                    <div class="title-icon-wrap">
+                        <img
+                            class="title-icon"
+                            src={currentDivision.logoUrl}
+                            alt={currentDivision.label}
+                        />
+                    </div>
+                    <div class="title-content">
+                        <h1>{currentDivision.label}</h1>
+                        <div class="title-meta">
+                            {articleCountLabel} <span aria-hidden="true">·</span> {currentDivision.summary}
+                        </div>
+                    </div>
+                </div>
+            </template>
+        </div>
+
+        <div class="content-layout">
+            <aside class="sidebar" aria-label="Other topics">
+                <h2 class="sidebar-heading">OTHER TOPICS</h2>
+
+                <template if:true={hasOtherDivisions}>
+                    <nav>
+                        <ul class="topic-list">
+                            <template for:each={otherDivisions} for:item="division">
+                                <li key={division.divisionValue}>
+                                    <a
+                                        href="#"
+                                        class="topic-link"
+                                        data-division={division.divisionValue}
+                                        onclick={handleOtherDivisionClick}
+                                    >
+                                        <span>{division.label}</span>
+                                        <span>{division.articleCount}</span>
+                                    </a>
+                                </li>
+                            </template>
+                        </ul>
+                    </nav>
+                </template>
+
+                <div class="support-card">
+                    <h3>STILL NEED HELP?</h3>
+                    <p>Can't find your answer?<br />Open a Ticket and we'll<br />route it to the right team —<br />or chat with Client Care now.</p>
+                    <button class="support-primary" type="button">Open a Ticket</button>
+                    <button class="support-secondary" type="button">
+                        <lightning-icon
+                            icon-name="utility:chat"
+                            size="x-small"
+                            alternative-text=""
+                            class="chat-icon">
+                        </lightning-icon>
+                        <span>Chat with us</span>
+                    </button>
+                </div>
+            </aside>
+
+            <main class="article-area" aria-labelledby="division-articles-title">
+                <template if:true={showErrorState}>
+                    <div class="state state-error" role="alert">{errorMessage}</div>
+                </template>
+
+                <template if:true={showInvalidDivisionState}>
+                    <div class="state" role="status">This Knowledge Base topic is not available.</div>
+                </template>
+
+                <template if:false={showInvalidDivisionState}>
+                    <div class="search-row">
+                        <div class="search-box">
+                            <lightning-icon icon-name="utility:search" size="x-small" alternative-text=""></lightning-icon>
+                            <label class="sr-only" for="topic-search">Search within topic</label>
+                            <input
+                                id="topic-search"
+                                type="search"
+                                value={searchTerm}
+                                placeholder="Search within topic"
+                                autocomplete="off"
+                                oninput={handleInput}
+                                onkeyup={handleKeyUp}
+                            />
+                        </div>
+
+                        <label class="sr-only" for="topic-sort">Sort articles</label>
+                        <select id="topic-sort" class="sort-select" value={sortOption} onchange={handleSortChange}>
+                            <template for:each={sortOptions} for:item="option">
+                                <option key={option.value} value={option.value}>{option.label}</option>
+                            </template>
+                        </select>
+                    </div>
+
+                    <template if:true={showLoadingState}>
+                        <div class="state state-loading">
+                            <lightning-spinner alternative-text="Loading articles" size="medium"></lightning-spinner>
+                        </div>
+                    </template>
+
+                    <template if:false={showLoadingState}>
+                        <h2 id="division-articles-title" class="sr-only">Articles</h2>
+
+                        <template if:true={hasArticles}>
+                            <div class="article-list">
+                                <template for:each={articles} for:item="article">
+                                    <article class="article-item" key={article.id}>
+                                    <div class="article-leading-icon" aria-hidden="true">
+                                        <lightning-icon 
+                                            icon-name="utility:note" 
+                                            size="x-small" 
+                                            class="note-icon"
+                                            alternative-text="">
+                                        </lightning-icon>
+                                    </div>
+
+                                        <div class="article-body">
+                                            <a
+                                                class="article-title"
+                                                href={article.articleUrl}
+                                                data-id={article.id}
+                                                onclick={handleArticleClick}
+                                            >
+                                                {article.title}
+                                            </a>
+                                            <p class="article-summary">{article.summary}</p>
+                                        </div>
+
+                                        <div class="article-updated">Updated {article.updatedLabel}</div>
+                                    </article>
+                                </template>
+                            </div>
+
+                            <template if:true={hasMore}>
+                                <div class="pagination-row">
+                                    <button type="button" class="load-more" onclick={handleLoadMore}>Load more</button>
+                                </div>
+                            </template>
+                        </template>
+
+                        <template if:true={showEmptyState}>
+                            <div class="state state-empty" role="status">
+                                No articles match your search in this topic.
+                            </div>
+                        </template>
+                    </template>
+                </template>
+            </main>
+        </div>
+    </section>
+</template>

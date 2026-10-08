@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Target_Record_Name__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(NOT(ISBLANK(Opportunity__c)), Opportunity__r.Name,
+IF(NOT(ISBLANK(Contact__c)), Contact__r.FirstName + Contact__r.LastName ,
+IF(NOT(ISBLANK(Account__c)), Account__r.Name,
+IF(NOT(ISBLANK(Lead__c)), Lead__r.FirstName + Lead__r.LastName,
+&quot;&quot;))))</formula>
+    <label>Target Record Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

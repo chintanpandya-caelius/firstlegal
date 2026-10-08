@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Detail_cant_be_blank_if_indicator_other</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    INCLUDES(
+        Risk_Indicators__c,
+        &quot;Other&quot;
+    ),
+    ISBLANK(Other__c)
+)</errorConditionFormula>
+    <errorDisplayField>Risk_Indicators__c</errorDisplayField>
+    <errorMessage>Please provide details in the Other field when Other is selected as a Risk Indicator.</errorMessage>
+</ValidationRule>

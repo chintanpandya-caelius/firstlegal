@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Case Type --></label>
+    <name>Case_Type__c</name>
+    <picklistValues>
+        <masterLabel>Administrative</masterLabel>
+        <translation><!-- Administrative --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Arbitration</masterLabel>
+        <translation><!-- Arbitration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bankruptcy</masterLabel>
+        <translation><!-- Bankruptcy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Civil</masterLabel>
+        <translation><!-- Civil --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Criminal</masterLabel>
+        <translation><!-- Criminal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Miscellaneous</masterLabel>
+        <translation><!-- Miscellaneous --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Workers comp</masterLabel>
+        <translation><!-- Workers comp --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

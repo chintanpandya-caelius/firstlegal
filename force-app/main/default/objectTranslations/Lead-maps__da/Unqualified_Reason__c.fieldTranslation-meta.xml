@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Unqualified Reason --></label>
+    <name>Unqualified_Reason__c</name>
+    <picklistValues>
+        <masterLabel>Duplicate</masterLabel>
+        <translation><!-- Duplicate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Budget</masterLabel>
+        <translation><!-- No Budget --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Interested</masterLabel>
+        <translation><!-- Not Interested --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wrong Contact</masterLabel>
+        <translation><!-- Wrong Contact --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

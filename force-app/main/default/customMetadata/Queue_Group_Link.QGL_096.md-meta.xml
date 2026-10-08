@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Pod 1 – LA Civil / San Joaquin / Vent...</label>
+    <protected>false</protected>
+    <values>
+        <field>Group_API_Name__c</field>
+        <value xsi:type="xsd:string">Pod_1_LA_Civil_San_Joaquin_Ventura</value>
+    </values>
+    <values>
+        <field>Group_Name__c</field>
+        <value xsi:type="xsd:string">Pod 1 – LA Civil / San Joaquin / Ventura</value>
+    </values>
+    <values>
+        <field>Queue_API_Name__c</field>
+        <value xsi:type="xsd:string">Pod_1_LA_Civil_San_Joaquin_Ventura</value>
+    </values>
+    <values>
+        <field>Queue_Name__c</field>
+        <value xsi:type="xsd:string">Pod 1 – LA Civil / San Joaquin / Ventura</value>
+    </values>
+</CustomMetadata>

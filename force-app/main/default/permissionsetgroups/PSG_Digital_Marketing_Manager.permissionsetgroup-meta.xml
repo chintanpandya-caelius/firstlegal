@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Grants access to manage campaigns, events, and tasks, with reporting and dashboard capabilities and visibility into individual records</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>PSG_Digital_Marketing_Manager</label>
+    <permissionSets>PS_Base_Access</permissionSets>
+    <permissionSets>PS_Campaign_CRU</permissionSets>
+    <permissionSets>PS_Dashboards_Create_Edit</permissionSets>
+    <permissionSets>PS_Event_CRUD</permissionSets>
+    <permissionSets>PS_Individual_Read</permissionSets>
+    <permissionSets>PS_Reports_Create_Edit</permissionSets>
+    <permissionSets>PS_Task_CRUD</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>
