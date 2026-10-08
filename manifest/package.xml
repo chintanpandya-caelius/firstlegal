@@ -67,31 +67,7 @@
     <types><members>*</members><name>SharingOwnerRule</name></types>
     <types><members>*</members><name>SharingTerritoryRule</name></types>
     
-    <!-- Folder-based types: wildcard '*' does NOT retrieve contents.
-         Add folder names (and folder/item names) manually, or use the
-         CLI command shown in the notes. Examples (uncomment and edit):
-    <types>
-        <members>unfiled$public</members>
-        <members>MyReportFolder</members>
-        <members>MyReportFolder/My_Report</members>
-        <name>Report</name>
-    </types>
-    <types>
-        <members>MyDashboardFolder</members>
-        <members>MyDashboardFolder/My_Dashboard</members>
-        <name>Dashboard</name>
-    </types>
-    <types>
-        <members>unfiled$public</members>
-        <members>MyEmailFolder/My_Template</members>
-        <name>EmailTemplate</name>
-    </types>
-    <types>
-        <members>MyDocFolder</members>
-        <members>MyDocFolder/My_Document</members>
-        <name>Document</name>
-    </types>
-    -->
+   
 
     <version>66.0</version>
 </Package>
